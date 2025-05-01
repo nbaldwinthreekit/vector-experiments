@@ -1,10 +1,10 @@
 import { Router } from 'express';
 import searchAttributes from './searchAttributes';
-import digestConfiguration from './digestConfiguration';
+import ingestConfiguration from './ingestConfiguration';
 
 const router = Router();
 
 router.use('/search', searchAttributes);
-router.use('/digest', digestConfiguration);
+router.use('/digest', ingestConfiguration);
 
 export default router;

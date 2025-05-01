@@ -1,0 +1,43 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id          Int         @id @default(autoincrement())
+  name        String
+  description String
+  embedding   Json
+  attributes  Attribute[]
+}
+
+model Attribute {
+  id        Int               @id @default(autoincrement())
+  name      String
+  embedding Json
+  options   AttributeOption[]
+  product   Product?          @relation(fields: [productId], references: [id])
+  productId Int?
+}
+
+model AttributeOption {
+  id          Int       @id @default(autoincrement())
+  name        String
+  attributeId Int
+  attribute   Attribute @relation(fields: [attributeId], references: [id])
+}
+
+model Vectors {
+  id           Int    @id @default(autoincrement())
+  vectorString String
+  vector       Json
+  metadata     Json
+}

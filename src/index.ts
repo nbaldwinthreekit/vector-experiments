@@ -1,14 +1,18 @@
 import express from 'express';
 import cors from 'cors';
 import router from './routes';
+import http from 'http';
 
 const app = express();
-app.use(cors());
-app.use(express.json());
+const server = http.createServer(app);
 
+server.setTimeout(600000);
+
+app.use(cors());
+app.use(express.json({ limit: '50mb' }));
 app.use('/api', router);
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Backend running on http://localhost:${PORT}`);
 });

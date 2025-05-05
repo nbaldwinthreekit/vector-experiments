@@ -119,29 +119,29 @@ exports.Prisma.TransactionIsolationLevel = makeStrictEnum({
 
 exports.Prisma.ProductScalarFieldEnum = {
   id: 'id',
-  name: 'name',
+  productName: 'productName',
   description: 'description',
-  embedding: 'embedding'
-};
-
-exports.Prisma.AttributeScalarFieldEnum = {
-  id: 'id',
-  name: 'name',
-  embedding: 'embedding',
-  productId: 'productId'
+  metadata: 'metadata'
 };
 
 exports.Prisma.AttributeOptionScalarFieldEnum = {
   id: 'id',
-  name: 'name',
-  attributeId: 'attributeId'
+  attribute: 'attribute',
+  attributeOption: 'attributeOption',
+  metadata: 'metadata'
 };
 
-exports.Prisma.VectorsScalarFieldEnum = {
+exports.Prisma.VariantScalarFieldEnum = {
   id: 'id',
-  vectorString: 'vectorString',
-  vector: 'vector',
+  productId: 'productId',
+  configuration: 'configuration',
   metadata: 'metadata'
+};
+
+exports.Prisma.ProductAttributeOptionScalarFieldEnum = {
+  id: 'id',
+  productId: 'productId',
+  attributeOptionId: 'attributeOptionId'
 };
 
 exports.Prisma.SortOrder = {
@@ -164,17 +164,12 @@ exports.Prisma.QueryMode = {
   insensitive: 'insensitive'
 };
 
-exports.Prisma.NullsOrder = {
-  first: 'first',
-  last: 'last'
-};
-
 
 exports.Prisma.ModelName = {
   Product: 'Product',
-  Attribute: 'Attribute',
   AttributeOption: 'AttributeOption',
-  Vectors: 'Vectors'
+  Variant: 'Variant',
+  ProductAttributeOption: 'ProductAttributeOption'
 };
 
 /**

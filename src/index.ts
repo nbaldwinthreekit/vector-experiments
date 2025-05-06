@@ -6,7 +6,7 @@ import http from 'http';
 const app = express();
 const server = http.createServer(app);
 
-server.setTimeout(600000);
+server.setTimeout(20 * 60 * 1000);
 
 app.use(cors());
 app.use(express.json({ limit: '50mb' }));

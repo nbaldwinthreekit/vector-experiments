@@ -21,9 +21,15 @@ router.post('/', async (req, res) => {
   try {
     const { productName, description, variants } = req.body as VariantData;
 
+    let newProductCount = 0;
+    let newVariantCount = 0;
+    let newAttributeOptionCount = 0;
+
     let newProduct = await prisma.product.findUnique({ where: { productName } });
 
     if (!newProduct) {
+      newProductCount += 1;
+
       const productEmbedding = await getEmbedding(productName + description);
       newProduct = await prisma.product.create({
         data: {
@@ -33,6 +39,8 @@ router.post('/', async (req, res) => {
           metadata: { reminder: 'metadata' },
         },
       });
+
+      console.log('Created new product:', newProduct.productName);
     }
 
     for (const v of variants) {
@@ -48,6 +56,8 @@ router.post('/', async (req, res) => {
       });
 
       if (!newVariant) {
+        newVariantCount += 1;
+
         const variantEmbedding = await getEmbedding(configString);
         newVariant = await prisma.variant.create({
           data: {
@@ -57,10 +67,11 @@ router.post('/', async (req, res) => {
             metadata: { reminder: 'metadata' },
           },
         });
+
+        console.log('Created new variant:', newVariant.configuration);
       }
 
       const attributeOptions = configString.split(',');
-
       for (const pair of attributeOptions) {
         const [rawKey, rawValue] = pair.split(':');
         const attributeName = rawKey?.replace(/["{}]/g, '').trim();
@@ -78,6 +89,8 @@ router.post('/', async (req, res) => {
         });
 
         if (!newAttributeOption) {
+          newAttributeOptionCount += 1;
+
           const attrEmbedding = await getEmbedding(`${attributeName}: ${attributeOption}`);
           newAttributeOption = await prisma.attributeOption.create({
             data: {
@@ -87,6 +100,12 @@ router.post('/', async (req, res) => {
               metadata: { reminder: 'metadata' },
             },
           });
+
+          console.log(
+            'Created new attribute option:',
+            newAttributeOption.attribute,
+            newAttributeOption.attributeOption
+          );
         }
 
         await prisma.productAttributeOption.upsert({
@@ -107,6 +126,9 @@ router.post('/', async (req, res) => {
 
     res.json({
       message: 'Successfully ingested variant data.',
+      newProductCount,
+      newVariantCount,
+      newAttributeOptionCount,
     });
   } catch (err) {
     console.error(err);

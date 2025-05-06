@@ -9,11 +9,16 @@ router.post('/', async (req, res) => {
   try {
     const { productName, description, attributes } = req.body as ConfigurationData;
 
+    let newProductCount = 0;
+    let newAttributeOptionCount = 0;
+
     let newProduct = await prisma.product.findUnique({
       where: { productName },
     });
 
     if (!newProduct) {
+      newProductCount += 1;
+
       const embedding = await getEmbedding(productName + description);
       newProduct = await prisma.product.create({
         data: {
@@ -23,6 +28,8 @@ router.post('/', async (req, res) => {
           metadata: { reminder: 'metadata' },
         },
       });
+
+      console.log('Created new product:', newProduct.productName);
     }
 
     for (const attribute of attributes) {
@@ -38,6 +45,8 @@ router.post('/', async (req, res) => {
         });
 
         if (!newAttributeOption) {
+          newAttributeOptionCount += 1;
+
           const embedding = await getEmbedding(`${attributeName}: ${attributeOption}`);
           newAttributeOption = await prisma.attributeOption.create({
             data: {
@@ -47,6 +56,12 @@ router.post('/', async (req, res) => {
               metadata: { reminder: 'metadata' },
             },
           });
+
+          console.log(
+            'Created new attribute option:',
+            newAttributeOption.attribute,
+            newAttributeOption.attributeOption
+          );
 
           await prisma.productAttributeOption.upsert({
             where: {
@@ -67,6 +82,8 @@ router.post('/', async (req, res) => {
 
     res.json({
       message: 'Successfully ingested configuration data.',
+      newProductCount,
+      newAttributeOptionCount,
     });
   } catch (err) {
     console.log(err);

@@ -1,6 +1,5 @@
 import { Router } from 'express';
 import prisma from '../lib/prisma';
-import { getEmbedding } from '../openai';
 import {
   canonicalize,
   calcEuclideanDistance,
@@ -14,8 +13,7 @@ const router = Router();
 router.post('/', async (req, res) => {
   try {
     const { productName, configuration } = req.body;
-    const parsedConfiguration = JSON.parse(configuration) as Record<string, string>;
-    const sortedConfiguration = JSON.stringify(canonicalize(parsedConfiguration));
+    const sortedConfiguration = JSON.stringify(canonicalize(configuration));
 
     const variant = await prisma.variant.findUnique({
       where: {
@@ -31,12 +29,14 @@ router.post('/', async (req, res) => {
     }
 
     const attributeOptionEmbeddings: number[][] = [];
-    for (const [attribute, attributeOption] of Object.entries(parsedConfiguration)) {
+    for (const [rawAttribute, rawAttributeOption] of Object.entries(configuration)) {
+      const attribute = rawAttribute.trim();
+      const attributeOption = (rawAttributeOption as string).trim();
       const attributeOptionEntry = await prisma.attributeOption.findUnique({
         where: {
           attribute_attributeOption: {
-            attribute: attribute.trim(),
-            attributeOption: attributeOption.toString().trim(),
+            attribute: attribute,
+            attributeOption: attributeOption,
           },
         },
       });

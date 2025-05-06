@@ -19,20 +19,20 @@ export type PrismaPromise<T> = $Public.PrismaPromise<T>
  */
 export type Product = $Result.DefaultSelection<Prisma.$ProductPayload>
 /**
- * Model Attribute
- * 
- */
-export type Attribute = $Result.DefaultSelection<Prisma.$AttributePayload>
-/**
  * Model AttributeOption
  * 
  */
 export type AttributeOption = $Result.DefaultSelection<Prisma.$AttributeOptionPayload>
 /**
- * Model Vectors
+ * Model Variant
  * 
  */
-export type Vectors = $Result.DefaultSelection<Prisma.$VectorsPayload>
+export type Variant = $Result.DefaultSelection<Prisma.$VariantPayload>
+/**
+ * Model ProductAttributeOption
+ * 
+ */
+export type ProductAttributeOption = $Result.DefaultSelection<Prisma.$ProductAttributeOptionPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -170,16 +170,6 @@ export class PrismaClient<
   get product(): Prisma.ProductDelegate<ExtArgs, ClientOptions>;
 
   /**
-   * `prisma.attribute`: Exposes CRUD operations for the **Attribute** model.
-    * Example usage:
-    * ```ts
-    * // Fetch zero or more Attributes
-    * const attributes = await prisma.attribute.findMany()
-    * ```
-    */
-  get attribute(): Prisma.AttributeDelegate<ExtArgs, ClientOptions>;
-
-  /**
    * `prisma.attributeOption`: Exposes CRUD operations for the **AttributeOption** model.
     * Example usage:
     * ```ts
@@ -190,14 +180,24 @@ export class PrismaClient<
   get attributeOption(): Prisma.AttributeOptionDelegate<ExtArgs, ClientOptions>;
 
   /**
-   * `prisma.vectors`: Exposes CRUD operations for the **Vectors** model.
+   * `prisma.variant`: Exposes CRUD operations for the **Variant** model.
     * Example usage:
     * ```ts
-    * // Fetch zero or more Vectors
-    * const vectors = await prisma.vectors.findMany()
+    * // Fetch zero or more Variants
+    * const variants = await prisma.variant.findMany()
     * ```
     */
-  get vectors(): Prisma.VectorsDelegate<ExtArgs, ClientOptions>;
+  get variant(): Prisma.VariantDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.productAttributeOption`: Exposes CRUD operations for the **ProductAttributeOption** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more ProductAttributeOptions
+    * const productAttributeOptions = await prisma.productAttributeOption.findMany()
+    * ```
+    */
+  get productAttributeOption(): Prisma.ProductAttributeOptionDelegate<ExtArgs, ClientOptions>;
 }
 
 export namespace Prisma {
@@ -639,9 +639,9 @@ export namespace Prisma {
 
   export const ModelName: {
     Product: 'Product',
-    Attribute: 'Attribute',
     AttributeOption: 'AttributeOption',
-    Vectors: 'Vectors'
+    Variant: 'Variant',
+    ProductAttributeOption: 'ProductAttributeOption'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -660,7 +660,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "product" | "attribute" | "attributeOption" | "vectors"
+      modelProps: "product" | "attributeOption" | "variant" | "productAttributeOption"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -738,80 +738,6 @@ export namespace Prisma {
           }
         }
       }
-      Attribute: {
-        payload: Prisma.$AttributePayload<ExtArgs>
-        fields: Prisma.AttributeFieldRefs
-        operations: {
-          findUnique: {
-            args: Prisma.AttributeFindUniqueArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload> | null
-          }
-          findUniqueOrThrow: {
-            args: Prisma.AttributeFindUniqueOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload>
-          }
-          findFirst: {
-            args: Prisma.AttributeFindFirstArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload> | null
-          }
-          findFirstOrThrow: {
-            args: Prisma.AttributeFindFirstOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload>
-          }
-          findMany: {
-            args: Prisma.AttributeFindManyArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload>[]
-          }
-          create: {
-            args: Prisma.AttributeCreateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload>
-          }
-          createMany: {
-            args: Prisma.AttributeCreateManyArgs<ExtArgs>
-            result: BatchPayload
-          }
-          createManyAndReturn: {
-            args: Prisma.AttributeCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload>[]
-          }
-          delete: {
-            args: Prisma.AttributeDeleteArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload>
-          }
-          update: {
-            args: Prisma.AttributeUpdateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload>
-          }
-          deleteMany: {
-            args: Prisma.AttributeDeleteManyArgs<ExtArgs>
-            result: BatchPayload
-          }
-          updateMany: {
-            args: Prisma.AttributeUpdateManyArgs<ExtArgs>
-            result: BatchPayload
-          }
-          updateManyAndReturn: {
-            args: Prisma.AttributeUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload>[]
-          }
-          upsert: {
-            args: Prisma.AttributeUpsertArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$AttributePayload>
-          }
-          aggregate: {
-            args: Prisma.AttributeAggregateArgs<ExtArgs>
-            result: $Utils.Optional<AggregateAttribute>
-          }
-          groupBy: {
-            args: Prisma.AttributeGroupByArgs<ExtArgs>
-            result: $Utils.Optional<AttributeGroupByOutputType>[]
-          }
-          count: {
-            args: Prisma.AttributeCountArgs<ExtArgs>
-            result: $Utils.Optional<AttributeCountAggregateOutputType> | number
-          }
-        }
-      }
       AttributeOption: {
         payload: Prisma.$AttributeOptionPayload<ExtArgs>
         fields: Prisma.AttributeOptionFieldRefs
@@ -886,77 +812,151 @@ export namespace Prisma {
           }
         }
       }
-      Vectors: {
-        payload: Prisma.$VectorsPayload<ExtArgs>
-        fields: Prisma.VectorsFieldRefs
+      Variant: {
+        payload: Prisma.$VariantPayload<ExtArgs>
+        fields: Prisma.VariantFieldRefs
         operations: {
           findUnique: {
-            args: Prisma.VectorsFindUniqueArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload> | null
+            args: Prisma.VariantFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload> | null
           }
           findUniqueOrThrow: {
-            args: Prisma.VectorsFindUniqueOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload>
+            args: Prisma.VariantFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload>
           }
           findFirst: {
-            args: Prisma.VectorsFindFirstArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload> | null
+            args: Prisma.VariantFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload> | null
           }
           findFirstOrThrow: {
-            args: Prisma.VectorsFindFirstOrThrowArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload>
+            args: Prisma.VariantFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload>
           }
           findMany: {
-            args: Prisma.VectorsFindManyArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload>[]
+            args: Prisma.VariantFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload>[]
           }
           create: {
-            args: Prisma.VectorsCreateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload>
+            args: Prisma.VariantCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload>
           }
           createMany: {
-            args: Prisma.VectorsCreateManyArgs<ExtArgs>
+            args: Prisma.VariantCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
           createManyAndReturn: {
-            args: Prisma.VectorsCreateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload>[]
+            args: Prisma.VariantCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload>[]
           }
           delete: {
-            args: Prisma.VectorsDeleteArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload>
+            args: Prisma.VariantDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload>
           }
           update: {
-            args: Prisma.VectorsUpdateArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload>
+            args: Prisma.VariantUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload>
           }
           deleteMany: {
-            args: Prisma.VectorsDeleteManyArgs<ExtArgs>
+            args: Prisma.VariantDeleteManyArgs<ExtArgs>
             result: BatchPayload
           }
           updateMany: {
-            args: Prisma.VectorsUpdateManyArgs<ExtArgs>
+            args: Prisma.VariantUpdateManyArgs<ExtArgs>
             result: BatchPayload
           }
           updateManyAndReturn: {
-            args: Prisma.VectorsUpdateManyAndReturnArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload>[]
+            args: Prisma.VariantUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload>[]
           }
           upsert: {
-            args: Prisma.VectorsUpsertArgs<ExtArgs>
-            result: $Utils.PayloadToResult<Prisma.$VectorsPayload>
+            args: Prisma.VariantUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$VariantPayload>
           }
           aggregate: {
-            args: Prisma.VectorsAggregateArgs<ExtArgs>
-            result: $Utils.Optional<AggregateVectors>
+            args: Prisma.VariantAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateVariant>
           }
           groupBy: {
-            args: Prisma.VectorsGroupByArgs<ExtArgs>
-            result: $Utils.Optional<VectorsGroupByOutputType>[]
+            args: Prisma.VariantGroupByArgs<ExtArgs>
+            result: $Utils.Optional<VariantGroupByOutputType>[]
           }
           count: {
-            args: Prisma.VectorsCountArgs<ExtArgs>
-            result: $Utils.Optional<VectorsCountAggregateOutputType> | number
+            args: Prisma.VariantCountArgs<ExtArgs>
+            result: $Utils.Optional<VariantCountAggregateOutputType> | number
+          }
+        }
+      }
+      ProductAttributeOption: {
+        payload: Prisma.$ProductAttributeOptionPayload<ExtArgs>
+        fields: Prisma.ProductAttributeOptionFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.ProductAttributeOptionFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.ProductAttributeOptionFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload>
+          }
+          findFirst: {
+            args: Prisma.ProductAttributeOptionFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.ProductAttributeOptionFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload>
+          }
+          findMany: {
+            args: Prisma.ProductAttributeOptionFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload>[]
+          }
+          create: {
+            args: Prisma.ProductAttributeOptionCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload>
+          }
+          createMany: {
+            args: Prisma.ProductAttributeOptionCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.ProductAttributeOptionCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload>[]
+          }
+          delete: {
+            args: Prisma.ProductAttributeOptionDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload>
+          }
+          update: {
+            args: Prisma.ProductAttributeOptionUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload>
+          }
+          deleteMany: {
+            args: Prisma.ProductAttributeOptionDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.ProductAttributeOptionUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.ProductAttributeOptionUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload>[]
+          }
+          upsert: {
+            args: Prisma.ProductAttributeOptionUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ProductAttributeOptionPayload>
+          }
+          aggregate: {
+            args: Prisma.ProductAttributeOptionAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateProductAttributeOption>
+          }
+          groupBy: {
+            args: Prisma.ProductAttributeOptionGroupByArgs<ExtArgs>
+            result: $Utils.Optional<ProductAttributeOptionGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.ProductAttributeOptionCountArgs<ExtArgs>
+            result: $Utils.Optional<ProductAttributeOptionCountAggregateOutputType> | number
           }
         }
       }
@@ -1045,9 +1045,9 @@ export namespace Prisma {
   }
   export type GlobalOmitConfig = {
     product?: ProductOmit
-    attribute?: AttributeOmit
     attributeOption?: AttributeOptionOmit
-    vectors?: VectorsOmit
+    variant?: VariantOmit
+    productAttributeOption?: ProductAttributeOptionOmit
   }
 
   /* Types for Logging */
@@ -1142,11 +1142,13 @@ export namespace Prisma {
    */
 
   export type ProductCountOutputType = {
-    attributes: number
+    attributeOptions: number
+    variants: number
   }
 
   export type ProductCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    attributes?: boolean | ProductCountOutputTypeCountAttributesArgs
+    attributeOptions?: boolean | ProductCountOutputTypeCountAttributeOptionsArgs
+    variants?: boolean | ProductCountOutputTypeCountVariantsArgs
   }
 
   // Custom InputTypes
@@ -1163,39 +1165,46 @@ export namespace Prisma {
   /**
    * ProductCountOutputType without action
    */
-  export type ProductCountOutputTypeCountAttributesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: AttributeWhereInput
+  export type ProductCountOutputTypeCountAttributeOptionsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: ProductAttributeOptionWhereInput
+  }
+
+  /**
+   * ProductCountOutputType without action
+   */
+  export type ProductCountOutputTypeCountVariantsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VariantWhereInput
   }
 
 
   /**
-   * Count Type AttributeCountOutputType
+   * Count Type AttributeOptionCountOutputType
    */
 
-  export type AttributeCountOutputType = {
-    options: number
+  export type AttributeOptionCountOutputType = {
+    products: number
   }
 
-  export type AttributeCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    options?: boolean | AttributeCountOutputTypeCountOptionsArgs
+  export type AttributeOptionCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    products?: boolean | AttributeOptionCountOutputTypeCountProductsArgs
   }
 
   // Custom InputTypes
   /**
-   * AttributeCountOutputType without action
+   * AttributeOptionCountOutputType without action
    */
-  export type AttributeCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type AttributeOptionCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the AttributeCountOutputType
+     * Select specific fields to fetch from the AttributeOptionCountOutputType
      */
-    select?: AttributeCountOutputTypeSelect<ExtArgs> | null
+    select?: AttributeOptionCountOutputTypeSelect<ExtArgs> | null
   }
 
   /**
-   * AttributeCountOutputType without action
+   * AttributeOptionCountOutputType without action
    */
-  export type AttributeCountOutputTypeCountOptionsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: AttributeOptionWhereInput
+  export type AttributeOptionCountOutputTypeCountProductsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: ProductAttributeOptionWhereInput
   }
 
 
@@ -1225,21 +1234,22 @@ export namespace Prisma {
 
   export type ProductMinAggregateOutputType = {
     id: number | null
-    name: string | null
+    productName: string | null
     description: string | null
   }
 
   export type ProductMaxAggregateOutputType = {
     id: number | null
-    name: string | null
+    productName: string | null
     description: string | null
   }
 
   export type ProductCountAggregateOutputType = {
     id: number
-    name: number
+    productName: number
     description: number
     embedding: number
+    metadata: number
     _all: number
   }
 
@@ -1254,21 +1264,22 @@ export namespace Prisma {
 
   export type ProductMinAggregateInputType = {
     id?: true
-    name?: true
+    productName?: true
     description?: true
   }
 
   export type ProductMaxAggregateInputType = {
     id?: true
-    name?: true
+    productName?: true
     description?: true
   }
 
   export type ProductCountAggregateInputType = {
     id?: true
-    name?: true
+    productName?: true
     description?: true
     embedding?: true
+    metadata?: true
     _all?: true
   }
 
@@ -1360,9 +1371,10 @@ export namespace Prisma {
 
   export type ProductGroupByOutputType = {
     id: number
-    name: string
+    productName: string
     description: string
     embedding: JsonValue
+    metadata: JsonValue
     _count: ProductCountAggregateOutputType | null
     _avg: ProductAvgAggregateOutputType | null
     _sum: ProductSumAggregateOutputType | null
@@ -1386,37 +1398,43 @@ export namespace Prisma {
 
   export type ProductSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    name?: boolean
+    productName?: boolean
     description?: boolean
     embedding?: boolean
-    attributes?: boolean | Product$attributesArgs<ExtArgs>
+    metadata?: boolean
+    attributeOptions?: boolean | Product$attributeOptionsArgs<ExtArgs>
+    variants?: boolean | Product$variantsArgs<ExtArgs>
     _count?: boolean | ProductCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["product"]>
 
   export type ProductSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    name?: boolean
+    productName?: boolean
     description?: boolean
     embedding?: boolean
+    metadata?: boolean
   }, ExtArgs["result"]["product"]>
 
   export type ProductSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    name?: boolean
+    productName?: boolean
     description?: boolean
     embedding?: boolean
+    metadata?: boolean
   }, ExtArgs["result"]["product"]>
 
   export type ProductSelectScalar = {
     id?: boolean
-    name?: boolean
+    productName?: boolean
     description?: boolean
     embedding?: boolean
+    metadata?: boolean
   }
 
-  export type ProductOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "description" | "embedding", ExtArgs["result"]["product"]>
+  export type ProductOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "productName" | "description" | "embedding" | "metadata", ExtArgs["result"]["product"]>
   export type ProductInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    attributes?: boolean | Product$attributesArgs<ExtArgs>
+    attributeOptions?: boolean | Product$attributeOptionsArgs<ExtArgs>
+    variants?: boolean | Product$variantsArgs<ExtArgs>
     _count?: boolean | ProductCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type ProductIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
@@ -1425,13 +1443,15 @@ export namespace Prisma {
   export type $ProductPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "Product"
     objects: {
-      attributes: Prisma.$AttributePayload<ExtArgs>[]
+      attributeOptions: Prisma.$ProductAttributeOptionPayload<ExtArgs>[]
+      variants: Prisma.$VariantPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: number
-      name: string
+      productName: string
       description: string
       embedding: Prisma.JsonValue
+      metadata: Prisma.JsonValue
     }, ExtArgs["result"]["product"]>
     composites: {}
   }
@@ -1826,7 +1846,8 @@ export namespace Prisma {
    */
   export interface Prisma__ProductClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    attributes<T extends Product$attributesArgs<ExtArgs> = {}>(args?: Subset<T, Product$attributesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    attributeOptions<T extends Product$attributeOptionsArgs<ExtArgs> = {}>(args?: Subset<T, Product$attributeOptionsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    variants<T extends Product$variantsArgs<ExtArgs> = {}>(args?: Subset<T, Product$variantsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -1857,9 +1878,10 @@ export namespace Prisma {
    */
   interface ProductFieldRefs {
     readonly id: FieldRef<"Product", 'Int'>
-    readonly name: FieldRef<"Product", 'String'>
+    readonly productName: FieldRef<"Product", 'String'>
     readonly description: FieldRef<"Product", 'String'>
     readonly embedding: FieldRef<"Product", 'Json'>
+    readonly metadata: FieldRef<"Product", 'Json'>
   }
     
 
@@ -2246,27 +2268,51 @@ export namespace Prisma {
   }
 
   /**
-   * Product.attributes
+   * Product.attributeOptions
    */
-  export type Product$attributesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Product$attributeOptionsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Attribute
+     * Select specific fields to fetch from the ProductAttributeOption
      */
-    select?: AttributeSelect<ExtArgs> | null
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the Attribute
+     * Omit specific fields from the ProductAttributeOption
      */
-    omit?: AttributeOmit<ExtArgs> | null
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
     /**
      * Choose, which related nodes to fetch as well
      */
-    include?: AttributeInclude<ExtArgs> | null
-    where?: AttributeWhereInput
-    orderBy?: AttributeOrderByWithRelationInput | AttributeOrderByWithRelationInput[]
-    cursor?: AttributeWhereUniqueInput
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    where?: ProductAttributeOptionWhereInput
+    orderBy?: ProductAttributeOptionOrderByWithRelationInput | ProductAttributeOptionOrderByWithRelationInput[]
+    cursor?: ProductAttributeOptionWhereUniqueInput
     take?: number
     skip?: number
-    distinct?: AttributeScalarFieldEnum | AttributeScalarFieldEnum[]
+    distinct?: ProductAttributeOptionScalarFieldEnum | ProductAttributeOptionScalarFieldEnum[]
+  }
+
+  /**
+   * Product.variants
+   */
+  export type Product$variantsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Variant
+     */
+    select?: VariantSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Variant
+     */
+    omit?: VariantOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: VariantInclude<ExtArgs> | null
+    where?: VariantWhereInput
+    orderBy?: VariantOrderByWithRelationInput | VariantOrderByWithRelationInput[]
+    cursor?: VariantWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: VariantScalarFieldEnum | VariantScalarFieldEnum[]
   }
 
   /**
@@ -2289,1132 +2335,6 @@ export namespace Prisma {
 
 
   /**
-   * Model Attribute
-   */
-
-  export type AggregateAttribute = {
-    _count: AttributeCountAggregateOutputType | null
-    _avg: AttributeAvgAggregateOutputType | null
-    _sum: AttributeSumAggregateOutputType | null
-    _min: AttributeMinAggregateOutputType | null
-    _max: AttributeMaxAggregateOutputType | null
-  }
-
-  export type AttributeAvgAggregateOutputType = {
-    id: number | null
-    productId: number | null
-  }
-
-  export type AttributeSumAggregateOutputType = {
-    id: number | null
-    productId: number | null
-  }
-
-  export type AttributeMinAggregateOutputType = {
-    id: number | null
-    name: string | null
-    productId: number | null
-  }
-
-  export type AttributeMaxAggregateOutputType = {
-    id: number | null
-    name: string | null
-    productId: number | null
-  }
-
-  export type AttributeCountAggregateOutputType = {
-    id: number
-    name: number
-    embedding: number
-    productId: number
-    _all: number
-  }
-
-
-  export type AttributeAvgAggregateInputType = {
-    id?: true
-    productId?: true
-  }
-
-  export type AttributeSumAggregateInputType = {
-    id?: true
-    productId?: true
-  }
-
-  export type AttributeMinAggregateInputType = {
-    id?: true
-    name?: true
-    productId?: true
-  }
-
-  export type AttributeMaxAggregateInputType = {
-    id?: true
-    name?: true
-    productId?: true
-  }
-
-  export type AttributeCountAggregateInputType = {
-    id?: true
-    name?: true
-    embedding?: true
-    productId?: true
-    _all?: true
-  }
-
-  export type AttributeAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Filter which Attribute to aggregate.
-     */
-    where?: AttributeWhereInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
-     * 
-     * Determine the order of Attributes to fetch.
-     */
-    orderBy?: AttributeOrderByWithRelationInput | AttributeOrderByWithRelationInput[]
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
-     * 
-     * Sets the start position
-     */
-    cursor?: AttributeWhereUniqueInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Take `±n` Attributes from the position of the cursor.
-     */
-    take?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Skip the first `n` Attributes.
-     */
-    skip?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Count returned Attributes
-    **/
-    _count?: true | AttributeCountAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Select which fields to average
-    **/
-    _avg?: AttributeAvgAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Select which fields to sum
-    **/
-    _sum?: AttributeSumAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Select which fields to find the minimum value
-    **/
-    _min?: AttributeMinAggregateInputType
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
-     * 
-     * Select which fields to find the maximum value
-    **/
-    _max?: AttributeMaxAggregateInputType
-  }
-
-  export type GetAttributeAggregateType<T extends AttributeAggregateArgs> = {
-        [P in keyof T & keyof AggregateAttribute]: P extends '_count' | 'count'
-      ? T[P] extends true
-        ? number
-        : GetScalarType<T[P], AggregateAttribute[P]>
-      : GetScalarType<T[P], AggregateAttribute[P]>
-  }
-
-
-
-
-  export type AttributeGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: AttributeWhereInput
-    orderBy?: AttributeOrderByWithAggregationInput | AttributeOrderByWithAggregationInput[]
-    by: AttributeScalarFieldEnum[] | AttributeScalarFieldEnum
-    having?: AttributeScalarWhereWithAggregatesInput
-    take?: number
-    skip?: number
-    _count?: AttributeCountAggregateInputType | true
-    _avg?: AttributeAvgAggregateInputType
-    _sum?: AttributeSumAggregateInputType
-    _min?: AttributeMinAggregateInputType
-    _max?: AttributeMaxAggregateInputType
-  }
-
-  export type AttributeGroupByOutputType = {
-    id: number
-    name: string
-    embedding: JsonValue
-    productId: number | null
-    _count: AttributeCountAggregateOutputType | null
-    _avg: AttributeAvgAggregateOutputType | null
-    _sum: AttributeSumAggregateOutputType | null
-    _min: AttributeMinAggregateOutputType | null
-    _max: AttributeMaxAggregateOutputType | null
-  }
-
-  type GetAttributeGroupByPayload<T extends AttributeGroupByArgs> = Prisma.PrismaPromise<
-    Array<
-      PickEnumerable<AttributeGroupByOutputType, T['by']> &
-        {
-          [P in ((keyof T) & (keyof AttributeGroupByOutputType))]: P extends '_count'
-            ? T[P] extends boolean
-              ? number
-              : GetScalarType<T[P], AttributeGroupByOutputType[P]>
-            : GetScalarType<T[P], AttributeGroupByOutputType[P]>
-        }
-      >
-    >
-
-
-  export type AttributeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    embedding?: boolean
-    productId?: boolean
-    options?: boolean | Attribute$optionsArgs<ExtArgs>
-    product?: boolean | Attribute$productArgs<ExtArgs>
-    _count?: boolean | AttributeCountOutputTypeDefaultArgs<ExtArgs>
-  }, ExtArgs["result"]["attribute"]>
-
-  export type AttributeSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    embedding?: boolean
-    productId?: boolean
-    product?: boolean | Attribute$productArgs<ExtArgs>
-  }, ExtArgs["result"]["attribute"]>
-
-  export type AttributeSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
-    id?: boolean
-    name?: boolean
-    embedding?: boolean
-    productId?: boolean
-    product?: boolean | Attribute$productArgs<ExtArgs>
-  }, ExtArgs["result"]["attribute"]>
-
-  export type AttributeSelectScalar = {
-    id?: boolean
-    name?: boolean
-    embedding?: boolean
-    productId?: boolean
-  }
-
-  export type AttributeOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "embedding" | "productId", ExtArgs["result"]["attribute"]>
-  export type AttributeInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    options?: boolean | Attribute$optionsArgs<ExtArgs>
-    product?: boolean | Attribute$productArgs<ExtArgs>
-    _count?: boolean | AttributeCountOutputTypeDefaultArgs<ExtArgs>
-  }
-  export type AttributeIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    product?: boolean | Attribute$productArgs<ExtArgs>
-  }
-  export type AttributeIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    product?: boolean | Attribute$productArgs<ExtArgs>
-  }
-
-  export type $AttributePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    name: "Attribute"
-    objects: {
-      options: Prisma.$AttributeOptionPayload<ExtArgs>[]
-      product: Prisma.$ProductPayload<ExtArgs> | null
-    }
-    scalars: $Extensions.GetPayloadResult<{
-      id: number
-      name: string
-      embedding: Prisma.JsonValue
-      productId: number | null
-    }, ExtArgs["result"]["attribute"]>
-    composites: {}
-  }
-
-  type AttributeGetPayload<S extends boolean | null | undefined | AttributeDefaultArgs> = $Result.GetResult<Prisma.$AttributePayload, S>
-
-  type AttributeCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
-    Omit<AttributeFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
-      select?: AttributeCountAggregateInputType | true
-    }
-
-  export interface AttributeDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
-    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Attribute'], meta: { name: 'Attribute' } }
-    /**
-     * Find zero or one Attribute that matches the filter.
-     * @param {AttributeFindUniqueArgs} args - Arguments to find a Attribute
-     * @example
-     * // Get one Attribute
-     * const attribute = await prisma.attribute.findUnique({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     */
-    findUnique<T extends AttributeFindUniqueArgs>(args: SelectSubset<T, AttributeFindUniqueArgs<ExtArgs>>): Prisma__AttributeClient<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Find one Attribute that matches the filter or throw an error with `error.code='P2025'`
-     * if no matches were found.
-     * @param {AttributeFindUniqueOrThrowArgs} args - Arguments to find a Attribute
-     * @example
-     * // Get one Attribute
-     * const attribute = await prisma.attribute.findUniqueOrThrow({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     */
-    findUniqueOrThrow<T extends AttributeFindUniqueOrThrowArgs>(args: SelectSubset<T, AttributeFindUniqueOrThrowArgs<ExtArgs>>): Prisma__AttributeClient<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Find the first Attribute that matches the filter.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {AttributeFindFirstArgs} args - Arguments to find a Attribute
-     * @example
-     * // Get one Attribute
-     * const attribute = await prisma.attribute.findFirst({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     */
-    findFirst<T extends AttributeFindFirstArgs>(args?: SelectSubset<T, AttributeFindFirstArgs<ExtArgs>>): Prisma__AttributeClient<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Find the first Attribute that matches the filter or
-     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {AttributeFindFirstOrThrowArgs} args - Arguments to find a Attribute
-     * @example
-     * // Get one Attribute
-     * const attribute = await prisma.attribute.findFirstOrThrow({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     */
-    findFirstOrThrow<T extends AttributeFindFirstOrThrowArgs>(args?: SelectSubset<T, AttributeFindFirstOrThrowArgs<ExtArgs>>): Prisma__AttributeClient<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Find zero or more Attributes that matches the filter.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {AttributeFindManyArgs} args - Arguments to filter and select certain fields only.
-     * @example
-     * // Get all Attributes
-     * const attributes = await prisma.attribute.findMany()
-     * 
-     * // Get first 10 Attributes
-     * const attributes = await prisma.attribute.findMany({ take: 10 })
-     * 
-     * // Only select the `id`
-     * const attributeWithIdOnly = await prisma.attribute.findMany({ select: { id: true } })
-     * 
-     */
-    findMany<T extends AttributeFindManyArgs>(args?: SelectSubset<T, AttributeFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
-
-    /**
-     * Create a Attribute.
-     * @param {AttributeCreateArgs} args - Arguments to create a Attribute.
-     * @example
-     * // Create one Attribute
-     * const Attribute = await prisma.attribute.create({
-     *   data: {
-     *     // ... data to create a Attribute
-     *   }
-     * })
-     * 
-     */
-    create<T extends AttributeCreateArgs>(args: SelectSubset<T, AttributeCreateArgs<ExtArgs>>): Prisma__AttributeClient<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Create many Attributes.
-     * @param {AttributeCreateManyArgs} args - Arguments to create many Attributes.
-     * @example
-     * // Create many Attributes
-     * const attribute = await prisma.attribute.createMany({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     *     
-     */
-    createMany<T extends AttributeCreateManyArgs>(args?: SelectSubset<T, AttributeCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Create many Attributes and returns the data saved in the database.
-     * @param {AttributeCreateManyAndReturnArgs} args - Arguments to create many Attributes.
-     * @example
-     * // Create many Attributes
-     * const attribute = await prisma.attribute.createManyAndReturn({
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Create many Attributes and only return the `id`
-     * const attributeWithIdOnly = await prisma.attribute.createManyAndReturn({
-     *   select: { id: true },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    createManyAndReturn<T extends AttributeCreateManyAndReturnArgs>(args?: SelectSubset<T, AttributeCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
-
-    /**
-     * Delete a Attribute.
-     * @param {AttributeDeleteArgs} args - Arguments to delete one Attribute.
-     * @example
-     * // Delete one Attribute
-     * const Attribute = await prisma.attribute.delete({
-     *   where: {
-     *     // ... filter to delete one Attribute
-     *   }
-     * })
-     * 
-     */
-    delete<T extends AttributeDeleteArgs>(args: SelectSubset<T, AttributeDeleteArgs<ExtArgs>>): Prisma__AttributeClient<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Update one Attribute.
-     * @param {AttributeUpdateArgs} args - Arguments to update one Attribute.
-     * @example
-     * // Update one Attribute
-     * const attribute = await prisma.attribute.update({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: {
-     *     // ... provide data here
-     *   }
-     * })
-     * 
-     */
-    update<T extends AttributeUpdateArgs>(args: SelectSubset<T, AttributeUpdateArgs<ExtArgs>>): Prisma__AttributeClient<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-    /**
-     * Delete zero or more Attributes.
-     * @param {AttributeDeleteManyArgs} args - Arguments to filter Attributes to delete.
-     * @example
-     * // Delete a few Attributes
-     * const { count } = await prisma.attribute.deleteMany({
-     *   where: {
-     *     // ... provide filter here
-     *   }
-     * })
-     * 
-     */
-    deleteMany<T extends AttributeDeleteManyArgs>(args?: SelectSubset<T, AttributeDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Attributes.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {AttributeUpdateManyArgs} args - Arguments to update one or more rows.
-     * @example
-     * // Update many Attributes
-     * const attribute = await prisma.attribute.updateMany({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: {
-     *     // ... provide data here
-     *   }
-     * })
-     * 
-     */
-    updateMany<T extends AttributeUpdateManyArgs>(args: SelectSubset<T, AttributeUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
-
-    /**
-     * Update zero or more Attributes and returns the data updated in the database.
-     * @param {AttributeUpdateManyAndReturnArgs} args - Arguments to update many Attributes.
-     * @example
-     * // Update many Attributes
-     * const attribute = await prisma.attribute.updateManyAndReturn({
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * 
-     * // Update zero or more Attributes and only return the `id`
-     * const attributeWithIdOnly = await prisma.attribute.updateManyAndReturn({
-     *   select: { id: true },
-     *   where: {
-     *     // ... provide filter here
-     *   },
-     *   data: [
-     *     // ... provide data here
-     *   ]
-     * })
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * 
-     */
-    updateManyAndReturn<T extends AttributeUpdateManyAndReturnArgs>(args: SelectSubset<T, AttributeUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
-
-    /**
-     * Create or update one Attribute.
-     * @param {AttributeUpsertArgs} args - Arguments to update or create a Attribute.
-     * @example
-     * // Update or create a Attribute
-     * const attribute = await prisma.attribute.upsert({
-     *   create: {
-     *     // ... data to create a Attribute
-     *   },
-     *   update: {
-     *     // ... in case it already exists, update
-     *   },
-     *   where: {
-     *     // ... the filter for the Attribute we want to update
-     *   }
-     * })
-     */
-    upsert<T extends AttributeUpsertArgs>(args: SelectSubset<T, AttributeUpsertArgs<ExtArgs>>): Prisma__AttributeClient<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
-
-
-    /**
-     * Count the number of Attributes.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {AttributeCountArgs} args - Arguments to filter Attributes to count.
-     * @example
-     * // Count the number of Attributes
-     * const count = await prisma.attribute.count({
-     *   where: {
-     *     // ... the filter for the Attributes we want to count
-     *   }
-     * })
-    **/
-    count<T extends AttributeCountArgs>(
-      args?: Subset<T, AttributeCountArgs>,
-    ): Prisma.PrismaPromise<
-      T extends $Utils.Record<'select', any>
-        ? T['select'] extends true
-          ? number
-          : GetScalarType<T['select'], AttributeCountAggregateOutputType>
-        : number
-    >
-
-    /**
-     * Allows you to perform aggregations operations on a Attribute.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {AttributeAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
-     * @example
-     * // Ordered by age ascending
-     * // Where email contains prisma.io
-     * // Limited to the 10 users
-     * const aggregations = await prisma.user.aggregate({
-     *   _avg: {
-     *     age: true,
-     *   },
-     *   where: {
-     *     email: {
-     *       contains: "prisma.io",
-     *     },
-     *   },
-     *   orderBy: {
-     *     age: "asc",
-     *   },
-     *   take: 10,
-     * })
-    **/
-    aggregate<T extends AttributeAggregateArgs>(args: Subset<T, AttributeAggregateArgs>): Prisma.PrismaPromise<GetAttributeAggregateType<T>>
-
-    /**
-     * Group by Attribute.
-     * Note, that providing `undefined` is treated as the value not being there.
-     * Read more here: https://pris.ly/d/null-undefined
-     * @param {AttributeGroupByArgs} args - Group by arguments.
-     * @example
-     * // Group by city, order by createdAt, get count
-     * const result = await prisma.user.groupBy({
-     *   by: ['city', 'createdAt'],
-     *   orderBy: {
-     *     createdAt: true
-     *   },
-     *   _count: {
-     *     _all: true
-     *   },
-     * })
-     * 
-    **/
-    groupBy<
-      T extends AttributeGroupByArgs,
-      HasSelectOrTake extends Or<
-        Extends<'skip', Keys<T>>,
-        Extends<'take', Keys<T>>
-      >,
-      OrderByArg extends True extends HasSelectOrTake
-        ? { orderBy: AttributeGroupByArgs['orderBy'] }
-        : { orderBy?: AttributeGroupByArgs['orderBy'] },
-      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
-      ByFields extends MaybeTupleToUnion<T['by']>,
-      ByValid extends Has<ByFields, OrderFields>,
-      HavingFields extends GetHavingFields<T['having']>,
-      HavingValid extends Has<ByFields, HavingFields>,
-      ByEmpty extends T['by'] extends never[] ? True : False,
-      InputErrors extends ByEmpty extends True
-      ? `Error: "by" must not be empty.`
-      : HavingValid extends False
-      ? {
-          [P in HavingFields]: P extends ByFields
-            ? never
-            : P extends string
-            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
-            : [
-                Error,
-                'Field ',
-                P,
-                ` in "having" needs to be provided in "by"`,
-              ]
-        }[HavingFields]
-      : 'take' extends Keys<T>
-      ? 'orderBy' extends Keys<T>
-        ? ByValid extends True
-          ? {}
-          : {
-              [P in OrderFields]: P extends ByFields
-                ? never
-                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
-            }[OrderFields]
-        : 'Error: If you provide "take", you also need to provide "orderBy"'
-      : 'skip' extends Keys<T>
-      ? 'orderBy' extends Keys<T>
-        ? ByValid extends True
-          ? {}
-          : {
-              [P in OrderFields]: P extends ByFields
-                ? never
-                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
-            }[OrderFields]
-        : 'Error: If you provide "skip", you also need to provide "orderBy"'
-      : ByValid extends True
-      ? {}
-      : {
-          [P in OrderFields]: P extends ByFields
-            ? never
-            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
-        }[OrderFields]
-    >(args: SubsetIntersection<T, AttributeGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetAttributeGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
-  /**
-   * Fields of the Attribute model
-   */
-  readonly fields: AttributeFieldRefs;
-  }
-
-  /**
-   * The delegate class that acts as a "Promise-like" for Attribute.
-   * Why is this prefixed with `Prisma__`?
-   * Because we want to prevent naming conflicts as mentioned in
-   * https://github.com/prisma/prisma-client-js/issues/707
-   */
-  export interface Prisma__AttributeClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
-    readonly [Symbol.toStringTag]: "PrismaPromise"
-    options<T extends Attribute$optionsArgs<ExtArgs> = {}>(args?: Subset<T, Attribute$optionsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AttributeOptionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    product<T extends Attribute$productArgs<ExtArgs> = {}>(args?: Subset<T, Attribute$productArgs<ExtArgs>>): Prisma__ProductClient<$Result.GetResult<Prisma.$ProductPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
-    /**
-     * Attaches callbacks for the resolution and/or rejection of the Promise.
-     * @param onfulfilled The callback to execute when the Promise is resolved.
-     * @param onrejected The callback to execute when the Promise is rejected.
-     * @returns A Promise for the completion of which ever callback is executed.
-     */
-    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
-    /**
-     * Attaches a callback for only the rejection of the Promise.
-     * @param onrejected The callback to execute when the Promise is rejected.
-     * @returns A Promise for the completion of the callback.
-     */
-    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
-    /**
-     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
-     * resolved value cannot be modified from the callback.
-     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
-     * @returns A Promise for the completion of the callback.
-     */
-    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
-  }
-
-
-
-
-  /**
-   * Fields of the Attribute model
-   */
-  interface AttributeFieldRefs {
-    readonly id: FieldRef<"Attribute", 'Int'>
-    readonly name: FieldRef<"Attribute", 'String'>
-    readonly embedding: FieldRef<"Attribute", 'Json'>
-    readonly productId: FieldRef<"Attribute", 'Int'>
-  }
-    
-
-  // Custom InputTypes
-  /**
-   * Attribute findUnique
-   */
-  export type AttributeFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-    /**
-     * Filter, which Attribute to fetch.
-     */
-    where: AttributeWhereUniqueInput
-  }
-
-  /**
-   * Attribute findUniqueOrThrow
-   */
-  export type AttributeFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-    /**
-     * Filter, which Attribute to fetch.
-     */
-    where: AttributeWhereUniqueInput
-  }
-
-  /**
-   * Attribute findFirst
-   */
-  export type AttributeFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-    /**
-     * Filter, which Attribute to fetch.
-     */
-    where?: AttributeWhereInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
-     * 
-     * Determine the order of Attributes to fetch.
-     */
-    orderBy?: AttributeOrderByWithRelationInput | AttributeOrderByWithRelationInput[]
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
-     * 
-     * Sets the position for searching for Attributes.
-     */
-    cursor?: AttributeWhereUniqueInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Take `±n` Attributes from the position of the cursor.
-     */
-    take?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Skip the first `n` Attributes.
-     */
-    skip?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
-     * 
-     * Filter by unique combinations of Attributes.
-     */
-    distinct?: AttributeScalarFieldEnum | AttributeScalarFieldEnum[]
-  }
-
-  /**
-   * Attribute findFirstOrThrow
-   */
-  export type AttributeFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-    /**
-     * Filter, which Attribute to fetch.
-     */
-    where?: AttributeWhereInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
-     * 
-     * Determine the order of Attributes to fetch.
-     */
-    orderBy?: AttributeOrderByWithRelationInput | AttributeOrderByWithRelationInput[]
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
-     * 
-     * Sets the position for searching for Attributes.
-     */
-    cursor?: AttributeWhereUniqueInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Take `±n` Attributes from the position of the cursor.
-     */
-    take?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Skip the first `n` Attributes.
-     */
-    skip?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
-     * 
-     * Filter by unique combinations of Attributes.
-     */
-    distinct?: AttributeScalarFieldEnum | AttributeScalarFieldEnum[]
-  }
-
-  /**
-   * Attribute findMany
-   */
-  export type AttributeFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-    /**
-     * Filter, which Attributes to fetch.
-     */
-    where?: AttributeWhereInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
-     * 
-     * Determine the order of Attributes to fetch.
-     */
-    orderBy?: AttributeOrderByWithRelationInput | AttributeOrderByWithRelationInput[]
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
-     * 
-     * Sets the position for listing Attributes.
-     */
-    cursor?: AttributeWhereUniqueInput
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Take `±n` Attributes from the position of the cursor.
-     */
-    take?: number
-    /**
-     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
-     * 
-     * Skip the first `n` Attributes.
-     */
-    skip?: number
-    distinct?: AttributeScalarFieldEnum | AttributeScalarFieldEnum[]
-  }
-
-  /**
-   * Attribute create
-   */
-  export type AttributeCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-    /**
-     * The data needed to create a Attribute.
-     */
-    data: XOR<AttributeCreateInput, AttributeUncheckedCreateInput>
-  }
-
-  /**
-   * Attribute createMany
-   */
-  export type AttributeCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * The data used to create many Attributes.
-     */
-    data: AttributeCreateManyInput | AttributeCreateManyInput[]
-  }
-
-  /**
-   * Attribute createManyAndReturn
-   */
-  export type AttributeCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelectCreateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * The data used to create many Attributes.
-     */
-    data: AttributeCreateManyInput | AttributeCreateManyInput[]
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeIncludeCreateManyAndReturn<ExtArgs> | null
-  }
-
-  /**
-   * Attribute update
-   */
-  export type AttributeUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-    /**
-     * The data needed to update a Attribute.
-     */
-    data: XOR<AttributeUpdateInput, AttributeUncheckedUpdateInput>
-    /**
-     * Choose, which Attribute to update.
-     */
-    where: AttributeWhereUniqueInput
-  }
-
-  /**
-   * Attribute updateMany
-   */
-  export type AttributeUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * The data used to update Attributes.
-     */
-    data: XOR<AttributeUpdateManyMutationInput, AttributeUncheckedUpdateManyInput>
-    /**
-     * Filter which Attributes to update
-     */
-    where?: AttributeWhereInput
-    /**
-     * Limit how many Attributes to update.
-     */
-    limit?: number
-  }
-
-  /**
-   * Attribute updateManyAndReturn
-   */
-  export type AttributeUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelectUpdateManyAndReturn<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * The data used to update Attributes.
-     */
-    data: XOR<AttributeUpdateManyMutationInput, AttributeUncheckedUpdateManyInput>
-    /**
-     * Filter which Attributes to update
-     */
-    where?: AttributeWhereInput
-    /**
-     * Limit how many Attributes to update.
-     */
-    limit?: number
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeIncludeUpdateManyAndReturn<ExtArgs> | null
-  }
-
-  /**
-   * Attribute upsert
-   */
-  export type AttributeUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-    /**
-     * The filter to search for the Attribute to update in case it exists.
-     */
-    where: AttributeWhereUniqueInput
-    /**
-     * In case the Attribute found by the `where` argument doesn't exist, create a new Attribute with this data.
-     */
-    create: XOR<AttributeCreateInput, AttributeUncheckedCreateInput>
-    /**
-     * In case the Attribute was found with the provided `where` argument, update it with this data.
-     */
-    update: XOR<AttributeUpdateInput, AttributeUncheckedUpdateInput>
-  }
-
-  /**
-   * Attribute delete
-   */
-  export type AttributeDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-    /**
-     * Filter which Attribute to delete.
-     */
-    where: AttributeWhereUniqueInput
-  }
-
-  /**
-   * Attribute deleteMany
-   */
-  export type AttributeDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Filter which Attributes to delete
-     */
-    where?: AttributeWhereInput
-    /**
-     * Limit how many Attributes to delete.
-     */
-    limit?: number
-  }
-
-  /**
-   * Attribute.options
-   */
-  export type Attribute$optionsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the AttributeOption
-     */
-    select?: AttributeOptionSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the AttributeOption
-     */
-    omit?: AttributeOptionOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeOptionInclude<ExtArgs> | null
-    where?: AttributeOptionWhereInput
-    orderBy?: AttributeOptionOrderByWithRelationInput | AttributeOptionOrderByWithRelationInput[]
-    cursor?: AttributeOptionWhereUniqueInput
-    take?: number
-    skip?: number
-    distinct?: AttributeOptionScalarFieldEnum | AttributeOptionScalarFieldEnum[]
-  }
-
-  /**
-   * Attribute.product
-   */
-  export type Attribute$productArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Product
-     */
-    select?: ProductSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Product
-     */
-    omit?: ProductOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: ProductInclude<ExtArgs> | null
-    where?: ProductWhereInput
-  }
-
-  /**
-   * Attribute without action
-   */
-  export type AttributeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the Attribute
-     */
-    select?: AttributeSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the Attribute
-     */
-    omit?: AttributeOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeInclude<ExtArgs> | null
-  }
-
-
-  /**
    * Model AttributeOption
    */
 
@@ -3428,60 +2348,60 @@ export namespace Prisma {
 
   export type AttributeOptionAvgAggregateOutputType = {
     id: number | null
-    attributeId: number | null
   }
 
   export type AttributeOptionSumAggregateOutputType = {
     id: number | null
-    attributeId: number | null
   }
 
   export type AttributeOptionMinAggregateOutputType = {
     id: number | null
-    name: string | null
-    attributeId: number | null
+    attribute: string | null
+    attributeOption: string | null
   }
 
   export type AttributeOptionMaxAggregateOutputType = {
     id: number | null
-    name: string | null
-    attributeId: number | null
+    attribute: string | null
+    attributeOption: string | null
   }
 
   export type AttributeOptionCountAggregateOutputType = {
     id: number
-    name: number
-    attributeId: number
+    attribute: number
+    attributeOption: number
+    embedding: number
+    metadata: number
     _all: number
   }
 
 
   export type AttributeOptionAvgAggregateInputType = {
     id?: true
-    attributeId?: true
   }
 
   export type AttributeOptionSumAggregateInputType = {
     id?: true
-    attributeId?: true
   }
 
   export type AttributeOptionMinAggregateInputType = {
     id?: true
-    name?: true
-    attributeId?: true
+    attribute?: true
+    attributeOption?: true
   }
 
   export type AttributeOptionMaxAggregateInputType = {
     id?: true
-    name?: true
-    attributeId?: true
+    attribute?: true
+    attributeOption?: true
   }
 
   export type AttributeOptionCountAggregateInputType = {
     id?: true
-    name?: true
-    attributeId?: true
+    attribute?: true
+    attributeOption?: true
+    embedding?: true
+    metadata?: true
     _all?: true
   }
 
@@ -3573,8 +2493,10 @@ export namespace Prisma {
 
   export type AttributeOptionGroupByOutputType = {
     id: number
-    name: string
-    attributeId: number
+    attribute: string
+    attributeOption: string
+    embedding: JsonValue
+    metadata: JsonValue
     _count: AttributeOptionCountAggregateOutputType | null
     _avg: AttributeOptionAvgAggregateOutputType | null
     _sum: AttributeOptionSumAggregateOutputType | null
@@ -3598,51 +2520,57 @@ export namespace Prisma {
 
   export type AttributeOptionSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    name?: boolean
-    attributeId?: boolean
-    attribute?: boolean | AttributeDefaultArgs<ExtArgs>
+    attribute?: boolean
+    attributeOption?: boolean
+    embedding?: boolean
+    metadata?: boolean
+    products?: boolean | AttributeOption$productsArgs<ExtArgs>
+    _count?: boolean | AttributeOptionCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["attributeOption"]>
 
   export type AttributeOptionSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    name?: boolean
-    attributeId?: boolean
-    attribute?: boolean | AttributeDefaultArgs<ExtArgs>
+    attribute?: boolean
+    attributeOption?: boolean
+    embedding?: boolean
+    metadata?: boolean
   }, ExtArgs["result"]["attributeOption"]>
 
   export type AttributeOptionSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    name?: boolean
-    attributeId?: boolean
-    attribute?: boolean | AttributeDefaultArgs<ExtArgs>
+    attribute?: boolean
+    attributeOption?: boolean
+    embedding?: boolean
+    metadata?: boolean
   }, ExtArgs["result"]["attributeOption"]>
 
   export type AttributeOptionSelectScalar = {
     id?: boolean
-    name?: boolean
-    attributeId?: boolean
+    attribute?: boolean
+    attributeOption?: boolean
+    embedding?: boolean
+    metadata?: boolean
   }
 
-  export type AttributeOptionOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "attributeId", ExtArgs["result"]["attributeOption"]>
+  export type AttributeOptionOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "attribute" | "attributeOption" | "embedding" | "metadata", ExtArgs["result"]["attributeOption"]>
   export type AttributeOptionInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    attribute?: boolean | AttributeDefaultArgs<ExtArgs>
+    products?: boolean | AttributeOption$productsArgs<ExtArgs>
+    _count?: boolean | AttributeOptionCountOutputTypeDefaultArgs<ExtArgs>
   }
-  export type AttributeOptionIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    attribute?: boolean | AttributeDefaultArgs<ExtArgs>
-  }
-  export type AttributeOptionIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    attribute?: boolean | AttributeDefaultArgs<ExtArgs>
-  }
+  export type AttributeOptionIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type AttributeOptionIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $AttributeOptionPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "AttributeOption"
     objects: {
-      attribute: Prisma.$AttributePayload<ExtArgs>
+      products: Prisma.$ProductAttributeOptionPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: number
-      name: string
-      attributeId: number
+      attribute: string
+      attributeOption: string
+      embedding: Prisma.JsonValue
+      metadata: Prisma.JsonValue
     }, ExtArgs["result"]["attributeOption"]>
     composites: {}
   }
@@ -4037,7 +2965,7 @@ export namespace Prisma {
    */
   export interface Prisma__AttributeOptionClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    attribute<T extends AttributeDefaultArgs<ExtArgs> = {}>(args?: Subset<T, AttributeDefaultArgs<ExtArgs>>): Prisma__AttributeClient<$Result.GetResult<Prisma.$AttributePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    products<T extends AttributeOption$productsArgs<ExtArgs> = {}>(args?: Subset<T, AttributeOption$productsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -4068,8 +2996,10 @@ export namespace Prisma {
    */
   interface AttributeOptionFieldRefs {
     readonly id: FieldRef<"AttributeOption", 'Int'>
-    readonly name: FieldRef<"AttributeOption", 'String'>
-    readonly attributeId: FieldRef<"AttributeOption", 'Int'>
+    readonly attribute: FieldRef<"AttributeOption", 'String'>
+    readonly attributeOption: FieldRef<"AttributeOption", 'String'>
+    readonly embedding: FieldRef<"AttributeOption", 'Json'>
+    readonly metadata: FieldRef<"AttributeOption", 'Json'>
   }
     
 
@@ -4317,10 +3247,6 @@ export namespace Prisma {
      * The data used to create many AttributeOptions.
      */
     data: AttributeOptionCreateManyInput | AttributeOptionCreateManyInput[]
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeOptionIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -4391,10 +3317,6 @@ export namespace Prisma {
      * Limit how many AttributeOptions to update.
      */
     limit?: number
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: AttributeOptionIncludeUpdateManyAndReturn<ExtArgs> | null
   }
 
   /**
@@ -4464,6 +3386,30 @@ export namespace Prisma {
   }
 
   /**
+   * AttributeOption.products
+   */
+  export type AttributeOption$productsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    where?: ProductAttributeOptionWhereInput
+    orderBy?: ProductAttributeOptionOrderByWithRelationInput | ProductAttributeOptionOrderByWithRelationInput[]
+    cursor?: ProductAttributeOptionWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: ProductAttributeOptionScalarFieldEnum | ProductAttributeOptionScalarFieldEnum[]
+  }
+
+  /**
    * AttributeOption without action
    */
   export type AttributeOptionDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -4483,350 +3429,380 @@ export namespace Prisma {
 
 
   /**
-   * Model Vectors
+   * Model Variant
    */
 
-  export type AggregateVectors = {
-    _count: VectorsCountAggregateOutputType | null
-    _avg: VectorsAvgAggregateOutputType | null
-    _sum: VectorsSumAggregateOutputType | null
-    _min: VectorsMinAggregateOutputType | null
-    _max: VectorsMaxAggregateOutputType | null
+  export type AggregateVariant = {
+    _count: VariantCountAggregateOutputType | null
+    _avg: VariantAvgAggregateOutputType | null
+    _sum: VariantSumAggregateOutputType | null
+    _min: VariantMinAggregateOutputType | null
+    _max: VariantMaxAggregateOutputType | null
   }
 
-  export type VectorsAvgAggregateOutputType = {
+  export type VariantAvgAggregateOutputType = {
     id: number | null
+    productId: number | null
   }
 
-  export type VectorsSumAggregateOutputType = {
+  export type VariantSumAggregateOutputType = {
     id: number | null
+    productId: number | null
   }
 
-  export type VectorsMinAggregateOutputType = {
+  export type VariantMinAggregateOutputType = {
     id: number | null
-    vectorString: string | null
+    productId: number | null
+    configuration: string | null
   }
 
-  export type VectorsMaxAggregateOutputType = {
+  export type VariantMaxAggregateOutputType = {
     id: number | null
-    vectorString: string | null
+    productId: number | null
+    configuration: string | null
   }
 
-  export type VectorsCountAggregateOutputType = {
+  export type VariantCountAggregateOutputType = {
     id: number
-    vectorString: number
-    vector: number
+    productId: number
+    configuration: number
+    embedding: number
     metadata: number
     _all: number
   }
 
 
-  export type VectorsAvgAggregateInputType = {
+  export type VariantAvgAggregateInputType = {
     id?: true
+    productId?: true
   }
 
-  export type VectorsSumAggregateInputType = {
+  export type VariantSumAggregateInputType = {
     id?: true
+    productId?: true
   }
 
-  export type VectorsMinAggregateInputType = {
+  export type VariantMinAggregateInputType = {
     id?: true
-    vectorString?: true
+    productId?: true
+    configuration?: true
   }
 
-  export type VectorsMaxAggregateInputType = {
+  export type VariantMaxAggregateInputType = {
     id?: true
-    vectorString?: true
+    productId?: true
+    configuration?: true
   }
 
-  export type VectorsCountAggregateInputType = {
+  export type VariantCountAggregateInputType = {
     id?: true
-    vectorString?: true
-    vector?: true
+    productId?: true
+    configuration?: true
+    embedding?: true
     metadata?: true
     _all?: true
   }
 
-  export type VectorsAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which Vectors to aggregate.
+     * Filter which Variant to aggregate.
      */
-    where?: VectorsWhereInput
+    where?: VariantWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Vectors to fetch.
+     * Determine the order of Variants to fetch.
      */
-    orderBy?: VectorsOrderByWithRelationInput | VectorsOrderByWithRelationInput[]
+    orderBy?: VariantOrderByWithRelationInput | VariantOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
      * Sets the start position
      */
-    cursor?: VectorsWhereUniqueInput
+    cursor?: VariantWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Vectors from the position of the cursor.
+     * Take `±n` Variants from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Vectors.
+     * Skip the first `n` Variants.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
-     * Count returned Vectors
+     * Count returned Variants
     **/
-    _count?: true | VectorsCountAggregateInputType
+    _count?: true | VariantCountAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to average
     **/
-    _avg?: VectorsAvgAggregateInputType
+    _avg?: VariantAvgAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to sum
     **/
-    _sum?: VectorsSumAggregateInputType
+    _sum?: VariantSumAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the minimum value
     **/
-    _min?: VectorsMinAggregateInputType
+    _min?: VariantMinAggregateInputType
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
      * 
      * Select which fields to find the maximum value
     **/
-    _max?: VectorsMaxAggregateInputType
+    _max?: VariantMaxAggregateInputType
   }
 
-  export type GetVectorsAggregateType<T extends VectorsAggregateArgs> = {
-        [P in keyof T & keyof AggregateVectors]: P extends '_count' | 'count'
+  export type GetVariantAggregateType<T extends VariantAggregateArgs> = {
+        [P in keyof T & keyof AggregateVariant]: P extends '_count' | 'count'
       ? T[P] extends true
         ? number
-        : GetScalarType<T[P], AggregateVectors[P]>
-      : GetScalarType<T[P], AggregateVectors[P]>
+        : GetScalarType<T[P], AggregateVariant[P]>
+      : GetScalarType<T[P], AggregateVariant[P]>
   }
 
 
 
 
-  export type VectorsGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: VectorsWhereInput
-    orderBy?: VectorsOrderByWithAggregationInput | VectorsOrderByWithAggregationInput[]
-    by: VectorsScalarFieldEnum[] | VectorsScalarFieldEnum
-    having?: VectorsScalarWhereWithAggregatesInput
+  export type VariantGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: VariantWhereInput
+    orderBy?: VariantOrderByWithAggregationInput | VariantOrderByWithAggregationInput[]
+    by: VariantScalarFieldEnum[] | VariantScalarFieldEnum
+    having?: VariantScalarWhereWithAggregatesInput
     take?: number
     skip?: number
-    _count?: VectorsCountAggregateInputType | true
-    _avg?: VectorsAvgAggregateInputType
-    _sum?: VectorsSumAggregateInputType
-    _min?: VectorsMinAggregateInputType
-    _max?: VectorsMaxAggregateInputType
+    _count?: VariantCountAggregateInputType | true
+    _avg?: VariantAvgAggregateInputType
+    _sum?: VariantSumAggregateInputType
+    _min?: VariantMinAggregateInputType
+    _max?: VariantMaxAggregateInputType
   }
 
-  export type VectorsGroupByOutputType = {
+  export type VariantGroupByOutputType = {
     id: number
-    vectorString: string
-    vector: JsonValue
+    productId: number
+    configuration: string
+    embedding: JsonValue
     metadata: JsonValue
-    _count: VectorsCountAggregateOutputType | null
-    _avg: VectorsAvgAggregateOutputType | null
-    _sum: VectorsSumAggregateOutputType | null
-    _min: VectorsMinAggregateOutputType | null
-    _max: VectorsMaxAggregateOutputType | null
+    _count: VariantCountAggregateOutputType | null
+    _avg: VariantAvgAggregateOutputType | null
+    _sum: VariantSumAggregateOutputType | null
+    _min: VariantMinAggregateOutputType | null
+    _max: VariantMaxAggregateOutputType | null
   }
 
-  type GetVectorsGroupByPayload<T extends VectorsGroupByArgs> = Prisma.PrismaPromise<
+  type GetVariantGroupByPayload<T extends VariantGroupByArgs> = Prisma.PrismaPromise<
     Array<
-      PickEnumerable<VectorsGroupByOutputType, T['by']> &
+      PickEnumerable<VariantGroupByOutputType, T['by']> &
         {
-          [P in ((keyof T) & (keyof VectorsGroupByOutputType))]: P extends '_count'
+          [P in ((keyof T) & (keyof VariantGroupByOutputType))]: P extends '_count'
             ? T[P] extends boolean
               ? number
-              : GetScalarType<T[P], VectorsGroupByOutputType[P]>
-            : GetScalarType<T[P], VectorsGroupByOutputType[P]>
+              : GetScalarType<T[P], VariantGroupByOutputType[P]>
+            : GetScalarType<T[P], VariantGroupByOutputType[P]>
         }
       >
     >
 
 
-  export type VectorsSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type VariantSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    vectorString?: boolean
-    vector?: boolean
+    productId?: boolean
+    configuration?: boolean
+    embedding?: boolean
     metadata?: boolean
-  }, ExtArgs["result"]["vectors"]>
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["variant"]>
 
-  export type VectorsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type VariantSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    vectorString?: boolean
-    vector?: boolean
+    productId?: boolean
+    configuration?: boolean
+    embedding?: boolean
     metadata?: boolean
-  }, ExtArgs["result"]["vectors"]>
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["variant"]>
 
-  export type VectorsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+  export type VariantSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
-    vectorString?: boolean
-    vector?: boolean
+    productId?: boolean
+    configuration?: boolean
+    embedding?: boolean
     metadata?: boolean
-  }, ExtArgs["result"]["vectors"]>
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["variant"]>
 
-  export type VectorsSelectScalar = {
+  export type VariantSelectScalar = {
     id?: boolean
-    vectorString?: boolean
-    vector?: boolean
+    productId?: boolean
+    configuration?: boolean
+    embedding?: boolean
     metadata?: boolean
   }
 
-  export type VectorsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "vectorString" | "vector" | "metadata", ExtArgs["result"]["vectors"]>
+  export type VariantOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "productId" | "configuration" | "embedding" | "metadata", ExtArgs["result"]["variant"]>
+  export type VariantInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+  }
+  export type VariantIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+  }
+  export type VariantIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+  }
 
-  export type $VectorsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    name: "Vectors"
-    objects: {}
+  export type $VariantPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "Variant"
+    objects: {
+      product: Prisma.$ProductPayload<ExtArgs>
+    }
     scalars: $Extensions.GetPayloadResult<{
       id: number
-      vectorString: string
-      vector: Prisma.JsonValue
+      productId: number
+      configuration: string
+      embedding: Prisma.JsonValue
       metadata: Prisma.JsonValue
-    }, ExtArgs["result"]["vectors"]>
+    }, ExtArgs["result"]["variant"]>
     composites: {}
   }
 
-  type VectorsGetPayload<S extends boolean | null | undefined | VectorsDefaultArgs> = $Result.GetResult<Prisma.$VectorsPayload, S>
+  type VariantGetPayload<S extends boolean | null | undefined | VariantDefaultArgs> = $Result.GetResult<Prisma.$VariantPayload, S>
 
-  type VectorsCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
-    Omit<VectorsFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
-      select?: VectorsCountAggregateInputType | true
+  type VariantCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<VariantFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: VariantCountAggregateInputType | true
     }
 
-  export interface VectorsDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
-    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Vectors'], meta: { name: 'Vectors' } }
+  export interface VariantDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Variant'], meta: { name: 'Variant' } }
     /**
-     * Find zero or one Vectors that matches the filter.
-     * @param {VectorsFindUniqueArgs} args - Arguments to find a Vectors
+     * Find zero or one Variant that matches the filter.
+     * @param {VariantFindUniqueArgs} args - Arguments to find a Variant
      * @example
-     * // Get one Vectors
-     * const vectors = await prisma.vectors.findUnique({
+     * // Get one Variant
+     * const variant = await prisma.variant.findUnique({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUnique<T extends VectorsFindUniqueArgs>(args: SelectSubset<T, VectorsFindUniqueArgs<ExtArgs>>): Prisma__VectorsClient<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    findUnique<T extends VariantFindUniqueArgs>(args: SelectSubset<T, VariantFindUniqueArgs<ExtArgs>>): Prisma__VariantClient<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find one Vectors that matches the filter or throw an error with `error.code='P2025'`
+     * Find one Variant that matches the filter or throw an error with `error.code='P2025'`
      * if no matches were found.
-     * @param {VectorsFindUniqueOrThrowArgs} args - Arguments to find a Vectors
+     * @param {VariantFindUniqueOrThrowArgs} args - Arguments to find a Variant
      * @example
-     * // Get one Vectors
-     * const vectors = await prisma.vectors.findUniqueOrThrow({
+     * // Get one Variant
+     * const variant = await prisma.variant.findUniqueOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findUniqueOrThrow<T extends VectorsFindUniqueOrThrowArgs>(args: SelectSubset<T, VectorsFindUniqueOrThrowArgs<ExtArgs>>): Prisma__VectorsClient<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    findUniqueOrThrow<T extends VariantFindUniqueOrThrowArgs>(args: SelectSubset<T, VariantFindUniqueOrThrowArgs<ExtArgs>>): Prisma__VariantClient<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find the first Vectors that matches the filter.
+     * Find the first Variant that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {VectorsFindFirstArgs} args - Arguments to find a Vectors
+     * @param {VariantFindFirstArgs} args - Arguments to find a Variant
      * @example
-     * // Get one Vectors
-     * const vectors = await prisma.vectors.findFirst({
+     * // Get one Variant
+     * const variant = await prisma.variant.findFirst({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirst<T extends VectorsFindFirstArgs>(args?: SelectSubset<T, VectorsFindFirstArgs<ExtArgs>>): Prisma__VectorsClient<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    findFirst<T extends VariantFindFirstArgs>(args?: SelectSubset<T, VariantFindFirstArgs<ExtArgs>>): Prisma__VariantClient<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find the first Vectors that matches the filter or
+     * Find the first Variant that matches the filter or
      * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {VectorsFindFirstOrThrowArgs} args - Arguments to find a Vectors
+     * @param {VariantFindFirstOrThrowArgs} args - Arguments to find a Variant
      * @example
-     * // Get one Vectors
-     * const vectors = await prisma.vectors.findFirstOrThrow({
+     * // Get one Variant
+     * const variant = await prisma.variant.findFirstOrThrow({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      */
-    findFirstOrThrow<T extends VectorsFindFirstOrThrowArgs>(args?: SelectSubset<T, VectorsFindFirstOrThrowArgs<ExtArgs>>): Prisma__VectorsClient<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    findFirstOrThrow<T extends VariantFindFirstOrThrowArgs>(args?: SelectSubset<T, VariantFindFirstOrThrowArgs<ExtArgs>>): Prisma__VariantClient<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Find zero or more Vectors that matches the filter.
+     * Find zero or more Variants that matches the filter.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {VectorsFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @param {VariantFindManyArgs} args - Arguments to filter and select certain fields only.
      * @example
-     * // Get all Vectors
-     * const vectors = await prisma.vectors.findMany()
+     * // Get all Variants
+     * const variants = await prisma.variant.findMany()
      * 
-     * // Get first 10 Vectors
-     * const vectors = await prisma.vectors.findMany({ take: 10 })
+     * // Get first 10 Variants
+     * const variants = await prisma.variant.findMany({ take: 10 })
      * 
      * // Only select the `id`
-     * const vectorsWithIdOnly = await prisma.vectors.findMany({ select: { id: true } })
+     * const variantWithIdOnly = await prisma.variant.findMany({ select: { id: true } })
      * 
      */
-    findMany<T extends VectorsFindManyArgs>(args?: SelectSubset<T, VectorsFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+    findMany<T extends VariantFindManyArgs>(args?: SelectSubset<T, VariantFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
 
     /**
-     * Create a Vectors.
-     * @param {VectorsCreateArgs} args - Arguments to create a Vectors.
+     * Create a Variant.
+     * @param {VariantCreateArgs} args - Arguments to create a Variant.
      * @example
-     * // Create one Vectors
-     * const Vectors = await prisma.vectors.create({
+     * // Create one Variant
+     * const Variant = await prisma.variant.create({
      *   data: {
-     *     // ... data to create a Vectors
+     *     // ... data to create a Variant
      *   }
      * })
      * 
      */
-    create<T extends VectorsCreateArgs>(args: SelectSubset<T, VectorsCreateArgs<ExtArgs>>): Prisma__VectorsClient<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    create<T extends VariantCreateArgs>(args: SelectSubset<T, VariantCreateArgs<ExtArgs>>): Prisma__VariantClient<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Create many Vectors.
-     * @param {VectorsCreateManyArgs} args - Arguments to create many Vectors.
+     * Create many Variants.
+     * @param {VariantCreateManyArgs} args - Arguments to create many Variants.
      * @example
-     * // Create many Vectors
-     * const vectors = await prisma.vectors.createMany({
+     * // Create many Variants
+     * const variant = await prisma.variant.createMany({
      *   data: [
      *     // ... provide data here
      *   ]
      * })
      *     
      */
-    createMany<T extends VectorsCreateManyArgs>(args?: SelectSubset<T, VectorsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    createMany<T extends VariantCreateManyArgs>(args?: SelectSubset<T, VariantCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Create many Vectors and returns the data saved in the database.
-     * @param {VectorsCreateManyAndReturnArgs} args - Arguments to create many Vectors.
+     * Create many Variants and returns the data saved in the database.
+     * @param {VariantCreateManyAndReturnArgs} args - Arguments to create many Variants.
      * @example
-     * // Create many Vectors
-     * const vectors = await prisma.vectors.createManyAndReturn({
+     * // Create many Variants
+     * const variant = await prisma.variant.createManyAndReturn({
      *   data: [
      *     // ... provide data here
      *   ]
      * })
      * 
-     * // Create many Vectors and only return the `id`
-     * const vectorsWithIdOnly = await prisma.vectors.createManyAndReturn({
+     * // Create many Variants and only return the `id`
+     * const variantWithIdOnly = await prisma.variant.createManyAndReturn({
      *   select: { id: true },
      *   data: [
      *     // ... provide data here
@@ -4836,28 +3812,28 @@ export namespace Prisma {
      * Read more here: https://pris.ly/d/null-undefined
      * 
      */
-    createManyAndReturn<T extends VectorsCreateManyAndReturnArgs>(args?: SelectSubset<T, VectorsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+    createManyAndReturn<T extends VariantCreateManyAndReturnArgs>(args?: SelectSubset<T, VariantCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
 
     /**
-     * Delete a Vectors.
-     * @param {VectorsDeleteArgs} args - Arguments to delete one Vectors.
+     * Delete a Variant.
+     * @param {VariantDeleteArgs} args - Arguments to delete one Variant.
      * @example
-     * // Delete one Vectors
-     * const Vectors = await prisma.vectors.delete({
+     * // Delete one Variant
+     * const Variant = await prisma.variant.delete({
      *   where: {
-     *     // ... filter to delete one Vectors
+     *     // ... filter to delete one Variant
      *   }
      * })
      * 
      */
-    delete<T extends VectorsDeleteArgs>(args: SelectSubset<T, VectorsDeleteArgs<ExtArgs>>): Prisma__VectorsClient<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    delete<T extends VariantDeleteArgs>(args: SelectSubset<T, VariantDeleteArgs<ExtArgs>>): Prisma__VariantClient<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Update one Vectors.
-     * @param {VectorsUpdateArgs} args - Arguments to update one Vectors.
+     * Update one Variant.
+     * @param {VariantUpdateArgs} args - Arguments to update one Variant.
      * @example
-     * // Update one Vectors
-     * const vectors = await prisma.vectors.update({
+     * // Update one Variant
+     * const variant = await prisma.variant.update({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -4867,30 +3843,30 @@ export namespace Prisma {
      * })
      * 
      */
-    update<T extends VectorsUpdateArgs>(args: SelectSubset<T, VectorsUpdateArgs<ExtArgs>>): Prisma__VectorsClient<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    update<T extends VariantUpdateArgs>(args: SelectSubset<T, VariantUpdateArgs<ExtArgs>>): Prisma__VariantClient<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
     /**
-     * Delete zero or more Vectors.
-     * @param {VectorsDeleteManyArgs} args - Arguments to filter Vectors to delete.
+     * Delete zero or more Variants.
+     * @param {VariantDeleteManyArgs} args - Arguments to filter Variants to delete.
      * @example
-     * // Delete a few Vectors
-     * const { count } = await prisma.vectors.deleteMany({
+     * // Delete a few Variants
+     * const { count } = await prisma.variant.deleteMany({
      *   where: {
      *     // ... provide filter here
      *   }
      * })
      * 
      */
-    deleteMany<T extends VectorsDeleteManyArgs>(args?: SelectSubset<T, VectorsDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    deleteMany<T extends VariantDeleteManyArgs>(args?: SelectSubset<T, VariantDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Update zero or more Vectors.
+     * Update zero or more Variants.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {VectorsUpdateManyArgs} args - Arguments to update one or more rows.
+     * @param {VariantUpdateManyArgs} args - Arguments to update one or more rows.
      * @example
-     * // Update many Vectors
-     * const vectors = await prisma.vectors.updateMany({
+     * // Update many Variants
+     * const variant = await prisma.variant.updateMany({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -4900,14 +3876,14 @@ export namespace Prisma {
      * })
      * 
      */
-    updateMany<T extends VectorsUpdateManyArgs>(args: SelectSubset<T, VectorsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+    updateMany<T extends VariantUpdateManyArgs>(args: SelectSubset<T, VariantUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
-     * Update zero or more Vectors and returns the data updated in the database.
-     * @param {VectorsUpdateManyAndReturnArgs} args - Arguments to update many Vectors.
+     * Update zero or more Variants and returns the data updated in the database.
+     * @param {VariantUpdateManyAndReturnArgs} args - Arguments to update many Variants.
      * @example
-     * // Update many Vectors
-     * const vectors = await prisma.vectors.updateManyAndReturn({
+     * // Update many Variants
+     * const variant = await prisma.variant.updateManyAndReturn({
      *   where: {
      *     // ... provide filter here
      *   },
@@ -4916,8 +3892,8 @@ export namespace Prisma {
      *   ]
      * })
      * 
-     * // Update zero or more Vectors and only return the `id`
-     * const vectorsWithIdOnly = await prisma.vectors.updateManyAndReturn({
+     * // Update zero or more Variants and only return the `id`
+     * const variantWithIdOnly = await prisma.variant.updateManyAndReturn({
      *   select: { id: true },
      *   where: {
      *     // ... provide filter here
@@ -4930,56 +3906,56 @@ export namespace Prisma {
      * Read more here: https://pris.ly/d/null-undefined
      * 
      */
-    updateManyAndReturn<T extends VectorsUpdateManyAndReturnArgs>(args: SelectSubset<T, VectorsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+    updateManyAndReturn<T extends VariantUpdateManyAndReturnArgs>(args: SelectSubset<T, VariantUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
-     * Create or update one Vectors.
-     * @param {VectorsUpsertArgs} args - Arguments to update or create a Vectors.
+     * Create or update one Variant.
+     * @param {VariantUpsertArgs} args - Arguments to update or create a Variant.
      * @example
-     * // Update or create a Vectors
-     * const vectors = await prisma.vectors.upsert({
+     * // Update or create a Variant
+     * const variant = await prisma.variant.upsert({
      *   create: {
-     *     // ... data to create a Vectors
+     *     // ... data to create a Variant
      *   },
      *   update: {
      *     // ... in case it already exists, update
      *   },
      *   where: {
-     *     // ... the filter for the Vectors we want to update
+     *     // ... the filter for the Variant we want to update
      *   }
      * })
      */
-    upsert<T extends VectorsUpsertArgs>(args: SelectSubset<T, VectorsUpsertArgs<ExtArgs>>): Prisma__VectorsClient<$Result.GetResult<Prisma.$VectorsPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+    upsert<T extends VariantUpsertArgs>(args: SelectSubset<T, VariantUpsertArgs<ExtArgs>>): Prisma__VariantClient<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
 
 
     /**
-     * Count the number of Vectors.
+     * Count the number of Variants.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {VectorsCountArgs} args - Arguments to filter Vectors to count.
+     * @param {VariantCountArgs} args - Arguments to filter Variants to count.
      * @example
-     * // Count the number of Vectors
-     * const count = await prisma.vectors.count({
+     * // Count the number of Variants
+     * const count = await prisma.variant.count({
      *   where: {
-     *     // ... the filter for the Vectors we want to count
+     *     // ... the filter for the Variants we want to count
      *   }
      * })
     **/
-    count<T extends VectorsCountArgs>(
-      args?: Subset<T, VectorsCountArgs>,
+    count<T extends VariantCountArgs>(
+      args?: Subset<T, VariantCountArgs>,
     ): Prisma.PrismaPromise<
       T extends $Utils.Record<'select', any>
         ? T['select'] extends true
           ? number
-          : GetScalarType<T['select'], VectorsCountAggregateOutputType>
+          : GetScalarType<T['select'], VariantCountAggregateOutputType>
         : number
     >
 
     /**
-     * Allows you to perform aggregations operations on a Vectors.
+     * Allows you to perform aggregations operations on a Variant.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {VectorsAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @param {VariantAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
      * @example
      * // Ordered by age ascending
      * // Where email contains prisma.io
@@ -4999,13 +3975,13 @@ export namespace Prisma {
      *   take: 10,
      * })
     **/
-    aggregate<T extends VectorsAggregateArgs>(args: Subset<T, VectorsAggregateArgs>): Prisma.PrismaPromise<GetVectorsAggregateType<T>>
+    aggregate<T extends VariantAggregateArgs>(args: Subset<T, VariantAggregateArgs>): Prisma.PrismaPromise<GetVariantAggregateType<T>>
 
     /**
-     * Group by Vectors.
+     * Group by Variant.
      * Note, that providing `undefined` is treated as the value not being there.
      * Read more here: https://pris.ly/d/null-undefined
-     * @param {VectorsGroupByArgs} args - Group by arguments.
+     * @param {VariantGroupByArgs} args - Group by arguments.
      * @example
      * // Group by city, order by createdAt, get count
      * const result = await prisma.user.groupBy({
@@ -5020,14 +3996,14 @@ export namespace Prisma {
      * 
     **/
     groupBy<
-      T extends VectorsGroupByArgs,
+      T extends VariantGroupByArgs,
       HasSelectOrTake extends Or<
         Extends<'skip', Keys<T>>,
         Extends<'take', Keys<T>>
       >,
       OrderByArg extends True extends HasSelectOrTake
-        ? { orderBy: VectorsGroupByArgs['orderBy'] }
-        : { orderBy?: VectorsGroupByArgs['orderBy'] },
+        ? { orderBy: VariantGroupByArgs['orderBy'] }
+        : { orderBy?: VariantGroupByArgs['orderBy'] },
       OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
       ByFields extends MaybeTupleToUnion<T['by']>,
       ByValid extends Has<ByFields, OrderFields>,
@@ -5076,21 +4052,22 @@ export namespace Prisma {
             ? never
             : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
         }[OrderFields]
-    >(args: SubsetIntersection<T, VectorsGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVectorsGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+    >(args: SubsetIntersection<T, VariantGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetVariantGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
   /**
-   * Fields of the Vectors model
+   * Fields of the Variant model
    */
-  readonly fields: VectorsFieldRefs;
+  readonly fields: VariantFieldRefs;
   }
 
   /**
-   * The delegate class that acts as a "Promise-like" for Vectors.
+   * The delegate class that acts as a "Promise-like" for Variant.
    * Why is this prefixed with `Prisma__`?
    * Because we want to prevent naming conflicts as mentioned in
    * https://github.com/prisma/prisma-client-js/issues/707
    */
-  export interface Prisma__VectorsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+  export interface Prisma__VariantClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
+    product<T extends ProductDefaultArgs<ExtArgs> = {}>(args?: Subset<T, ProductDefaultArgs<ExtArgs>>): Prisma__ProductClient<$Result.GetResult<Prisma.$ProductPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -5117,374 +4094,1503 @@ export namespace Prisma {
 
 
   /**
-   * Fields of the Vectors model
+   * Fields of the Variant model
    */
-  interface VectorsFieldRefs {
-    readonly id: FieldRef<"Vectors", 'Int'>
-    readonly vectorString: FieldRef<"Vectors", 'String'>
-    readonly vector: FieldRef<"Vectors", 'Json'>
-    readonly metadata: FieldRef<"Vectors", 'Json'>
+  interface VariantFieldRefs {
+    readonly id: FieldRef<"Variant", 'Int'>
+    readonly productId: FieldRef<"Variant", 'Int'>
+    readonly configuration: FieldRef<"Variant", 'String'>
+    readonly embedding: FieldRef<"Variant", 'Json'>
+    readonly metadata: FieldRef<"Variant", 'Json'>
   }
     
 
   // Custom InputTypes
   /**
-   * Vectors findUnique
+   * Variant findUnique
    */
-  export type VectorsFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelect<ExtArgs> | null
+    select?: VariantSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * Filter, which Vectors to fetch.
+     * Choose, which related nodes to fetch as well
      */
-    where: VectorsWhereUniqueInput
+    include?: VariantInclude<ExtArgs> | null
+    /**
+     * Filter, which Variant to fetch.
+     */
+    where: VariantWhereUniqueInput
   }
 
   /**
-   * Vectors findUniqueOrThrow
+   * Variant findUniqueOrThrow
    */
-  export type VectorsFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelect<ExtArgs> | null
+    select?: VariantSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * Filter, which Vectors to fetch.
+     * Choose, which related nodes to fetch as well
      */
-    where: VectorsWhereUniqueInput
+    include?: VariantInclude<ExtArgs> | null
+    /**
+     * Filter, which Variant to fetch.
+     */
+    where: VariantWhereUniqueInput
   }
 
   /**
-   * Vectors findFirst
+   * Variant findFirst
    */
-  export type VectorsFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelect<ExtArgs> | null
+    select?: VariantSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * Filter, which Vectors to fetch.
+     * Choose, which related nodes to fetch as well
      */
-    where?: VectorsWhereInput
+    include?: VariantInclude<ExtArgs> | null
+    /**
+     * Filter, which Variant to fetch.
+     */
+    where?: VariantWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Vectors to fetch.
+     * Determine the order of Variants to fetch.
      */
-    orderBy?: VectorsOrderByWithRelationInput | VectorsOrderByWithRelationInput[]
+    orderBy?: VariantOrderByWithRelationInput | VariantOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for Vectors.
+     * Sets the position for searching for Variants.
      */
-    cursor?: VectorsWhereUniqueInput
+    cursor?: VariantWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Vectors from the position of the cursor.
+     * Take `±n` Variants from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Vectors.
+     * Skip the first `n` Variants.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Vectors.
+     * Filter by unique combinations of Variants.
      */
-    distinct?: VectorsScalarFieldEnum | VectorsScalarFieldEnum[]
+    distinct?: VariantScalarFieldEnum | VariantScalarFieldEnum[]
   }
 
   /**
-   * Vectors findFirstOrThrow
+   * Variant findFirstOrThrow
    */
-  export type VectorsFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelect<ExtArgs> | null
+    select?: VariantSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * Filter, which Vectors to fetch.
+     * Choose, which related nodes to fetch as well
      */
-    where?: VectorsWhereInput
+    include?: VariantInclude<ExtArgs> | null
+    /**
+     * Filter, which Variant to fetch.
+     */
+    where?: VariantWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Vectors to fetch.
+     * Determine the order of Variants to fetch.
      */
-    orderBy?: VectorsOrderByWithRelationInput | VectorsOrderByWithRelationInput[]
+    orderBy?: VariantOrderByWithRelationInput | VariantOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for searching for Vectors.
+     * Sets the position for searching for Variants.
      */
-    cursor?: VectorsWhereUniqueInput
+    cursor?: VariantWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Vectors from the position of the cursor.
+     * Take `±n` Variants from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Vectors.
+     * Skip the first `n` Variants.
      */
     skip?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
      * 
-     * Filter by unique combinations of Vectors.
+     * Filter by unique combinations of Variants.
      */
-    distinct?: VectorsScalarFieldEnum | VectorsScalarFieldEnum[]
+    distinct?: VariantScalarFieldEnum | VariantScalarFieldEnum[]
   }
 
   /**
-   * Vectors findMany
+   * Variant findMany
    */
-  export type VectorsFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelect<ExtArgs> | null
+    select?: VariantSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * Filter, which Vectors to fetch.
+     * Choose, which related nodes to fetch as well
      */
-    where?: VectorsWhereInput
+    include?: VariantInclude<ExtArgs> | null
+    /**
+     * Filter, which Variants to fetch.
+     */
+    where?: VariantWhereInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
      * 
-     * Determine the order of Vectors to fetch.
+     * Determine the order of Variants to fetch.
      */
-    orderBy?: VectorsOrderByWithRelationInput | VectorsOrderByWithRelationInput[]
+    orderBy?: VariantOrderByWithRelationInput | VariantOrderByWithRelationInput[]
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
      * 
-     * Sets the position for listing Vectors.
+     * Sets the position for listing Variants.
      */
-    cursor?: VectorsWhereUniqueInput
+    cursor?: VariantWhereUniqueInput
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Take `±n` Vectors from the position of the cursor.
+     * Take `±n` Variants from the position of the cursor.
      */
     take?: number
     /**
      * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
      * 
-     * Skip the first `n` Vectors.
+     * Skip the first `n` Variants.
      */
     skip?: number
-    distinct?: VectorsScalarFieldEnum | VectorsScalarFieldEnum[]
+    distinct?: VariantScalarFieldEnum | VariantScalarFieldEnum[]
   }
 
   /**
-   * Vectors create
+   * Variant create
    */
-  export type VectorsCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelect<ExtArgs> | null
+    select?: VariantSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * The data needed to create a Vectors.
+     * Choose, which related nodes to fetch as well
      */
-    data: XOR<VectorsCreateInput, VectorsUncheckedCreateInput>
+    include?: VariantInclude<ExtArgs> | null
+    /**
+     * The data needed to create a Variant.
+     */
+    data: XOR<VariantCreateInput, VariantUncheckedCreateInput>
   }
 
   /**
-   * Vectors createMany
+   * Variant createMany
    */
-  export type VectorsCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to create many Vectors.
+     * The data used to create many Variants.
      */
-    data: VectorsCreateManyInput | VectorsCreateManyInput[]
+    data: VariantCreateManyInput | VariantCreateManyInput[]
   }
 
   /**
-   * Vectors createManyAndReturn
+   * Variant createManyAndReturn
    */
-  export type VectorsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelectCreateManyAndReturn<ExtArgs> | null
+    select?: VariantSelectCreateManyAndReturn<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * The data used to create many Vectors.
+     * The data used to create many Variants.
      */
-    data: VectorsCreateManyInput | VectorsCreateManyInput[]
+    data: VariantCreateManyInput | VariantCreateManyInput[]
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: VariantIncludeCreateManyAndReturn<ExtArgs> | null
   }
 
   /**
-   * Vectors update
+   * Variant update
    */
-  export type VectorsUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelect<ExtArgs> | null
+    select?: VariantSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * The data needed to update a Vectors.
+     * Choose, which related nodes to fetch as well
      */
-    data: XOR<VectorsUpdateInput, VectorsUncheckedUpdateInput>
+    include?: VariantInclude<ExtArgs> | null
     /**
-     * Choose, which Vectors to update.
+     * The data needed to update a Variant.
      */
-    where: VectorsWhereUniqueInput
+    data: XOR<VariantUpdateInput, VariantUncheckedUpdateInput>
+    /**
+     * Choose, which Variant to update.
+     */
+    where: VariantWhereUniqueInput
   }
 
   /**
-   * Vectors updateMany
+   * Variant updateMany
    */
-  export type VectorsUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * The data used to update Vectors.
+     * The data used to update Variants.
      */
-    data: XOR<VectorsUpdateManyMutationInput, VectorsUncheckedUpdateManyInput>
+    data: XOR<VariantUpdateManyMutationInput, VariantUncheckedUpdateManyInput>
     /**
-     * Filter which Vectors to update
+     * Filter which Variants to update
      */
-    where?: VectorsWhereInput
+    where?: VariantWhereInput
     /**
-     * Limit how many Vectors to update.
+     * Limit how many Variants to update.
      */
     limit?: number
   }
 
   /**
-   * Vectors updateManyAndReturn
+   * Variant updateManyAndReturn
    */
-  export type VectorsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelectUpdateManyAndReturn<ExtArgs> | null
+    select?: VariantSelectUpdateManyAndReturn<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * The data used to update Vectors.
+     * The data used to update Variants.
      */
-    data: XOR<VectorsUpdateManyMutationInput, VectorsUncheckedUpdateManyInput>
+    data: XOR<VariantUpdateManyMutationInput, VariantUncheckedUpdateManyInput>
     /**
-     * Filter which Vectors to update
+     * Filter which Variants to update
      */
-    where?: VectorsWhereInput
+    where?: VariantWhereInput
     /**
-     * Limit how many Vectors to update.
+     * Limit how many Variants to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: VariantIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * Variant upsert
+   */
+  export type VariantUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Variant
+     */
+    select?: VariantSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Variant
+     */
+    omit?: VariantOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: VariantInclude<ExtArgs> | null
+    /**
+     * The filter to search for the Variant to update in case it exists.
+     */
+    where: VariantWhereUniqueInput
+    /**
+     * In case the Variant found by the `where` argument doesn't exist, create a new Variant with this data.
+     */
+    create: XOR<VariantCreateInput, VariantUncheckedCreateInput>
+    /**
+     * In case the Variant was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<VariantUpdateInput, VariantUncheckedUpdateInput>
+  }
+
+  /**
+   * Variant delete
+   */
+  export type VariantDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Variant
+     */
+    select?: VariantSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Variant
+     */
+    omit?: VariantOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: VariantInclude<ExtArgs> | null
+    /**
+     * Filter which Variant to delete.
+     */
+    where: VariantWhereUniqueInput
+  }
+
+  /**
+   * Variant deleteMany
+   */
+  export type VariantDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which Variants to delete
+     */
+    where?: VariantWhereInput
+    /**
+     * Limit how many Variants to delete.
      */
     limit?: number
   }
 
   /**
-   * Vectors upsert
+   * Variant without action
    */
-  export type VectorsUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type VariantDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the Variant
      */
-    select?: VectorsSelect<ExtArgs> | null
+    select?: VariantSelect<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the Variant
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: VariantOmit<ExtArgs> | null
     /**
-     * The filter to search for the Vectors to update in case it exists.
+     * Choose, which related nodes to fetch as well
      */
-    where: VectorsWhereUniqueInput
+    include?: VariantInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model ProductAttributeOption
+   */
+
+  export type AggregateProductAttributeOption = {
+    _count: ProductAttributeOptionCountAggregateOutputType | null
+    _avg: ProductAttributeOptionAvgAggregateOutputType | null
+    _sum: ProductAttributeOptionSumAggregateOutputType | null
+    _min: ProductAttributeOptionMinAggregateOutputType | null
+    _max: ProductAttributeOptionMaxAggregateOutputType | null
+  }
+
+  export type ProductAttributeOptionAvgAggregateOutputType = {
+    id: number | null
+    productId: number | null
+    attributeOptionId: number | null
+  }
+
+  export type ProductAttributeOptionSumAggregateOutputType = {
+    id: number | null
+    productId: number | null
+    attributeOptionId: number | null
+  }
+
+  export type ProductAttributeOptionMinAggregateOutputType = {
+    id: number | null
+    productId: number | null
+    attributeOptionId: number | null
+  }
+
+  export type ProductAttributeOptionMaxAggregateOutputType = {
+    id: number | null
+    productId: number | null
+    attributeOptionId: number | null
+  }
+
+  export type ProductAttributeOptionCountAggregateOutputType = {
+    id: number
+    productId: number
+    attributeOptionId: number
+    _all: number
+  }
+
+
+  export type ProductAttributeOptionAvgAggregateInputType = {
+    id?: true
+    productId?: true
+    attributeOptionId?: true
+  }
+
+  export type ProductAttributeOptionSumAggregateInputType = {
+    id?: true
+    productId?: true
+    attributeOptionId?: true
+  }
+
+  export type ProductAttributeOptionMinAggregateInputType = {
+    id?: true
+    productId?: true
+    attributeOptionId?: true
+  }
+
+  export type ProductAttributeOptionMaxAggregateInputType = {
+    id?: true
+    productId?: true
+    attributeOptionId?: true
+  }
+
+  export type ProductAttributeOptionCountAggregateInputType = {
+    id?: true
+    productId?: true
+    attributeOptionId?: true
+    _all?: true
+  }
+
+  export type ProductAttributeOptionAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * In case the Vectors found by the `where` argument doesn't exist, create a new Vectors with this data.
+     * Filter which ProductAttributeOption to aggregate.
      */
-    create: XOR<VectorsCreateInput, VectorsUncheckedCreateInput>
+    where?: ProductAttributeOptionWhereInput
     /**
-     * In case the Vectors was found with the provided `where` argument, update it with this data.
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of ProductAttributeOptions to fetch.
      */
-    update: XOR<VectorsUpdateInput, VectorsUncheckedUpdateInput>
+    orderBy?: ProductAttributeOptionOrderByWithRelationInput | ProductAttributeOptionOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: ProductAttributeOptionWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` ProductAttributeOptions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` ProductAttributeOptions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned ProductAttributeOptions
+    **/
+    _count?: true | ProductAttributeOptionCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: ProductAttributeOptionAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: ProductAttributeOptionSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: ProductAttributeOptionMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: ProductAttributeOptionMaxAggregateInputType
+  }
+
+  export type GetProductAttributeOptionAggregateType<T extends ProductAttributeOptionAggregateArgs> = {
+        [P in keyof T & keyof AggregateProductAttributeOption]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateProductAttributeOption[P]>
+      : GetScalarType<T[P], AggregateProductAttributeOption[P]>
+  }
+
+
+
+
+  export type ProductAttributeOptionGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: ProductAttributeOptionWhereInput
+    orderBy?: ProductAttributeOptionOrderByWithAggregationInput | ProductAttributeOptionOrderByWithAggregationInput[]
+    by: ProductAttributeOptionScalarFieldEnum[] | ProductAttributeOptionScalarFieldEnum
+    having?: ProductAttributeOptionScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: ProductAttributeOptionCountAggregateInputType | true
+    _avg?: ProductAttributeOptionAvgAggregateInputType
+    _sum?: ProductAttributeOptionSumAggregateInputType
+    _min?: ProductAttributeOptionMinAggregateInputType
+    _max?: ProductAttributeOptionMaxAggregateInputType
+  }
+
+  export type ProductAttributeOptionGroupByOutputType = {
+    id: number
+    productId: number
+    attributeOptionId: number
+    _count: ProductAttributeOptionCountAggregateOutputType | null
+    _avg: ProductAttributeOptionAvgAggregateOutputType | null
+    _sum: ProductAttributeOptionSumAggregateOutputType | null
+    _min: ProductAttributeOptionMinAggregateOutputType | null
+    _max: ProductAttributeOptionMaxAggregateOutputType | null
+  }
+
+  type GetProductAttributeOptionGroupByPayload<T extends ProductAttributeOptionGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<ProductAttributeOptionGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof ProductAttributeOptionGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], ProductAttributeOptionGroupByOutputType[P]>
+            : GetScalarType<T[P], ProductAttributeOptionGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type ProductAttributeOptionSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    productId?: boolean
+    attributeOptionId?: boolean
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+    attributeOption?: boolean | AttributeOptionDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["productAttributeOption"]>
+
+  export type ProductAttributeOptionSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    productId?: boolean
+    attributeOptionId?: boolean
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+    attributeOption?: boolean | AttributeOptionDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["productAttributeOption"]>
+
+  export type ProductAttributeOptionSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    productId?: boolean
+    attributeOptionId?: boolean
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+    attributeOption?: boolean | AttributeOptionDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["productAttributeOption"]>
+
+  export type ProductAttributeOptionSelectScalar = {
+    id?: boolean
+    productId?: boolean
+    attributeOptionId?: boolean
+  }
+
+  export type ProductAttributeOptionOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "productId" | "attributeOptionId", ExtArgs["result"]["productAttributeOption"]>
+  export type ProductAttributeOptionInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+    attributeOption?: boolean | AttributeOptionDefaultArgs<ExtArgs>
+  }
+  export type ProductAttributeOptionIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+    attributeOption?: boolean | AttributeOptionDefaultArgs<ExtArgs>
+  }
+  export type ProductAttributeOptionIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    product?: boolean | ProductDefaultArgs<ExtArgs>
+    attributeOption?: boolean | AttributeOptionDefaultArgs<ExtArgs>
+  }
+
+  export type $ProductAttributeOptionPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "ProductAttributeOption"
+    objects: {
+      product: Prisma.$ProductPayload<ExtArgs>
+      attributeOption: Prisma.$AttributeOptionPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: number
+      productId: number
+      attributeOptionId: number
+    }, ExtArgs["result"]["productAttributeOption"]>
+    composites: {}
+  }
+
+  type ProductAttributeOptionGetPayload<S extends boolean | null | undefined | ProductAttributeOptionDefaultArgs> = $Result.GetResult<Prisma.$ProductAttributeOptionPayload, S>
+
+  type ProductAttributeOptionCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<ProductAttributeOptionFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: ProductAttributeOptionCountAggregateInputType | true
+    }
+
+  export interface ProductAttributeOptionDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['ProductAttributeOption'], meta: { name: 'ProductAttributeOption' } }
+    /**
+     * Find zero or one ProductAttributeOption that matches the filter.
+     * @param {ProductAttributeOptionFindUniqueArgs} args - Arguments to find a ProductAttributeOption
+     * @example
+     * // Get one ProductAttributeOption
+     * const productAttributeOption = await prisma.productAttributeOption.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends ProductAttributeOptionFindUniqueArgs>(args: SelectSubset<T, ProductAttributeOptionFindUniqueArgs<ExtArgs>>): Prisma__ProductAttributeOptionClient<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one ProductAttributeOption that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {ProductAttributeOptionFindUniqueOrThrowArgs} args - Arguments to find a ProductAttributeOption
+     * @example
+     * // Get one ProductAttributeOption
+     * const productAttributeOption = await prisma.productAttributeOption.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends ProductAttributeOptionFindUniqueOrThrowArgs>(args: SelectSubset<T, ProductAttributeOptionFindUniqueOrThrowArgs<ExtArgs>>): Prisma__ProductAttributeOptionClient<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first ProductAttributeOption that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ProductAttributeOptionFindFirstArgs} args - Arguments to find a ProductAttributeOption
+     * @example
+     * // Get one ProductAttributeOption
+     * const productAttributeOption = await prisma.productAttributeOption.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends ProductAttributeOptionFindFirstArgs>(args?: SelectSubset<T, ProductAttributeOptionFindFirstArgs<ExtArgs>>): Prisma__ProductAttributeOptionClient<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first ProductAttributeOption that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ProductAttributeOptionFindFirstOrThrowArgs} args - Arguments to find a ProductAttributeOption
+     * @example
+     * // Get one ProductAttributeOption
+     * const productAttributeOption = await prisma.productAttributeOption.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends ProductAttributeOptionFindFirstOrThrowArgs>(args?: SelectSubset<T, ProductAttributeOptionFindFirstOrThrowArgs<ExtArgs>>): Prisma__ProductAttributeOptionClient<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more ProductAttributeOptions that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ProductAttributeOptionFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all ProductAttributeOptions
+     * const productAttributeOptions = await prisma.productAttributeOption.findMany()
+     * 
+     * // Get first 10 ProductAttributeOptions
+     * const productAttributeOptions = await prisma.productAttributeOption.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const productAttributeOptionWithIdOnly = await prisma.productAttributeOption.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends ProductAttributeOptionFindManyArgs>(args?: SelectSubset<T, ProductAttributeOptionFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a ProductAttributeOption.
+     * @param {ProductAttributeOptionCreateArgs} args - Arguments to create a ProductAttributeOption.
+     * @example
+     * // Create one ProductAttributeOption
+     * const ProductAttributeOption = await prisma.productAttributeOption.create({
+     *   data: {
+     *     // ... data to create a ProductAttributeOption
+     *   }
+     * })
+     * 
+     */
+    create<T extends ProductAttributeOptionCreateArgs>(args: SelectSubset<T, ProductAttributeOptionCreateArgs<ExtArgs>>): Prisma__ProductAttributeOptionClient<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many ProductAttributeOptions.
+     * @param {ProductAttributeOptionCreateManyArgs} args - Arguments to create many ProductAttributeOptions.
+     * @example
+     * // Create many ProductAttributeOptions
+     * const productAttributeOption = await prisma.productAttributeOption.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends ProductAttributeOptionCreateManyArgs>(args?: SelectSubset<T, ProductAttributeOptionCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many ProductAttributeOptions and returns the data saved in the database.
+     * @param {ProductAttributeOptionCreateManyAndReturnArgs} args - Arguments to create many ProductAttributeOptions.
+     * @example
+     * // Create many ProductAttributeOptions
+     * const productAttributeOption = await prisma.productAttributeOption.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many ProductAttributeOptions and only return the `id`
+     * const productAttributeOptionWithIdOnly = await prisma.productAttributeOption.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends ProductAttributeOptionCreateManyAndReturnArgs>(args?: SelectSubset<T, ProductAttributeOptionCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a ProductAttributeOption.
+     * @param {ProductAttributeOptionDeleteArgs} args - Arguments to delete one ProductAttributeOption.
+     * @example
+     * // Delete one ProductAttributeOption
+     * const ProductAttributeOption = await prisma.productAttributeOption.delete({
+     *   where: {
+     *     // ... filter to delete one ProductAttributeOption
+     *   }
+     * })
+     * 
+     */
+    delete<T extends ProductAttributeOptionDeleteArgs>(args: SelectSubset<T, ProductAttributeOptionDeleteArgs<ExtArgs>>): Prisma__ProductAttributeOptionClient<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one ProductAttributeOption.
+     * @param {ProductAttributeOptionUpdateArgs} args - Arguments to update one ProductAttributeOption.
+     * @example
+     * // Update one ProductAttributeOption
+     * const productAttributeOption = await prisma.productAttributeOption.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends ProductAttributeOptionUpdateArgs>(args: SelectSubset<T, ProductAttributeOptionUpdateArgs<ExtArgs>>): Prisma__ProductAttributeOptionClient<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more ProductAttributeOptions.
+     * @param {ProductAttributeOptionDeleteManyArgs} args - Arguments to filter ProductAttributeOptions to delete.
+     * @example
+     * // Delete a few ProductAttributeOptions
+     * const { count } = await prisma.productAttributeOption.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends ProductAttributeOptionDeleteManyArgs>(args?: SelectSubset<T, ProductAttributeOptionDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more ProductAttributeOptions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ProductAttributeOptionUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many ProductAttributeOptions
+     * const productAttributeOption = await prisma.productAttributeOption.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends ProductAttributeOptionUpdateManyArgs>(args: SelectSubset<T, ProductAttributeOptionUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more ProductAttributeOptions and returns the data updated in the database.
+     * @param {ProductAttributeOptionUpdateManyAndReturnArgs} args - Arguments to update many ProductAttributeOptions.
+     * @example
+     * // Update many ProductAttributeOptions
+     * const productAttributeOption = await prisma.productAttributeOption.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more ProductAttributeOptions and only return the `id`
+     * const productAttributeOptionWithIdOnly = await prisma.productAttributeOption.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends ProductAttributeOptionUpdateManyAndReturnArgs>(args: SelectSubset<T, ProductAttributeOptionUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one ProductAttributeOption.
+     * @param {ProductAttributeOptionUpsertArgs} args - Arguments to update or create a ProductAttributeOption.
+     * @example
+     * // Update or create a ProductAttributeOption
+     * const productAttributeOption = await prisma.productAttributeOption.upsert({
+     *   create: {
+     *     // ... data to create a ProductAttributeOption
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the ProductAttributeOption we want to update
+     *   }
+     * })
+     */
+    upsert<T extends ProductAttributeOptionUpsertArgs>(args: SelectSubset<T, ProductAttributeOptionUpsertArgs<ExtArgs>>): Prisma__ProductAttributeOptionClient<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of ProductAttributeOptions.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ProductAttributeOptionCountArgs} args - Arguments to filter ProductAttributeOptions to count.
+     * @example
+     * // Count the number of ProductAttributeOptions
+     * const count = await prisma.productAttributeOption.count({
+     *   where: {
+     *     // ... the filter for the ProductAttributeOptions we want to count
+     *   }
+     * })
+    **/
+    count<T extends ProductAttributeOptionCountArgs>(
+      args?: Subset<T, ProductAttributeOptionCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], ProductAttributeOptionCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a ProductAttributeOption.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ProductAttributeOptionAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends ProductAttributeOptionAggregateArgs>(args: Subset<T, ProductAttributeOptionAggregateArgs>): Prisma.PrismaPromise<GetProductAttributeOptionAggregateType<T>>
+
+    /**
+     * Group by ProductAttributeOption.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ProductAttributeOptionGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends ProductAttributeOptionGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: ProductAttributeOptionGroupByArgs['orderBy'] }
+        : { orderBy?: ProductAttributeOptionGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, ProductAttributeOptionGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetProductAttributeOptionGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the ProductAttributeOption model
+   */
+  readonly fields: ProductAttributeOptionFieldRefs;
   }
 
   /**
-   * Vectors delete
+   * The delegate class that acts as a "Promise-like" for ProductAttributeOption.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
    */
-  export type VectorsDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export interface Prisma__ProductAttributeOptionClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    product<T extends ProductDefaultArgs<ExtArgs> = {}>(args?: Subset<T, ProductDefaultArgs<ExtArgs>>): Prisma__ProductClient<$Result.GetResult<Prisma.$ProductPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    attributeOption<T extends AttributeOptionDefaultArgs<ExtArgs> = {}>(args?: Subset<T, AttributeOptionDefaultArgs<ExtArgs>>): Prisma__AttributeOptionClient<$Result.GetResult<Prisma.$AttributeOptionPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
     /**
-     * Select specific fields to fetch from the Vectors
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
      */
-    select?: VectorsSelect<ExtArgs> | null
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
     /**
-     * Omit specific fields from the Vectors
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
     /**
-     * Filter which Vectors to delete.
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
      */
-    where: VectorsWhereUniqueInput
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the ProductAttributeOption model
+   */
+  interface ProductAttributeOptionFieldRefs {
+    readonly id: FieldRef<"ProductAttributeOption", 'Int'>
+    readonly productId: FieldRef<"ProductAttributeOption", 'Int'>
+    readonly attributeOptionId: FieldRef<"ProductAttributeOption", 'Int'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * ProductAttributeOption findUnique
+   */
+  export type ProductAttributeOptionFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    /**
+     * Filter, which ProductAttributeOption to fetch.
+     */
+    where: ProductAttributeOptionWhereUniqueInput
   }
 
   /**
-   * Vectors deleteMany
+   * ProductAttributeOption findUniqueOrThrow
    */
-  export type VectorsDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type ProductAttributeOptionFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Filter which Vectors to delete
+     * Select specific fields to fetch from the ProductAttributeOption
      */
-    where?: VectorsWhereInput
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
     /**
-     * Limit how many Vectors to delete.
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    /**
+     * Filter, which ProductAttributeOption to fetch.
+     */
+    where: ProductAttributeOptionWhereUniqueInput
+  }
+
+  /**
+   * ProductAttributeOption findFirst
+   */
+  export type ProductAttributeOptionFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    /**
+     * Filter, which ProductAttributeOption to fetch.
+     */
+    where?: ProductAttributeOptionWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of ProductAttributeOptions to fetch.
+     */
+    orderBy?: ProductAttributeOptionOrderByWithRelationInput | ProductAttributeOptionOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for ProductAttributeOptions.
+     */
+    cursor?: ProductAttributeOptionWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` ProductAttributeOptions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` ProductAttributeOptions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of ProductAttributeOptions.
+     */
+    distinct?: ProductAttributeOptionScalarFieldEnum | ProductAttributeOptionScalarFieldEnum[]
+  }
+
+  /**
+   * ProductAttributeOption findFirstOrThrow
+   */
+  export type ProductAttributeOptionFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    /**
+     * Filter, which ProductAttributeOption to fetch.
+     */
+    where?: ProductAttributeOptionWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of ProductAttributeOptions to fetch.
+     */
+    orderBy?: ProductAttributeOptionOrderByWithRelationInput | ProductAttributeOptionOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for ProductAttributeOptions.
+     */
+    cursor?: ProductAttributeOptionWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` ProductAttributeOptions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` ProductAttributeOptions.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of ProductAttributeOptions.
+     */
+    distinct?: ProductAttributeOptionScalarFieldEnum | ProductAttributeOptionScalarFieldEnum[]
+  }
+
+  /**
+   * ProductAttributeOption findMany
+   */
+  export type ProductAttributeOptionFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    /**
+     * Filter, which ProductAttributeOptions to fetch.
+     */
+    where?: ProductAttributeOptionWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of ProductAttributeOptions to fetch.
+     */
+    orderBy?: ProductAttributeOptionOrderByWithRelationInput | ProductAttributeOptionOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing ProductAttributeOptions.
+     */
+    cursor?: ProductAttributeOptionWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` ProductAttributeOptions from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` ProductAttributeOptions.
+     */
+    skip?: number
+    distinct?: ProductAttributeOptionScalarFieldEnum | ProductAttributeOptionScalarFieldEnum[]
+  }
+
+  /**
+   * ProductAttributeOption create
+   */
+  export type ProductAttributeOptionCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    /**
+     * The data needed to create a ProductAttributeOption.
+     */
+    data: XOR<ProductAttributeOptionCreateInput, ProductAttributeOptionUncheckedCreateInput>
+  }
+
+  /**
+   * ProductAttributeOption createMany
+   */
+  export type ProductAttributeOptionCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many ProductAttributeOptions.
+     */
+    data: ProductAttributeOptionCreateManyInput | ProductAttributeOptionCreateManyInput[]
+  }
+
+  /**
+   * ProductAttributeOption createManyAndReturn
+   */
+  export type ProductAttributeOptionCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * The data used to create many ProductAttributeOptions.
+     */
+    data: ProductAttributeOptionCreateManyInput | ProductAttributeOptionCreateManyInput[]
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * ProductAttributeOption update
+   */
+  export type ProductAttributeOptionUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    /**
+     * The data needed to update a ProductAttributeOption.
+     */
+    data: XOR<ProductAttributeOptionUpdateInput, ProductAttributeOptionUncheckedUpdateInput>
+    /**
+     * Choose, which ProductAttributeOption to update.
+     */
+    where: ProductAttributeOptionWhereUniqueInput
+  }
+
+  /**
+   * ProductAttributeOption updateMany
+   */
+  export type ProductAttributeOptionUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update ProductAttributeOptions.
+     */
+    data: XOR<ProductAttributeOptionUpdateManyMutationInput, ProductAttributeOptionUncheckedUpdateManyInput>
+    /**
+     * Filter which ProductAttributeOptions to update
+     */
+    where?: ProductAttributeOptionWhereInput
+    /**
+     * Limit how many ProductAttributeOptions to update.
      */
     limit?: number
   }
 
   /**
-   * Vectors without action
+   * ProductAttributeOption updateManyAndReturn
    */
-  export type VectorsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type ProductAttributeOptionUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
-     * Select specific fields to fetch from the Vectors
+     * Select specific fields to fetch from the ProductAttributeOption
      */
-    select?: VectorsSelect<ExtArgs> | null
+    select?: ProductAttributeOptionSelectUpdateManyAndReturn<ExtArgs> | null
     /**
-     * Omit specific fields from the Vectors
+     * Omit specific fields from the ProductAttributeOption
      */
-    omit?: VectorsOmit<ExtArgs> | null
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * The data used to update ProductAttributeOptions.
+     */
+    data: XOR<ProductAttributeOptionUpdateManyMutationInput, ProductAttributeOptionUncheckedUpdateManyInput>
+    /**
+     * Filter which ProductAttributeOptions to update
+     */
+    where?: ProductAttributeOptionWhereInput
+    /**
+     * Limit how many ProductAttributeOptions to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * ProductAttributeOption upsert
+   */
+  export type ProductAttributeOptionUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    /**
+     * The filter to search for the ProductAttributeOption to update in case it exists.
+     */
+    where: ProductAttributeOptionWhereUniqueInput
+    /**
+     * In case the ProductAttributeOption found by the `where` argument doesn't exist, create a new ProductAttributeOption with this data.
+     */
+    create: XOR<ProductAttributeOptionCreateInput, ProductAttributeOptionUncheckedCreateInput>
+    /**
+     * In case the ProductAttributeOption was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<ProductAttributeOptionUpdateInput, ProductAttributeOptionUncheckedUpdateInput>
+  }
+
+  /**
+   * ProductAttributeOption delete
+   */
+  export type ProductAttributeOptionDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
+    /**
+     * Filter which ProductAttributeOption to delete.
+     */
+    where: ProductAttributeOptionWhereUniqueInput
+  }
+
+  /**
+   * ProductAttributeOption deleteMany
+   */
+  export type ProductAttributeOptionDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which ProductAttributeOptions to delete
+     */
+    where?: ProductAttributeOptionWhereInput
+    /**
+     * Limit how many ProductAttributeOptions to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * ProductAttributeOption without action
+   */
+  export type ProductAttributeOptionDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProductAttributeOption
+     */
+    select?: ProductAttributeOptionSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ProductAttributeOption
+     */
+    omit?: ProductAttributeOptionOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ProductAttributeOptionInclude<ExtArgs> | null
   }
 
 
@@ -5501,41 +5607,44 @@ export namespace Prisma {
 
   export const ProductScalarFieldEnum: {
     id: 'id',
-    name: 'name',
+    productName: 'productName',
     description: 'description',
-    embedding: 'embedding'
+    embedding: 'embedding',
+    metadata: 'metadata'
   };
 
   export type ProductScalarFieldEnum = (typeof ProductScalarFieldEnum)[keyof typeof ProductScalarFieldEnum]
 
 
-  export const AttributeScalarFieldEnum: {
-    id: 'id',
-    name: 'name',
-    embedding: 'embedding',
-    productId: 'productId'
-  };
-
-  export type AttributeScalarFieldEnum = (typeof AttributeScalarFieldEnum)[keyof typeof AttributeScalarFieldEnum]
-
-
   export const AttributeOptionScalarFieldEnum: {
     id: 'id',
-    name: 'name',
-    attributeId: 'attributeId'
+    attribute: 'attribute',
+    attributeOption: 'attributeOption',
+    embedding: 'embedding',
+    metadata: 'metadata'
   };
 
   export type AttributeOptionScalarFieldEnum = (typeof AttributeOptionScalarFieldEnum)[keyof typeof AttributeOptionScalarFieldEnum]
 
 
-  export const VectorsScalarFieldEnum: {
+  export const VariantScalarFieldEnum: {
     id: 'id',
-    vectorString: 'vectorString',
-    vector: 'vector',
+    productId: 'productId',
+    configuration: 'configuration',
+    embedding: 'embedding',
     metadata: 'metadata'
   };
 
-  export type VectorsScalarFieldEnum = (typeof VectorsScalarFieldEnum)[keyof typeof VectorsScalarFieldEnum]
+  export type VariantScalarFieldEnum = (typeof VariantScalarFieldEnum)[keyof typeof VariantScalarFieldEnum]
+
+
+  export const ProductAttributeOptionScalarFieldEnum: {
+    id: 'id',
+    productId: 'productId',
+    attributeOptionId: 'attributeOptionId'
+  };
+
+  export type ProductAttributeOptionScalarFieldEnum = (typeof ProductAttributeOptionScalarFieldEnum)[keyof typeof ProductAttributeOptionScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -5568,14 +5677,6 @@ export namespace Prisma {
   };
 
   export type QueryMode = (typeof QueryMode)[keyof typeof QueryMode]
-
-
-  export const NullsOrder: {
-    first: 'first',
-    last: 'last'
-  };
-
-  export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
 
 
   /**
@@ -5626,36 +5727,43 @@ export namespace Prisma {
     OR?: ProductWhereInput[]
     NOT?: ProductWhereInput | ProductWhereInput[]
     id?: IntFilter<"Product"> | number
-    name?: StringFilter<"Product"> | string
+    productName?: StringFilter<"Product"> | string
     description?: StringFilter<"Product"> | string
     embedding?: JsonFilter<"Product">
-    attributes?: AttributeListRelationFilter
+    metadata?: JsonFilter<"Product">
+    attributeOptions?: ProductAttributeOptionListRelationFilter
+    variants?: VariantListRelationFilter
   }
 
   export type ProductOrderByWithRelationInput = {
     id?: SortOrder
-    name?: SortOrder
+    productName?: SortOrder
     description?: SortOrder
     embedding?: SortOrder
-    attributes?: AttributeOrderByRelationAggregateInput
+    metadata?: SortOrder
+    attributeOptions?: ProductAttributeOptionOrderByRelationAggregateInput
+    variants?: VariantOrderByRelationAggregateInput
   }
 
   export type ProductWhereUniqueInput = Prisma.AtLeast<{
     id?: number
+    productName?: string
     AND?: ProductWhereInput | ProductWhereInput[]
     OR?: ProductWhereInput[]
     NOT?: ProductWhereInput | ProductWhereInput[]
-    name?: StringFilter<"Product"> | string
     description?: StringFilter<"Product"> | string
     embedding?: JsonFilter<"Product">
-    attributes?: AttributeListRelationFilter
-  }, "id">
+    metadata?: JsonFilter<"Product">
+    attributeOptions?: ProductAttributeOptionListRelationFilter
+    variants?: VariantListRelationFilter
+  }, "id" | "productName">
 
   export type ProductOrderByWithAggregationInput = {
     id?: SortOrder
-    name?: SortOrder
+    productName?: SortOrder
     description?: SortOrder
     embedding?: SortOrder
+    metadata?: SortOrder
     _count?: ProductCountOrderByAggregateInput
     _avg?: ProductAvgOrderByAggregateInput
     _max?: ProductMaxOrderByAggregateInput
@@ -5668,64 +5776,10 @@ export namespace Prisma {
     OR?: ProductScalarWhereWithAggregatesInput[]
     NOT?: ProductScalarWhereWithAggregatesInput | ProductScalarWhereWithAggregatesInput[]
     id?: IntWithAggregatesFilter<"Product"> | number
-    name?: StringWithAggregatesFilter<"Product"> | string
+    productName?: StringWithAggregatesFilter<"Product"> | string
     description?: StringWithAggregatesFilter<"Product"> | string
     embedding?: JsonWithAggregatesFilter<"Product">
-  }
-
-  export type AttributeWhereInput = {
-    AND?: AttributeWhereInput | AttributeWhereInput[]
-    OR?: AttributeWhereInput[]
-    NOT?: AttributeWhereInput | AttributeWhereInput[]
-    id?: IntFilter<"Attribute"> | number
-    name?: StringFilter<"Attribute"> | string
-    embedding?: JsonFilter<"Attribute">
-    productId?: IntNullableFilter<"Attribute"> | number | null
-    options?: AttributeOptionListRelationFilter
-    product?: XOR<ProductNullableScalarRelationFilter, ProductWhereInput> | null
-  }
-
-  export type AttributeOrderByWithRelationInput = {
-    id?: SortOrder
-    name?: SortOrder
-    embedding?: SortOrder
-    productId?: SortOrderInput | SortOrder
-    options?: AttributeOptionOrderByRelationAggregateInput
-    product?: ProductOrderByWithRelationInput
-  }
-
-  export type AttributeWhereUniqueInput = Prisma.AtLeast<{
-    id?: number
-    AND?: AttributeWhereInput | AttributeWhereInput[]
-    OR?: AttributeWhereInput[]
-    NOT?: AttributeWhereInput | AttributeWhereInput[]
-    name?: StringFilter<"Attribute"> | string
-    embedding?: JsonFilter<"Attribute">
-    productId?: IntNullableFilter<"Attribute"> | number | null
-    options?: AttributeOptionListRelationFilter
-    product?: XOR<ProductNullableScalarRelationFilter, ProductWhereInput> | null
-  }, "id">
-
-  export type AttributeOrderByWithAggregationInput = {
-    id?: SortOrder
-    name?: SortOrder
-    embedding?: SortOrder
-    productId?: SortOrderInput | SortOrder
-    _count?: AttributeCountOrderByAggregateInput
-    _avg?: AttributeAvgOrderByAggregateInput
-    _max?: AttributeMaxOrderByAggregateInput
-    _min?: AttributeMinOrderByAggregateInput
-    _sum?: AttributeSumOrderByAggregateInput
-  }
-
-  export type AttributeScalarWhereWithAggregatesInput = {
-    AND?: AttributeScalarWhereWithAggregatesInput | AttributeScalarWhereWithAggregatesInput[]
-    OR?: AttributeScalarWhereWithAggregatesInput[]
-    NOT?: AttributeScalarWhereWithAggregatesInput | AttributeScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Attribute"> | number
-    name?: StringWithAggregatesFilter<"Attribute"> | string
-    embedding?: JsonWithAggregatesFilter<"Attribute">
-    productId?: IntNullableWithAggregatesFilter<"Attribute"> | number | null
+    metadata?: JsonWithAggregatesFilter<"Product">
   }
 
   export type AttributeOptionWhereInput = {
@@ -5733,32 +5787,41 @@ export namespace Prisma {
     OR?: AttributeOptionWhereInput[]
     NOT?: AttributeOptionWhereInput | AttributeOptionWhereInput[]
     id?: IntFilter<"AttributeOption"> | number
-    name?: StringFilter<"AttributeOption"> | string
-    attributeId?: IntFilter<"AttributeOption"> | number
-    attribute?: XOR<AttributeScalarRelationFilter, AttributeWhereInput>
+    attribute?: StringFilter<"AttributeOption"> | string
+    attributeOption?: StringFilter<"AttributeOption"> | string
+    embedding?: JsonFilter<"AttributeOption">
+    metadata?: JsonFilter<"AttributeOption">
+    products?: ProductAttributeOptionListRelationFilter
   }
 
   export type AttributeOptionOrderByWithRelationInput = {
     id?: SortOrder
-    name?: SortOrder
-    attributeId?: SortOrder
-    attribute?: AttributeOrderByWithRelationInput
+    attribute?: SortOrder
+    attributeOption?: SortOrder
+    embedding?: SortOrder
+    metadata?: SortOrder
+    products?: ProductAttributeOptionOrderByRelationAggregateInput
   }
 
   export type AttributeOptionWhereUniqueInput = Prisma.AtLeast<{
     id?: number
+    attribute_attributeOption?: AttributeOptionAttributeAttributeOptionCompoundUniqueInput
     AND?: AttributeOptionWhereInput | AttributeOptionWhereInput[]
     OR?: AttributeOptionWhereInput[]
     NOT?: AttributeOptionWhereInput | AttributeOptionWhereInput[]
-    name?: StringFilter<"AttributeOption"> | string
-    attributeId?: IntFilter<"AttributeOption"> | number
-    attribute?: XOR<AttributeScalarRelationFilter, AttributeWhereInput>
-  }, "id">
+    attribute?: StringFilter<"AttributeOption"> | string
+    attributeOption?: StringFilter<"AttributeOption"> | string
+    embedding?: JsonFilter<"AttributeOption">
+    metadata?: JsonFilter<"AttributeOption">
+    products?: ProductAttributeOptionListRelationFilter
+  }, "id" | "attribute_attributeOption">
 
   export type AttributeOptionOrderByWithAggregationInput = {
     id?: SortOrder
-    name?: SortOrder
-    attributeId?: SortOrder
+    attribute?: SortOrder
+    attributeOption?: SortOrder
+    embedding?: SortOrder
+    metadata?: SortOrder
     _count?: AttributeOptionCountOrderByAggregateInput
     _avg?: AttributeOptionAvgOrderByAggregateInput
     _max?: AttributeOptionMaxOrderByAggregateInput
@@ -5771,240 +5834,327 @@ export namespace Prisma {
     OR?: AttributeOptionScalarWhereWithAggregatesInput[]
     NOT?: AttributeOptionScalarWhereWithAggregatesInput | AttributeOptionScalarWhereWithAggregatesInput[]
     id?: IntWithAggregatesFilter<"AttributeOption"> | number
-    name?: StringWithAggregatesFilter<"AttributeOption"> | string
-    attributeId?: IntWithAggregatesFilter<"AttributeOption"> | number
+    attribute?: StringWithAggregatesFilter<"AttributeOption"> | string
+    attributeOption?: StringWithAggregatesFilter<"AttributeOption"> | string
+    embedding?: JsonWithAggregatesFilter<"AttributeOption">
+    metadata?: JsonWithAggregatesFilter<"AttributeOption">
   }
 
-  export type VectorsWhereInput = {
-    AND?: VectorsWhereInput | VectorsWhereInput[]
-    OR?: VectorsWhereInput[]
-    NOT?: VectorsWhereInput | VectorsWhereInput[]
-    id?: IntFilter<"Vectors"> | number
-    vectorString?: StringFilter<"Vectors"> | string
-    vector?: JsonFilter<"Vectors">
-    metadata?: JsonFilter<"Vectors">
+  export type VariantWhereInput = {
+    AND?: VariantWhereInput | VariantWhereInput[]
+    OR?: VariantWhereInput[]
+    NOT?: VariantWhereInput | VariantWhereInput[]
+    id?: IntFilter<"Variant"> | number
+    productId?: IntFilter<"Variant"> | number
+    configuration?: StringFilter<"Variant"> | string
+    embedding?: JsonFilter<"Variant">
+    metadata?: JsonFilter<"Variant">
+    product?: XOR<ProductScalarRelationFilter, ProductWhereInput>
   }
 
-  export type VectorsOrderByWithRelationInput = {
+  export type VariantOrderByWithRelationInput = {
     id?: SortOrder
-    vectorString?: SortOrder
-    vector?: SortOrder
+    productId?: SortOrder
+    configuration?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
+    product?: ProductOrderByWithRelationInput
   }
 
-  export type VectorsWhereUniqueInput = Prisma.AtLeast<{
+  export type VariantWhereUniqueInput = Prisma.AtLeast<{
     id?: number
-    AND?: VectorsWhereInput | VectorsWhereInput[]
-    OR?: VectorsWhereInput[]
-    NOT?: VectorsWhereInput | VectorsWhereInput[]
-    vectorString?: StringFilter<"Vectors"> | string
-    vector?: JsonFilter<"Vectors">
-    metadata?: JsonFilter<"Vectors">
-  }, "id">
+    productId_configuration?: VariantProductIdConfigurationCompoundUniqueInput
+    AND?: VariantWhereInput | VariantWhereInput[]
+    OR?: VariantWhereInput[]
+    NOT?: VariantWhereInput | VariantWhereInput[]
+    productId?: IntFilter<"Variant"> | number
+    configuration?: StringFilter<"Variant"> | string
+    embedding?: JsonFilter<"Variant">
+    metadata?: JsonFilter<"Variant">
+    product?: XOR<ProductScalarRelationFilter, ProductWhereInput>
+  }, "id" | "productId_configuration">
 
-  export type VectorsOrderByWithAggregationInput = {
+  export type VariantOrderByWithAggregationInput = {
     id?: SortOrder
-    vectorString?: SortOrder
-    vector?: SortOrder
+    productId?: SortOrder
+    configuration?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
-    _count?: VectorsCountOrderByAggregateInput
-    _avg?: VectorsAvgOrderByAggregateInput
-    _max?: VectorsMaxOrderByAggregateInput
-    _min?: VectorsMinOrderByAggregateInput
-    _sum?: VectorsSumOrderByAggregateInput
+    _count?: VariantCountOrderByAggregateInput
+    _avg?: VariantAvgOrderByAggregateInput
+    _max?: VariantMaxOrderByAggregateInput
+    _min?: VariantMinOrderByAggregateInput
+    _sum?: VariantSumOrderByAggregateInput
   }
 
-  export type VectorsScalarWhereWithAggregatesInput = {
-    AND?: VectorsScalarWhereWithAggregatesInput | VectorsScalarWhereWithAggregatesInput[]
-    OR?: VectorsScalarWhereWithAggregatesInput[]
-    NOT?: VectorsScalarWhereWithAggregatesInput | VectorsScalarWhereWithAggregatesInput[]
-    id?: IntWithAggregatesFilter<"Vectors"> | number
-    vectorString?: StringWithAggregatesFilter<"Vectors"> | string
-    vector?: JsonWithAggregatesFilter<"Vectors">
-    metadata?: JsonWithAggregatesFilter<"Vectors">
+  export type VariantScalarWhereWithAggregatesInput = {
+    AND?: VariantScalarWhereWithAggregatesInput | VariantScalarWhereWithAggregatesInput[]
+    OR?: VariantScalarWhereWithAggregatesInput[]
+    NOT?: VariantScalarWhereWithAggregatesInput | VariantScalarWhereWithAggregatesInput[]
+    id?: IntWithAggregatesFilter<"Variant"> | number
+    productId?: IntWithAggregatesFilter<"Variant"> | number
+    configuration?: StringWithAggregatesFilter<"Variant"> | string
+    embedding?: JsonWithAggregatesFilter<"Variant">
+    metadata?: JsonWithAggregatesFilter<"Variant">
+  }
+
+  export type ProductAttributeOptionWhereInput = {
+    AND?: ProductAttributeOptionWhereInput | ProductAttributeOptionWhereInput[]
+    OR?: ProductAttributeOptionWhereInput[]
+    NOT?: ProductAttributeOptionWhereInput | ProductAttributeOptionWhereInput[]
+    id?: IntFilter<"ProductAttributeOption"> | number
+    productId?: IntFilter<"ProductAttributeOption"> | number
+    attributeOptionId?: IntFilter<"ProductAttributeOption"> | number
+    product?: XOR<ProductScalarRelationFilter, ProductWhereInput>
+    attributeOption?: XOR<AttributeOptionScalarRelationFilter, AttributeOptionWhereInput>
+  }
+
+  export type ProductAttributeOptionOrderByWithRelationInput = {
+    id?: SortOrder
+    productId?: SortOrder
+    attributeOptionId?: SortOrder
+    product?: ProductOrderByWithRelationInput
+    attributeOption?: AttributeOptionOrderByWithRelationInput
+  }
+
+  export type ProductAttributeOptionWhereUniqueInput = Prisma.AtLeast<{
+    id?: number
+    productId_attributeOptionId?: ProductAttributeOptionProductIdAttributeOptionIdCompoundUniqueInput
+    AND?: ProductAttributeOptionWhereInput | ProductAttributeOptionWhereInput[]
+    OR?: ProductAttributeOptionWhereInput[]
+    NOT?: ProductAttributeOptionWhereInput | ProductAttributeOptionWhereInput[]
+    productId?: IntFilter<"ProductAttributeOption"> | number
+    attributeOptionId?: IntFilter<"ProductAttributeOption"> | number
+    product?: XOR<ProductScalarRelationFilter, ProductWhereInput>
+    attributeOption?: XOR<AttributeOptionScalarRelationFilter, AttributeOptionWhereInput>
+  }, "id" | "productId_attributeOptionId">
+
+  export type ProductAttributeOptionOrderByWithAggregationInput = {
+    id?: SortOrder
+    productId?: SortOrder
+    attributeOptionId?: SortOrder
+    _count?: ProductAttributeOptionCountOrderByAggregateInput
+    _avg?: ProductAttributeOptionAvgOrderByAggregateInput
+    _max?: ProductAttributeOptionMaxOrderByAggregateInput
+    _min?: ProductAttributeOptionMinOrderByAggregateInput
+    _sum?: ProductAttributeOptionSumOrderByAggregateInput
+  }
+
+  export type ProductAttributeOptionScalarWhereWithAggregatesInput = {
+    AND?: ProductAttributeOptionScalarWhereWithAggregatesInput | ProductAttributeOptionScalarWhereWithAggregatesInput[]
+    OR?: ProductAttributeOptionScalarWhereWithAggregatesInput[]
+    NOT?: ProductAttributeOptionScalarWhereWithAggregatesInput | ProductAttributeOptionScalarWhereWithAggregatesInput[]
+    id?: IntWithAggregatesFilter<"ProductAttributeOption"> | number
+    productId?: IntWithAggregatesFilter<"ProductAttributeOption"> | number
+    attributeOptionId?: IntWithAggregatesFilter<"ProductAttributeOption"> | number
   }
 
   export type ProductCreateInput = {
-    name: string
+    productName: string
     description: string
     embedding: JsonNullValueInput | InputJsonValue
-    attributes?: AttributeCreateNestedManyWithoutProductInput
+    metadata: JsonNullValueInput | InputJsonValue
+    attributeOptions?: ProductAttributeOptionCreateNestedManyWithoutProductInput
+    variants?: VariantCreateNestedManyWithoutProductInput
   }
 
   export type ProductUncheckedCreateInput = {
     id?: number
-    name: string
+    productName: string
     description: string
     embedding: JsonNullValueInput | InputJsonValue
-    attributes?: AttributeUncheckedCreateNestedManyWithoutProductInput
+    metadata: JsonNullValueInput | InputJsonValue
+    attributeOptions?: ProductAttributeOptionUncheckedCreateNestedManyWithoutProductInput
+    variants?: VariantUncheckedCreateNestedManyWithoutProductInput
   }
 
   export type ProductUpdateInput = {
-    name?: StringFieldUpdateOperationsInput | string
+    productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
     embedding?: JsonNullValueInput | InputJsonValue
-    attributes?: AttributeUpdateManyWithoutProductNestedInput
+    metadata?: JsonNullValueInput | InputJsonValue
+    attributeOptions?: ProductAttributeOptionUpdateManyWithoutProductNestedInput
+    variants?: VariantUpdateManyWithoutProductNestedInput
   }
 
   export type ProductUncheckedUpdateInput = {
     id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
+    productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
     embedding?: JsonNullValueInput | InputJsonValue
-    attributes?: AttributeUncheckedUpdateManyWithoutProductNestedInput
+    metadata?: JsonNullValueInput | InputJsonValue
+    attributeOptions?: ProductAttributeOptionUncheckedUpdateManyWithoutProductNestedInput
+    variants?: VariantUncheckedUpdateManyWithoutProductNestedInput
   }
 
   export type ProductCreateManyInput = {
     id?: number
-    name: string
+    productName: string
     description: string
     embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
   }
 
   export type ProductUpdateManyMutationInput = {
-    name?: StringFieldUpdateOperationsInput | string
+    productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
     embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
   }
 
   export type ProductUncheckedUpdateManyInput = {
     id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
+    productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
     embedding?: JsonNullValueInput | InputJsonValue
-  }
-
-  export type AttributeCreateInput = {
-    name: string
-    embedding: JsonNullValueInput | InputJsonValue
-    options?: AttributeOptionCreateNestedManyWithoutAttributeInput
-    product?: ProductCreateNestedOneWithoutAttributesInput
-  }
-
-  export type AttributeUncheckedCreateInput = {
-    id?: number
-    name: string
-    embedding: JsonNullValueInput | InputJsonValue
-    productId?: number | null
-    options?: AttributeOptionUncheckedCreateNestedManyWithoutAttributeInput
-  }
-
-  export type AttributeUpdateInput = {
-    name?: StringFieldUpdateOperationsInput | string
-    embedding?: JsonNullValueInput | InputJsonValue
-    options?: AttributeOptionUpdateManyWithoutAttributeNestedInput
-    product?: ProductUpdateOneWithoutAttributesNestedInput
-  }
-
-  export type AttributeUncheckedUpdateInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
-    embedding?: JsonNullValueInput | InputJsonValue
-    productId?: NullableIntFieldUpdateOperationsInput | number | null
-    options?: AttributeOptionUncheckedUpdateManyWithoutAttributeNestedInput
-  }
-
-  export type AttributeCreateManyInput = {
-    id?: number
-    name: string
-    embedding: JsonNullValueInput | InputJsonValue
-    productId?: number | null
-  }
-
-  export type AttributeUpdateManyMutationInput = {
-    name?: StringFieldUpdateOperationsInput | string
-    embedding?: JsonNullValueInput | InputJsonValue
-  }
-
-  export type AttributeUncheckedUpdateManyInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
-    embedding?: JsonNullValueInput | InputJsonValue
-    productId?: NullableIntFieldUpdateOperationsInput | number | null
+    metadata?: JsonNullValueInput | InputJsonValue
   }
 
   export type AttributeOptionCreateInput = {
-    name: string
-    attribute: AttributeCreateNestedOneWithoutOptionsInput
+    attribute: string
+    attributeOption: string
+    embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
+    products?: ProductAttributeOptionCreateNestedManyWithoutAttributeOptionInput
   }
 
   export type AttributeOptionUncheckedCreateInput = {
     id?: number
-    name: string
-    attributeId: number
+    attribute: string
+    attributeOption: string
+    embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
+    products?: ProductAttributeOptionUncheckedCreateNestedManyWithoutAttributeOptionInput
   }
 
   export type AttributeOptionUpdateInput = {
-    name?: StringFieldUpdateOperationsInput | string
-    attribute?: AttributeUpdateOneRequiredWithoutOptionsNestedInput
+    attribute?: StringFieldUpdateOperationsInput | string
+    attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+    products?: ProductAttributeOptionUpdateManyWithoutAttributeOptionNestedInput
   }
 
   export type AttributeOptionUncheckedUpdateInput = {
     id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
-    attributeId?: IntFieldUpdateOperationsInput | number
+    attribute?: StringFieldUpdateOperationsInput | string
+    attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+    products?: ProductAttributeOptionUncheckedUpdateManyWithoutAttributeOptionNestedInput
   }
 
   export type AttributeOptionCreateManyInput = {
     id?: number
-    name: string
-    attributeId: number
+    attribute: string
+    attributeOption: string
+    embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
   }
 
   export type AttributeOptionUpdateManyMutationInput = {
-    name?: StringFieldUpdateOperationsInput | string
+    attribute?: StringFieldUpdateOperationsInput | string
+    attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
   }
 
   export type AttributeOptionUncheckedUpdateManyInput = {
     id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
-    attributeId?: IntFieldUpdateOperationsInput | number
+    attribute?: StringFieldUpdateOperationsInput | string
+    attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
   }
 
-  export type VectorsCreateInput = {
-    vectorString: string
-    vector: JsonNullValueInput | InputJsonValue
+  export type VariantCreateInput = {
+    configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
+    product: ProductCreateNestedOneWithoutVariantsInput
   }
 
-  export type VectorsUncheckedCreateInput = {
+  export type VariantUncheckedCreateInput = {
     id?: number
-    vectorString: string
-    vector: JsonNullValueInput | InputJsonValue
+    productId: number
+    configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
-  export type VectorsUpdateInput = {
-    vectorString?: StringFieldUpdateOperationsInput | string
-    vector?: JsonNullValueInput | InputJsonValue
+  export type VariantUpdateInput = {
+    configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
+    product?: ProductUpdateOneRequiredWithoutVariantsNestedInput
   }
 
-  export type VectorsUncheckedUpdateInput = {
+  export type VariantUncheckedUpdateInput = {
     id?: IntFieldUpdateOperationsInput | number
-    vectorString?: StringFieldUpdateOperationsInput | string
-    vector?: JsonNullValueInput | InputJsonValue
+    productId?: IntFieldUpdateOperationsInput | number
+    configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
-  export type VectorsCreateManyInput = {
+  export type VariantCreateManyInput = {
     id?: number
-    vectorString: string
-    vector: JsonNullValueInput | InputJsonValue
+    productId: number
+    configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
-  export type VectorsUpdateManyMutationInput = {
-    vectorString?: StringFieldUpdateOperationsInput | string
-    vector?: JsonNullValueInput | InputJsonValue
+  export type VariantUpdateManyMutationInput = {
+    configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
-  export type VectorsUncheckedUpdateManyInput = {
+  export type VariantUncheckedUpdateManyInput = {
     id?: IntFieldUpdateOperationsInput | number
-    vectorString?: StringFieldUpdateOperationsInput | string
-    vector?: JsonNullValueInput | InputJsonValue
+    productId?: IntFieldUpdateOperationsInput | number
+    configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
+  }
+
+  export type ProductAttributeOptionCreateInput = {
+    product: ProductCreateNestedOneWithoutAttributeOptionsInput
+    attributeOption: AttributeOptionCreateNestedOneWithoutProductsInput
+  }
+
+  export type ProductAttributeOptionUncheckedCreateInput = {
+    id?: number
+    productId: number
+    attributeOptionId: number
+  }
+
+  export type ProductAttributeOptionUpdateInput = {
+    product?: ProductUpdateOneRequiredWithoutAttributeOptionsNestedInput
+    attributeOption?: AttributeOptionUpdateOneRequiredWithoutProductsNestedInput
+  }
+
+  export type ProductAttributeOptionUncheckedUpdateInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    productId?: IntFieldUpdateOperationsInput | number
+    attributeOptionId?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type ProductAttributeOptionCreateManyInput = {
+    id?: number
+    productId: number
+    attributeOptionId: number
+  }
+
+  export type ProductAttributeOptionUpdateManyMutationInput = {
+
+  }
+
+  export type ProductAttributeOptionUncheckedUpdateManyInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    productId?: IntFieldUpdateOperationsInput | number
+    attributeOptionId?: IntFieldUpdateOperationsInput | number
   }
 
   export type IntFilter<$PrismaModel = never> = {
@@ -6050,21 +6200,32 @@ export namespace Prisma {
     not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
   }
 
-  export type AttributeListRelationFilter = {
-    every?: AttributeWhereInput
-    some?: AttributeWhereInput
-    none?: AttributeWhereInput
+  export type ProductAttributeOptionListRelationFilter = {
+    every?: ProductAttributeOptionWhereInput
+    some?: ProductAttributeOptionWhereInput
+    none?: ProductAttributeOptionWhereInput
   }
 
-  export type AttributeOrderByRelationAggregateInput = {
+  export type VariantListRelationFilter = {
+    every?: VariantWhereInput
+    some?: VariantWhereInput
+    none?: VariantWhereInput
+  }
+
+  export type ProductAttributeOptionOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type VariantOrderByRelationAggregateInput = {
     _count?: SortOrder
   }
 
   export type ProductCountOrderByAggregateInput = {
     id?: SortOrder
-    name?: SortOrder
+    productName?: SortOrder
     description?: SortOrder
     embedding?: SortOrder
+    metadata?: SortOrder
   }
 
   export type ProductAvgOrderByAggregateInput = {
@@ -6073,13 +6234,13 @@ export namespace Prisma {
 
   export type ProductMaxOrderByAggregateInput = {
     id?: SortOrder
-    name?: SortOrder
+    productName?: SortOrder
     description?: SortOrder
   }
 
   export type ProductMinOrderByAggregateInput = {
     id?: SortOrder
-    name?: SortOrder
+    productName?: SortOrder
     description?: SortOrder
   }
 
@@ -6141,170 +6302,177 @@ export namespace Prisma {
     _max?: NestedJsonFilter<$PrismaModel>
   }
 
-  export type IntNullableFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableFilter<$PrismaModel> | number | null
-  }
-
-  export type AttributeOptionListRelationFilter = {
-    every?: AttributeOptionWhereInput
-    some?: AttributeOptionWhereInput
-    none?: AttributeOptionWhereInput
-  }
-
-  export type ProductNullableScalarRelationFilter = {
-    is?: ProductWhereInput | null
-    isNot?: ProductWhereInput | null
-  }
-
-  export type SortOrderInput = {
-    sort: SortOrder
-    nulls?: NullsOrder
-  }
-
-  export type AttributeOptionOrderByRelationAggregateInput = {
-    _count?: SortOrder
-  }
-
-  export type AttributeCountOrderByAggregateInput = {
-    id?: SortOrder
-    name?: SortOrder
-    embedding?: SortOrder
-    productId?: SortOrder
-  }
-
-  export type AttributeAvgOrderByAggregateInput = {
-    id?: SortOrder
-    productId?: SortOrder
-  }
-
-  export type AttributeMaxOrderByAggregateInput = {
-    id?: SortOrder
-    name?: SortOrder
-    productId?: SortOrder
-  }
-
-  export type AttributeMinOrderByAggregateInput = {
-    id?: SortOrder
-    name?: SortOrder
-    productId?: SortOrder
-  }
-
-  export type AttributeSumOrderByAggregateInput = {
-    id?: SortOrder
-    productId?: SortOrder
-  }
-
-  export type IntNullableWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
-    _count?: NestedIntNullableFilter<$PrismaModel>
-    _avg?: NestedFloatNullableFilter<$PrismaModel>
-    _sum?: NestedIntNullableFilter<$PrismaModel>
-    _min?: NestedIntNullableFilter<$PrismaModel>
-    _max?: NestedIntNullableFilter<$PrismaModel>
-  }
-
-  export type AttributeScalarRelationFilter = {
-    is?: AttributeWhereInput
-    isNot?: AttributeWhereInput
+  export type AttributeOptionAttributeAttributeOptionCompoundUniqueInput = {
+    attribute: string
+    attributeOption: string
   }
 
   export type AttributeOptionCountOrderByAggregateInput = {
     id?: SortOrder
-    name?: SortOrder
-    attributeId?: SortOrder
+    attribute?: SortOrder
+    attributeOption?: SortOrder
+    embedding?: SortOrder
+    metadata?: SortOrder
   }
 
   export type AttributeOptionAvgOrderByAggregateInput = {
     id?: SortOrder
-    attributeId?: SortOrder
   }
 
   export type AttributeOptionMaxOrderByAggregateInput = {
     id?: SortOrder
-    name?: SortOrder
-    attributeId?: SortOrder
+    attribute?: SortOrder
+    attributeOption?: SortOrder
   }
 
   export type AttributeOptionMinOrderByAggregateInput = {
     id?: SortOrder
-    name?: SortOrder
-    attributeId?: SortOrder
+    attribute?: SortOrder
+    attributeOption?: SortOrder
   }
 
   export type AttributeOptionSumOrderByAggregateInput = {
     id?: SortOrder
-    attributeId?: SortOrder
   }
 
-  export type VectorsCountOrderByAggregateInput = {
+  export type ProductScalarRelationFilter = {
+    is?: ProductWhereInput
+    isNot?: ProductWhereInput
+  }
+
+  export type VariantProductIdConfigurationCompoundUniqueInput = {
+    productId: number
+    configuration: string
+  }
+
+  export type VariantCountOrderByAggregateInput = {
     id?: SortOrder
-    vectorString?: SortOrder
-    vector?: SortOrder
+    productId?: SortOrder
+    configuration?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
   }
 
-  export type VectorsAvgOrderByAggregateInput = {
+  export type VariantAvgOrderByAggregateInput = {
     id?: SortOrder
+    productId?: SortOrder
   }
 
-  export type VectorsMaxOrderByAggregateInput = {
+  export type VariantMaxOrderByAggregateInput = {
     id?: SortOrder
-    vectorString?: SortOrder
+    productId?: SortOrder
+    configuration?: SortOrder
   }
 
-  export type VectorsMinOrderByAggregateInput = {
+  export type VariantMinOrderByAggregateInput = {
     id?: SortOrder
-    vectorString?: SortOrder
+    productId?: SortOrder
+    configuration?: SortOrder
   }
 
-  export type VectorsSumOrderByAggregateInput = {
+  export type VariantSumOrderByAggregateInput = {
     id?: SortOrder
+    productId?: SortOrder
   }
 
-  export type AttributeCreateNestedManyWithoutProductInput = {
-    create?: XOR<AttributeCreateWithoutProductInput, AttributeUncheckedCreateWithoutProductInput> | AttributeCreateWithoutProductInput[] | AttributeUncheckedCreateWithoutProductInput[]
-    connectOrCreate?: AttributeCreateOrConnectWithoutProductInput | AttributeCreateOrConnectWithoutProductInput[]
-    createMany?: AttributeCreateManyProductInputEnvelope
-    connect?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
+  export type AttributeOptionScalarRelationFilter = {
+    is?: AttributeOptionWhereInput
+    isNot?: AttributeOptionWhereInput
   }
 
-  export type AttributeUncheckedCreateNestedManyWithoutProductInput = {
-    create?: XOR<AttributeCreateWithoutProductInput, AttributeUncheckedCreateWithoutProductInput> | AttributeCreateWithoutProductInput[] | AttributeUncheckedCreateWithoutProductInput[]
-    connectOrCreate?: AttributeCreateOrConnectWithoutProductInput | AttributeCreateOrConnectWithoutProductInput[]
-    createMany?: AttributeCreateManyProductInputEnvelope
-    connect?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
+  export type ProductAttributeOptionProductIdAttributeOptionIdCompoundUniqueInput = {
+    productId: number
+    attributeOptionId: number
+  }
+
+  export type ProductAttributeOptionCountOrderByAggregateInput = {
+    id?: SortOrder
+    productId?: SortOrder
+    attributeOptionId?: SortOrder
+  }
+
+  export type ProductAttributeOptionAvgOrderByAggregateInput = {
+    id?: SortOrder
+    productId?: SortOrder
+    attributeOptionId?: SortOrder
+  }
+
+  export type ProductAttributeOptionMaxOrderByAggregateInput = {
+    id?: SortOrder
+    productId?: SortOrder
+    attributeOptionId?: SortOrder
+  }
+
+  export type ProductAttributeOptionMinOrderByAggregateInput = {
+    id?: SortOrder
+    productId?: SortOrder
+    attributeOptionId?: SortOrder
+  }
+
+  export type ProductAttributeOptionSumOrderByAggregateInput = {
+    id?: SortOrder
+    productId?: SortOrder
+    attributeOptionId?: SortOrder
+  }
+
+  export type ProductAttributeOptionCreateNestedManyWithoutProductInput = {
+    create?: XOR<ProductAttributeOptionCreateWithoutProductInput, ProductAttributeOptionUncheckedCreateWithoutProductInput> | ProductAttributeOptionCreateWithoutProductInput[] | ProductAttributeOptionUncheckedCreateWithoutProductInput[]
+    connectOrCreate?: ProductAttributeOptionCreateOrConnectWithoutProductInput | ProductAttributeOptionCreateOrConnectWithoutProductInput[]
+    createMany?: ProductAttributeOptionCreateManyProductInputEnvelope
+    connect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+  }
+
+  export type VariantCreateNestedManyWithoutProductInput = {
+    create?: XOR<VariantCreateWithoutProductInput, VariantUncheckedCreateWithoutProductInput> | VariantCreateWithoutProductInput[] | VariantUncheckedCreateWithoutProductInput[]
+    connectOrCreate?: VariantCreateOrConnectWithoutProductInput | VariantCreateOrConnectWithoutProductInput[]
+    createMany?: VariantCreateManyProductInputEnvelope
+    connect?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
+  }
+
+  export type ProductAttributeOptionUncheckedCreateNestedManyWithoutProductInput = {
+    create?: XOR<ProductAttributeOptionCreateWithoutProductInput, ProductAttributeOptionUncheckedCreateWithoutProductInput> | ProductAttributeOptionCreateWithoutProductInput[] | ProductAttributeOptionUncheckedCreateWithoutProductInput[]
+    connectOrCreate?: ProductAttributeOptionCreateOrConnectWithoutProductInput | ProductAttributeOptionCreateOrConnectWithoutProductInput[]
+    createMany?: ProductAttributeOptionCreateManyProductInputEnvelope
+    connect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+  }
+
+  export type VariantUncheckedCreateNestedManyWithoutProductInput = {
+    create?: XOR<VariantCreateWithoutProductInput, VariantUncheckedCreateWithoutProductInput> | VariantCreateWithoutProductInput[] | VariantUncheckedCreateWithoutProductInput[]
+    connectOrCreate?: VariantCreateOrConnectWithoutProductInput | VariantCreateOrConnectWithoutProductInput[]
+    createMany?: VariantCreateManyProductInputEnvelope
+    connect?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
   }
 
   export type StringFieldUpdateOperationsInput = {
     set?: string
   }
 
-  export type AttributeUpdateManyWithoutProductNestedInput = {
-    create?: XOR<AttributeCreateWithoutProductInput, AttributeUncheckedCreateWithoutProductInput> | AttributeCreateWithoutProductInput[] | AttributeUncheckedCreateWithoutProductInput[]
-    connectOrCreate?: AttributeCreateOrConnectWithoutProductInput | AttributeCreateOrConnectWithoutProductInput[]
-    upsert?: AttributeUpsertWithWhereUniqueWithoutProductInput | AttributeUpsertWithWhereUniqueWithoutProductInput[]
-    createMany?: AttributeCreateManyProductInputEnvelope
-    set?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
-    disconnect?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
-    delete?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
-    connect?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
-    update?: AttributeUpdateWithWhereUniqueWithoutProductInput | AttributeUpdateWithWhereUniqueWithoutProductInput[]
-    updateMany?: AttributeUpdateManyWithWhereWithoutProductInput | AttributeUpdateManyWithWhereWithoutProductInput[]
-    deleteMany?: AttributeScalarWhereInput | AttributeScalarWhereInput[]
+  export type ProductAttributeOptionUpdateManyWithoutProductNestedInput = {
+    create?: XOR<ProductAttributeOptionCreateWithoutProductInput, ProductAttributeOptionUncheckedCreateWithoutProductInput> | ProductAttributeOptionCreateWithoutProductInput[] | ProductAttributeOptionUncheckedCreateWithoutProductInput[]
+    connectOrCreate?: ProductAttributeOptionCreateOrConnectWithoutProductInput | ProductAttributeOptionCreateOrConnectWithoutProductInput[]
+    upsert?: ProductAttributeOptionUpsertWithWhereUniqueWithoutProductInput | ProductAttributeOptionUpsertWithWhereUniqueWithoutProductInput[]
+    createMany?: ProductAttributeOptionCreateManyProductInputEnvelope
+    set?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    disconnect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    delete?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    connect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    update?: ProductAttributeOptionUpdateWithWhereUniqueWithoutProductInput | ProductAttributeOptionUpdateWithWhereUniqueWithoutProductInput[]
+    updateMany?: ProductAttributeOptionUpdateManyWithWhereWithoutProductInput | ProductAttributeOptionUpdateManyWithWhereWithoutProductInput[]
+    deleteMany?: ProductAttributeOptionScalarWhereInput | ProductAttributeOptionScalarWhereInput[]
+  }
+
+  export type VariantUpdateManyWithoutProductNestedInput = {
+    create?: XOR<VariantCreateWithoutProductInput, VariantUncheckedCreateWithoutProductInput> | VariantCreateWithoutProductInput[] | VariantUncheckedCreateWithoutProductInput[]
+    connectOrCreate?: VariantCreateOrConnectWithoutProductInput | VariantCreateOrConnectWithoutProductInput[]
+    upsert?: VariantUpsertWithWhereUniqueWithoutProductInput | VariantUpsertWithWhereUniqueWithoutProductInput[]
+    createMany?: VariantCreateManyProductInputEnvelope
+    set?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
+    disconnect?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
+    delete?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
+    connect?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
+    update?: VariantUpdateWithWhereUniqueWithoutProductInput | VariantUpdateWithWhereUniqueWithoutProductInput[]
+    updateMany?: VariantUpdateManyWithWhereWithoutProductInput | VariantUpdateManyWithWhereWithoutProductInput[]
+    deleteMany?: VariantScalarWhereInput | VariantScalarWhereInput[]
   }
 
   export type IntFieldUpdateOperationsInput = {
@@ -6315,98 +6483,116 @@ export namespace Prisma {
     divide?: number
   }
 
-  export type AttributeUncheckedUpdateManyWithoutProductNestedInput = {
-    create?: XOR<AttributeCreateWithoutProductInput, AttributeUncheckedCreateWithoutProductInput> | AttributeCreateWithoutProductInput[] | AttributeUncheckedCreateWithoutProductInput[]
-    connectOrCreate?: AttributeCreateOrConnectWithoutProductInput | AttributeCreateOrConnectWithoutProductInput[]
-    upsert?: AttributeUpsertWithWhereUniqueWithoutProductInput | AttributeUpsertWithWhereUniqueWithoutProductInput[]
-    createMany?: AttributeCreateManyProductInputEnvelope
-    set?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
-    disconnect?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
-    delete?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
-    connect?: AttributeWhereUniqueInput | AttributeWhereUniqueInput[]
-    update?: AttributeUpdateWithWhereUniqueWithoutProductInput | AttributeUpdateWithWhereUniqueWithoutProductInput[]
-    updateMany?: AttributeUpdateManyWithWhereWithoutProductInput | AttributeUpdateManyWithWhereWithoutProductInput[]
-    deleteMany?: AttributeScalarWhereInput | AttributeScalarWhereInput[]
+  export type ProductAttributeOptionUncheckedUpdateManyWithoutProductNestedInput = {
+    create?: XOR<ProductAttributeOptionCreateWithoutProductInput, ProductAttributeOptionUncheckedCreateWithoutProductInput> | ProductAttributeOptionCreateWithoutProductInput[] | ProductAttributeOptionUncheckedCreateWithoutProductInput[]
+    connectOrCreate?: ProductAttributeOptionCreateOrConnectWithoutProductInput | ProductAttributeOptionCreateOrConnectWithoutProductInput[]
+    upsert?: ProductAttributeOptionUpsertWithWhereUniqueWithoutProductInput | ProductAttributeOptionUpsertWithWhereUniqueWithoutProductInput[]
+    createMany?: ProductAttributeOptionCreateManyProductInputEnvelope
+    set?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    disconnect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    delete?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    connect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    update?: ProductAttributeOptionUpdateWithWhereUniqueWithoutProductInput | ProductAttributeOptionUpdateWithWhereUniqueWithoutProductInput[]
+    updateMany?: ProductAttributeOptionUpdateManyWithWhereWithoutProductInput | ProductAttributeOptionUpdateManyWithWhereWithoutProductInput[]
+    deleteMany?: ProductAttributeOptionScalarWhereInput | ProductAttributeOptionScalarWhereInput[]
   }
 
-  export type AttributeOptionCreateNestedManyWithoutAttributeInput = {
-    create?: XOR<AttributeOptionCreateWithoutAttributeInput, AttributeOptionUncheckedCreateWithoutAttributeInput> | AttributeOptionCreateWithoutAttributeInput[] | AttributeOptionUncheckedCreateWithoutAttributeInput[]
-    connectOrCreate?: AttributeOptionCreateOrConnectWithoutAttributeInput | AttributeOptionCreateOrConnectWithoutAttributeInput[]
-    createMany?: AttributeOptionCreateManyAttributeInputEnvelope
-    connect?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
+  export type VariantUncheckedUpdateManyWithoutProductNestedInput = {
+    create?: XOR<VariantCreateWithoutProductInput, VariantUncheckedCreateWithoutProductInput> | VariantCreateWithoutProductInput[] | VariantUncheckedCreateWithoutProductInput[]
+    connectOrCreate?: VariantCreateOrConnectWithoutProductInput | VariantCreateOrConnectWithoutProductInput[]
+    upsert?: VariantUpsertWithWhereUniqueWithoutProductInput | VariantUpsertWithWhereUniqueWithoutProductInput[]
+    createMany?: VariantCreateManyProductInputEnvelope
+    set?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
+    disconnect?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
+    delete?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
+    connect?: VariantWhereUniqueInput | VariantWhereUniqueInput[]
+    update?: VariantUpdateWithWhereUniqueWithoutProductInput | VariantUpdateWithWhereUniqueWithoutProductInput[]
+    updateMany?: VariantUpdateManyWithWhereWithoutProductInput | VariantUpdateManyWithWhereWithoutProductInput[]
+    deleteMany?: VariantScalarWhereInput | VariantScalarWhereInput[]
   }
 
-  export type ProductCreateNestedOneWithoutAttributesInput = {
-    create?: XOR<ProductCreateWithoutAttributesInput, ProductUncheckedCreateWithoutAttributesInput>
-    connectOrCreate?: ProductCreateOrConnectWithoutAttributesInput
+  export type ProductAttributeOptionCreateNestedManyWithoutAttributeOptionInput = {
+    create?: XOR<ProductAttributeOptionCreateWithoutAttributeOptionInput, ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput> | ProductAttributeOptionCreateWithoutAttributeOptionInput[] | ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput[]
+    connectOrCreate?: ProductAttributeOptionCreateOrConnectWithoutAttributeOptionInput | ProductAttributeOptionCreateOrConnectWithoutAttributeOptionInput[]
+    createMany?: ProductAttributeOptionCreateManyAttributeOptionInputEnvelope
+    connect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+  }
+
+  export type ProductAttributeOptionUncheckedCreateNestedManyWithoutAttributeOptionInput = {
+    create?: XOR<ProductAttributeOptionCreateWithoutAttributeOptionInput, ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput> | ProductAttributeOptionCreateWithoutAttributeOptionInput[] | ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput[]
+    connectOrCreate?: ProductAttributeOptionCreateOrConnectWithoutAttributeOptionInput | ProductAttributeOptionCreateOrConnectWithoutAttributeOptionInput[]
+    createMany?: ProductAttributeOptionCreateManyAttributeOptionInputEnvelope
+    connect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+  }
+
+  export type ProductAttributeOptionUpdateManyWithoutAttributeOptionNestedInput = {
+    create?: XOR<ProductAttributeOptionCreateWithoutAttributeOptionInput, ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput> | ProductAttributeOptionCreateWithoutAttributeOptionInput[] | ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput[]
+    connectOrCreate?: ProductAttributeOptionCreateOrConnectWithoutAttributeOptionInput | ProductAttributeOptionCreateOrConnectWithoutAttributeOptionInput[]
+    upsert?: ProductAttributeOptionUpsertWithWhereUniqueWithoutAttributeOptionInput | ProductAttributeOptionUpsertWithWhereUniqueWithoutAttributeOptionInput[]
+    createMany?: ProductAttributeOptionCreateManyAttributeOptionInputEnvelope
+    set?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    disconnect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    delete?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    connect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    update?: ProductAttributeOptionUpdateWithWhereUniqueWithoutAttributeOptionInput | ProductAttributeOptionUpdateWithWhereUniqueWithoutAttributeOptionInput[]
+    updateMany?: ProductAttributeOptionUpdateManyWithWhereWithoutAttributeOptionInput | ProductAttributeOptionUpdateManyWithWhereWithoutAttributeOptionInput[]
+    deleteMany?: ProductAttributeOptionScalarWhereInput | ProductAttributeOptionScalarWhereInput[]
+  }
+
+  export type ProductAttributeOptionUncheckedUpdateManyWithoutAttributeOptionNestedInput = {
+    create?: XOR<ProductAttributeOptionCreateWithoutAttributeOptionInput, ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput> | ProductAttributeOptionCreateWithoutAttributeOptionInput[] | ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput[]
+    connectOrCreate?: ProductAttributeOptionCreateOrConnectWithoutAttributeOptionInput | ProductAttributeOptionCreateOrConnectWithoutAttributeOptionInput[]
+    upsert?: ProductAttributeOptionUpsertWithWhereUniqueWithoutAttributeOptionInput | ProductAttributeOptionUpsertWithWhereUniqueWithoutAttributeOptionInput[]
+    createMany?: ProductAttributeOptionCreateManyAttributeOptionInputEnvelope
+    set?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    disconnect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    delete?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    connect?: ProductAttributeOptionWhereUniqueInput | ProductAttributeOptionWhereUniqueInput[]
+    update?: ProductAttributeOptionUpdateWithWhereUniqueWithoutAttributeOptionInput | ProductAttributeOptionUpdateWithWhereUniqueWithoutAttributeOptionInput[]
+    updateMany?: ProductAttributeOptionUpdateManyWithWhereWithoutAttributeOptionInput | ProductAttributeOptionUpdateManyWithWhereWithoutAttributeOptionInput[]
+    deleteMany?: ProductAttributeOptionScalarWhereInput | ProductAttributeOptionScalarWhereInput[]
+  }
+
+  export type ProductCreateNestedOneWithoutVariantsInput = {
+    create?: XOR<ProductCreateWithoutVariantsInput, ProductUncheckedCreateWithoutVariantsInput>
+    connectOrCreate?: ProductCreateOrConnectWithoutVariantsInput
     connect?: ProductWhereUniqueInput
   }
 
-  export type AttributeOptionUncheckedCreateNestedManyWithoutAttributeInput = {
-    create?: XOR<AttributeOptionCreateWithoutAttributeInput, AttributeOptionUncheckedCreateWithoutAttributeInput> | AttributeOptionCreateWithoutAttributeInput[] | AttributeOptionUncheckedCreateWithoutAttributeInput[]
-    connectOrCreate?: AttributeOptionCreateOrConnectWithoutAttributeInput | AttributeOptionCreateOrConnectWithoutAttributeInput[]
-    createMany?: AttributeOptionCreateManyAttributeInputEnvelope
-    connect?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
-  }
-
-  export type AttributeOptionUpdateManyWithoutAttributeNestedInput = {
-    create?: XOR<AttributeOptionCreateWithoutAttributeInput, AttributeOptionUncheckedCreateWithoutAttributeInput> | AttributeOptionCreateWithoutAttributeInput[] | AttributeOptionUncheckedCreateWithoutAttributeInput[]
-    connectOrCreate?: AttributeOptionCreateOrConnectWithoutAttributeInput | AttributeOptionCreateOrConnectWithoutAttributeInput[]
-    upsert?: AttributeOptionUpsertWithWhereUniqueWithoutAttributeInput | AttributeOptionUpsertWithWhereUniqueWithoutAttributeInput[]
-    createMany?: AttributeOptionCreateManyAttributeInputEnvelope
-    set?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
-    disconnect?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
-    delete?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
-    connect?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
-    update?: AttributeOptionUpdateWithWhereUniqueWithoutAttributeInput | AttributeOptionUpdateWithWhereUniqueWithoutAttributeInput[]
-    updateMany?: AttributeOptionUpdateManyWithWhereWithoutAttributeInput | AttributeOptionUpdateManyWithWhereWithoutAttributeInput[]
-    deleteMany?: AttributeOptionScalarWhereInput | AttributeOptionScalarWhereInput[]
-  }
-
-  export type ProductUpdateOneWithoutAttributesNestedInput = {
-    create?: XOR<ProductCreateWithoutAttributesInput, ProductUncheckedCreateWithoutAttributesInput>
-    connectOrCreate?: ProductCreateOrConnectWithoutAttributesInput
-    upsert?: ProductUpsertWithoutAttributesInput
-    disconnect?: ProductWhereInput | boolean
-    delete?: ProductWhereInput | boolean
+  export type ProductUpdateOneRequiredWithoutVariantsNestedInput = {
+    create?: XOR<ProductCreateWithoutVariantsInput, ProductUncheckedCreateWithoutVariantsInput>
+    connectOrCreate?: ProductCreateOrConnectWithoutVariantsInput
+    upsert?: ProductUpsertWithoutVariantsInput
     connect?: ProductWhereUniqueInput
-    update?: XOR<XOR<ProductUpdateToOneWithWhereWithoutAttributesInput, ProductUpdateWithoutAttributesInput>, ProductUncheckedUpdateWithoutAttributesInput>
+    update?: XOR<XOR<ProductUpdateToOneWithWhereWithoutVariantsInput, ProductUpdateWithoutVariantsInput>, ProductUncheckedUpdateWithoutVariantsInput>
   }
 
-  export type NullableIntFieldUpdateOperationsInput = {
-    set?: number | null
-    increment?: number
-    decrement?: number
-    multiply?: number
-    divide?: number
+  export type ProductCreateNestedOneWithoutAttributeOptionsInput = {
+    create?: XOR<ProductCreateWithoutAttributeOptionsInput, ProductUncheckedCreateWithoutAttributeOptionsInput>
+    connectOrCreate?: ProductCreateOrConnectWithoutAttributeOptionsInput
+    connect?: ProductWhereUniqueInput
   }
 
-  export type AttributeOptionUncheckedUpdateManyWithoutAttributeNestedInput = {
-    create?: XOR<AttributeOptionCreateWithoutAttributeInput, AttributeOptionUncheckedCreateWithoutAttributeInput> | AttributeOptionCreateWithoutAttributeInput[] | AttributeOptionUncheckedCreateWithoutAttributeInput[]
-    connectOrCreate?: AttributeOptionCreateOrConnectWithoutAttributeInput | AttributeOptionCreateOrConnectWithoutAttributeInput[]
-    upsert?: AttributeOptionUpsertWithWhereUniqueWithoutAttributeInput | AttributeOptionUpsertWithWhereUniqueWithoutAttributeInput[]
-    createMany?: AttributeOptionCreateManyAttributeInputEnvelope
-    set?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
-    disconnect?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
-    delete?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
-    connect?: AttributeOptionWhereUniqueInput | AttributeOptionWhereUniqueInput[]
-    update?: AttributeOptionUpdateWithWhereUniqueWithoutAttributeInput | AttributeOptionUpdateWithWhereUniqueWithoutAttributeInput[]
-    updateMany?: AttributeOptionUpdateManyWithWhereWithoutAttributeInput | AttributeOptionUpdateManyWithWhereWithoutAttributeInput[]
-    deleteMany?: AttributeOptionScalarWhereInput | AttributeOptionScalarWhereInput[]
+  export type AttributeOptionCreateNestedOneWithoutProductsInput = {
+    create?: XOR<AttributeOptionCreateWithoutProductsInput, AttributeOptionUncheckedCreateWithoutProductsInput>
+    connectOrCreate?: AttributeOptionCreateOrConnectWithoutProductsInput
+    connect?: AttributeOptionWhereUniqueInput
   }
 
-  export type AttributeCreateNestedOneWithoutOptionsInput = {
-    create?: XOR<AttributeCreateWithoutOptionsInput, AttributeUncheckedCreateWithoutOptionsInput>
-    connectOrCreate?: AttributeCreateOrConnectWithoutOptionsInput
-    connect?: AttributeWhereUniqueInput
+  export type ProductUpdateOneRequiredWithoutAttributeOptionsNestedInput = {
+    create?: XOR<ProductCreateWithoutAttributeOptionsInput, ProductUncheckedCreateWithoutAttributeOptionsInput>
+    connectOrCreate?: ProductCreateOrConnectWithoutAttributeOptionsInput
+    upsert?: ProductUpsertWithoutAttributeOptionsInput
+    connect?: ProductWhereUniqueInput
+    update?: XOR<XOR<ProductUpdateToOneWithWhereWithoutAttributeOptionsInput, ProductUpdateWithoutAttributeOptionsInput>, ProductUncheckedUpdateWithoutAttributeOptionsInput>
   }
 
-  export type AttributeUpdateOneRequiredWithoutOptionsNestedInput = {
-    create?: XOR<AttributeCreateWithoutOptionsInput, AttributeUncheckedCreateWithoutOptionsInput>
-    connectOrCreate?: AttributeCreateOrConnectWithoutOptionsInput
-    upsert?: AttributeUpsertWithoutOptionsInput
-    connect?: AttributeWhereUniqueInput
-    update?: XOR<XOR<AttributeUpdateToOneWithWhereWithoutOptionsInput, AttributeUpdateWithoutOptionsInput>, AttributeUncheckedUpdateWithoutOptionsInput>
+  export type AttributeOptionUpdateOneRequiredWithoutProductsNestedInput = {
+    create?: XOR<AttributeOptionCreateWithoutProductsInput, AttributeOptionUncheckedCreateWithoutProductsInput>
+    connectOrCreate?: AttributeOptionCreateOrConnectWithoutProductsInput
+    upsert?: AttributeOptionUpsertWithoutProductsInput
+    connect?: AttributeOptionWhereUniqueInput
+    update?: XOR<XOR<AttributeOptionUpdateToOneWithWhereWithoutProductsInput, AttributeOptionUpdateWithoutProductsInput>, AttributeOptionUncheckedUpdateWithoutProductsInput>
   }
 
   export type NestedIntFilter<$PrismaModel = never> = {
@@ -6496,261 +6682,341 @@ export namespace Prisma {
     not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
   }
 
-  export type NestedIntNullableFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  export type ProductAttributeOptionCreateWithoutProductInput = {
+    attributeOption: AttributeOptionCreateNestedOneWithoutProductsInput
   }
 
-  export type NestedIntNullableWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
-    _count?: NestedIntNullableFilter<$PrismaModel>
-    _avg?: NestedFloatNullableFilter<$PrismaModel>
-    _sum?: NestedIntNullableFilter<$PrismaModel>
-    _min?: NestedIntNullableFilter<$PrismaModel>
-    _max?: NestedIntNullableFilter<$PrismaModel>
-  }
-
-  export type NestedFloatNullableFilter<$PrismaModel = never> = {
-    equals?: number | FloatFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
-    lt?: number | FloatFieldRefInput<$PrismaModel>
-    lte?: number | FloatFieldRefInput<$PrismaModel>
-    gt?: number | FloatFieldRefInput<$PrismaModel>
-    gte?: number | FloatFieldRefInput<$PrismaModel>
-    not?: NestedFloatNullableFilter<$PrismaModel> | number | null
-  }
-
-  export type AttributeCreateWithoutProductInput = {
-    name: string
-    embedding: JsonNullValueInput | InputJsonValue
-    options?: AttributeOptionCreateNestedManyWithoutAttributeInput
-  }
-
-  export type AttributeUncheckedCreateWithoutProductInput = {
+  export type ProductAttributeOptionUncheckedCreateWithoutProductInput = {
     id?: number
-    name: string
+    attributeOptionId: number
+  }
+
+  export type ProductAttributeOptionCreateOrConnectWithoutProductInput = {
+    where: ProductAttributeOptionWhereUniqueInput
+    create: XOR<ProductAttributeOptionCreateWithoutProductInput, ProductAttributeOptionUncheckedCreateWithoutProductInput>
+  }
+
+  export type ProductAttributeOptionCreateManyProductInputEnvelope = {
+    data: ProductAttributeOptionCreateManyProductInput | ProductAttributeOptionCreateManyProductInput[]
+  }
+
+  export type VariantCreateWithoutProductInput = {
+    configuration: string
     embedding: JsonNullValueInput | InputJsonValue
-    options?: AttributeOptionUncheckedCreateNestedManyWithoutAttributeInput
+    metadata: JsonNullValueInput | InputJsonValue
   }
 
-  export type AttributeCreateOrConnectWithoutProductInput = {
-    where: AttributeWhereUniqueInput
-    create: XOR<AttributeCreateWithoutProductInput, AttributeUncheckedCreateWithoutProductInput>
-  }
-
-  export type AttributeCreateManyProductInputEnvelope = {
-    data: AttributeCreateManyProductInput | AttributeCreateManyProductInput[]
-  }
-
-  export type AttributeUpsertWithWhereUniqueWithoutProductInput = {
-    where: AttributeWhereUniqueInput
-    update: XOR<AttributeUpdateWithoutProductInput, AttributeUncheckedUpdateWithoutProductInput>
-    create: XOR<AttributeCreateWithoutProductInput, AttributeUncheckedCreateWithoutProductInput>
-  }
-
-  export type AttributeUpdateWithWhereUniqueWithoutProductInput = {
-    where: AttributeWhereUniqueInput
-    data: XOR<AttributeUpdateWithoutProductInput, AttributeUncheckedUpdateWithoutProductInput>
-  }
-
-  export type AttributeUpdateManyWithWhereWithoutProductInput = {
-    where: AttributeScalarWhereInput
-    data: XOR<AttributeUpdateManyMutationInput, AttributeUncheckedUpdateManyWithoutProductInput>
-  }
-
-  export type AttributeScalarWhereInput = {
-    AND?: AttributeScalarWhereInput | AttributeScalarWhereInput[]
-    OR?: AttributeScalarWhereInput[]
-    NOT?: AttributeScalarWhereInput | AttributeScalarWhereInput[]
-    id?: IntFilter<"Attribute"> | number
-    name?: StringFilter<"Attribute"> | string
-    embedding?: JsonFilter<"Attribute">
-    productId?: IntNullableFilter<"Attribute"> | number | null
-  }
-
-  export type AttributeOptionCreateWithoutAttributeInput = {
-    name: string
-  }
-
-  export type AttributeOptionUncheckedCreateWithoutAttributeInput = {
+  export type VariantUncheckedCreateWithoutProductInput = {
     id?: number
-    name: string
+    configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
   }
 
-  export type AttributeOptionCreateOrConnectWithoutAttributeInput = {
-    where: AttributeOptionWhereUniqueInput
-    create: XOR<AttributeOptionCreateWithoutAttributeInput, AttributeOptionUncheckedCreateWithoutAttributeInput>
+  export type VariantCreateOrConnectWithoutProductInput = {
+    where: VariantWhereUniqueInput
+    create: XOR<VariantCreateWithoutProductInput, VariantUncheckedCreateWithoutProductInput>
   }
 
-  export type AttributeOptionCreateManyAttributeInputEnvelope = {
-    data: AttributeOptionCreateManyAttributeInput | AttributeOptionCreateManyAttributeInput[]
+  export type VariantCreateManyProductInputEnvelope = {
+    data: VariantCreateManyProductInput | VariantCreateManyProductInput[]
   }
 
-  export type ProductCreateWithoutAttributesInput = {
-    name: string
+  export type ProductAttributeOptionUpsertWithWhereUniqueWithoutProductInput = {
+    where: ProductAttributeOptionWhereUniqueInput
+    update: XOR<ProductAttributeOptionUpdateWithoutProductInput, ProductAttributeOptionUncheckedUpdateWithoutProductInput>
+    create: XOR<ProductAttributeOptionCreateWithoutProductInput, ProductAttributeOptionUncheckedCreateWithoutProductInput>
+  }
+
+  export type ProductAttributeOptionUpdateWithWhereUniqueWithoutProductInput = {
+    where: ProductAttributeOptionWhereUniqueInput
+    data: XOR<ProductAttributeOptionUpdateWithoutProductInput, ProductAttributeOptionUncheckedUpdateWithoutProductInput>
+  }
+
+  export type ProductAttributeOptionUpdateManyWithWhereWithoutProductInput = {
+    where: ProductAttributeOptionScalarWhereInput
+    data: XOR<ProductAttributeOptionUpdateManyMutationInput, ProductAttributeOptionUncheckedUpdateManyWithoutProductInput>
+  }
+
+  export type ProductAttributeOptionScalarWhereInput = {
+    AND?: ProductAttributeOptionScalarWhereInput | ProductAttributeOptionScalarWhereInput[]
+    OR?: ProductAttributeOptionScalarWhereInput[]
+    NOT?: ProductAttributeOptionScalarWhereInput | ProductAttributeOptionScalarWhereInput[]
+    id?: IntFilter<"ProductAttributeOption"> | number
+    productId?: IntFilter<"ProductAttributeOption"> | number
+    attributeOptionId?: IntFilter<"ProductAttributeOption"> | number
+  }
+
+  export type VariantUpsertWithWhereUniqueWithoutProductInput = {
+    where: VariantWhereUniqueInput
+    update: XOR<VariantUpdateWithoutProductInput, VariantUncheckedUpdateWithoutProductInput>
+    create: XOR<VariantCreateWithoutProductInput, VariantUncheckedCreateWithoutProductInput>
+  }
+
+  export type VariantUpdateWithWhereUniqueWithoutProductInput = {
+    where: VariantWhereUniqueInput
+    data: XOR<VariantUpdateWithoutProductInput, VariantUncheckedUpdateWithoutProductInput>
+  }
+
+  export type VariantUpdateManyWithWhereWithoutProductInput = {
+    where: VariantScalarWhereInput
+    data: XOR<VariantUpdateManyMutationInput, VariantUncheckedUpdateManyWithoutProductInput>
+  }
+
+  export type VariantScalarWhereInput = {
+    AND?: VariantScalarWhereInput | VariantScalarWhereInput[]
+    OR?: VariantScalarWhereInput[]
+    NOT?: VariantScalarWhereInput | VariantScalarWhereInput[]
+    id?: IntFilter<"Variant"> | number
+    productId?: IntFilter<"Variant"> | number
+    configuration?: StringFilter<"Variant"> | string
+    embedding?: JsonFilter<"Variant">
+    metadata?: JsonFilter<"Variant">
+  }
+
+  export type ProductAttributeOptionCreateWithoutAttributeOptionInput = {
+    product: ProductCreateNestedOneWithoutAttributeOptionsInput
+  }
+
+  export type ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput = {
+    id?: number
+    productId: number
+  }
+
+  export type ProductAttributeOptionCreateOrConnectWithoutAttributeOptionInput = {
+    where: ProductAttributeOptionWhereUniqueInput
+    create: XOR<ProductAttributeOptionCreateWithoutAttributeOptionInput, ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput>
+  }
+
+  export type ProductAttributeOptionCreateManyAttributeOptionInputEnvelope = {
+    data: ProductAttributeOptionCreateManyAttributeOptionInput | ProductAttributeOptionCreateManyAttributeOptionInput[]
+  }
+
+  export type ProductAttributeOptionUpsertWithWhereUniqueWithoutAttributeOptionInput = {
+    where: ProductAttributeOptionWhereUniqueInput
+    update: XOR<ProductAttributeOptionUpdateWithoutAttributeOptionInput, ProductAttributeOptionUncheckedUpdateWithoutAttributeOptionInput>
+    create: XOR<ProductAttributeOptionCreateWithoutAttributeOptionInput, ProductAttributeOptionUncheckedCreateWithoutAttributeOptionInput>
+  }
+
+  export type ProductAttributeOptionUpdateWithWhereUniqueWithoutAttributeOptionInput = {
+    where: ProductAttributeOptionWhereUniqueInput
+    data: XOR<ProductAttributeOptionUpdateWithoutAttributeOptionInput, ProductAttributeOptionUncheckedUpdateWithoutAttributeOptionInput>
+  }
+
+  export type ProductAttributeOptionUpdateManyWithWhereWithoutAttributeOptionInput = {
+    where: ProductAttributeOptionScalarWhereInput
+    data: XOR<ProductAttributeOptionUpdateManyMutationInput, ProductAttributeOptionUncheckedUpdateManyWithoutAttributeOptionInput>
+  }
+
+  export type ProductCreateWithoutVariantsInput = {
+    productName: string
     description: string
     embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
+    attributeOptions?: ProductAttributeOptionCreateNestedManyWithoutProductInput
   }
 
-  export type ProductUncheckedCreateWithoutAttributesInput = {
+  export type ProductUncheckedCreateWithoutVariantsInput = {
     id?: number
-    name: string
+    productName: string
     description: string
     embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
+    attributeOptions?: ProductAttributeOptionUncheckedCreateNestedManyWithoutProductInput
   }
 
-  export type ProductCreateOrConnectWithoutAttributesInput = {
+  export type ProductCreateOrConnectWithoutVariantsInput = {
     where: ProductWhereUniqueInput
-    create: XOR<ProductCreateWithoutAttributesInput, ProductUncheckedCreateWithoutAttributesInput>
+    create: XOR<ProductCreateWithoutVariantsInput, ProductUncheckedCreateWithoutVariantsInput>
   }
 
-  export type AttributeOptionUpsertWithWhereUniqueWithoutAttributeInput = {
-    where: AttributeOptionWhereUniqueInput
-    update: XOR<AttributeOptionUpdateWithoutAttributeInput, AttributeOptionUncheckedUpdateWithoutAttributeInput>
-    create: XOR<AttributeOptionCreateWithoutAttributeInput, AttributeOptionUncheckedCreateWithoutAttributeInput>
-  }
-
-  export type AttributeOptionUpdateWithWhereUniqueWithoutAttributeInput = {
-    where: AttributeOptionWhereUniqueInput
-    data: XOR<AttributeOptionUpdateWithoutAttributeInput, AttributeOptionUncheckedUpdateWithoutAttributeInput>
-  }
-
-  export type AttributeOptionUpdateManyWithWhereWithoutAttributeInput = {
-    where: AttributeOptionScalarWhereInput
-    data: XOR<AttributeOptionUpdateManyMutationInput, AttributeOptionUncheckedUpdateManyWithoutAttributeInput>
-  }
-
-  export type AttributeOptionScalarWhereInput = {
-    AND?: AttributeOptionScalarWhereInput | AttributeOptionScalarWhereInput[]
-    OR?: AttributeOptionScalarWhereInput[]
-    NOT?: AttributeOptionScalarWhereInput | AttributeOptionScalarWhereInput[]
-    id?: IntFilter<"AttributeOption"> | number
-    name?: StringFilter<"AttributeOption"> | string
-    attributeId?: IntFilter<"AttributeOption"> | number
-  }
-
-  export type ProductUpsertWithoutAttributesInput = {
-    update: XOR<ProductUpdateWithoutAttributesInput, ProductUncheckedUpdateWithoutAttributesInput>
-    create: XOR<ProductCreateWithoutAttributesInput, ProductUncheckedCreateWithoutAttributesInput>
+  export type ProductUpsertWithoutVariantsInput = {
+    update: XOR<ProductUpdateWithoutVariantsInput, ProductUncheckedUpdateWithoutVariantsInput>
+    create: XOR<ProductCreateWithoutVariantsInput, ProductUncheckedCreateWithoutVariantsInput>
     where?: ProductWhereInput
   }
 
-  export type ProductUpdateToOneWithWhereWithoutAttributesInput = {
+  export type ProductUpdateToOneWithWhereWithoutVariantsInput = {
     where?: ProductWhereInput
-    data: XOR<ProductUpdateWithoutAttributesInput, ProductUncheckedUpdateWithoutAttributesInput>
+    data: XOR<ProductUpdateWithoutVariantsInput, ProductUncheckedUpdateWithoutVariantsInput>
   }
 
-  export type ProductUpdateWithoutAttributesInput = {
-    name?: StringFieldUpdateOperationsInput | string
+  export type ProductUpdateWithoutVariantsInput = {
+    productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
     embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+    attributeOptions?: ProductAttributeOptionUpdateManyWithoutProductNestedInput
   }
 
-  export type ProductUncheckedUpdateWithoutAttributesInput = {
+  export type ProductUncheckedUpdateWithoutVariantsInput = {
     id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
+    productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
     embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+    attributeOptions?: ProductAttributeOptionUncheckedUpdateManyWithoutProductNestedInput
   }
 
-  export type AttributeCreateWithoutOptionsInput = {
-    name: string
+  export type ProductCreateWithoutAttributeOptionsInput = {
+    productName: string
+    description: string
     embedding: JsonNullValueInput | InputJsonValue
-    product?: ProductCreateNestedOneWithoutAttributesInput
+    metadata: JsonNullValueInput | InputJsonValue
+    variants?: VariantCreateNestedManyWithoutProductInput
   }
 
-  export type AttributeUncheckedCreateWithoutOptionsInput = {
+  export type ProductUncheckedCreateWithoutAttributeOptionsInput = {
     id?: number
-    name: string
+    productName: string
+    description: string
     embedding: JsonNullValueInput | InputJsonValue
-    productId?: number | null
+    metadata: JsonNullValueInput | InputJsonValue
+    variants?: VariantUncheckedCreateNestedManyWithoutProductInput
   }
 
-  export type AttributeCreateOrConnectWithoutOptionsInput = {
-    where: AttributeWhereUniqueInput
-    create: XOR<AttributeCreateWithoutOptionsInput, AttributeUncheckedCreateWithoutOptionsInput>
+  export type ProductCreateOrConnectWithoutAttributeOptionsInput = {
+    where: ProductWhereUniqueInput
+    create: XOR<ProductCreateWithoutAttributeOptionsInput, ProductUncheckedCreateWithoutAttributeOptionsInput>
   }
 
-  export type AttributeUpsertWithoutOptionsInput = {
-    update: XOR<AttributeUpdateWithoutOptionsInput, AttributeUncheckedUpdateWithoutOptionsInput>
-    create: XOR<AttributeCreateWithoutOptionsInput, AttributeUncheckedCreateWithoutOptionsInput>
-    where?: AttributeWhereInput
-  }
-
-  export type AttributeUpdateToOneWithWhereWithoutOptionsInput = {
-    where?: AttributeWhereInput
-    data: XOR<AttributeUpdateWithoutOptionsInput, AttributeUncheckedUpdateWithoutOptionsInput>
-  }
-
-  export type AttributeUpdateWithoutOptionsInput = {
-    name?: StringFieldUpdateOperationsInput | string
-    embedding?: JsonNullValueInput | InputJsonValue
-    product?: ProductUpdateOneWithoutAttributesNestedInput
-  }
-
-  export type AttributeUncheckedUpdateWithoutOptionsInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
-    embedding?: JsonNullValueInput | InputJsonValue
-    productId?: NullableIntFieldUpdateOperationsInput | number | null
-  }
-
-  export type AttributeCreateManyProductInput = {
-    id?: number
-    name: string
+  export type AttributeOptionCreateWithoutProductsInput = {
+    attribute: string
+    attributeOption: string
     embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
   }
 
-  export type AttributeUpdateWithoutProductInput = {
-    name?: StringFieldUpdateOperationsInput | string
-    embedding?: JsonNullValueInput | InputJsonValue
-    options?: AttributeOptionUpdateManyWithoutAttributeNestedInput
-  }
-
-  export type AttributeUncheckedUpdateWithoutProductInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
-    embedding?: JsonNullValueInput | InputJsonValue
-    options?: AttributeOptionUncheckedUpdateManyWithoutAttributeNestedInput
-  }
-
-  export type AttributeUncheckedUpdateManyWithoutProductInput = {
-    id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
-    embedding?: JsonNullValueInput | InputJsonValue
-  }
-
-  export type AttributeOptionCreateManyAttributeInput = {
+  export type AttributeOptionUncheckedCreateWithoutProductsInput = {
     id?: number
-    name: string
+    attribute: string
+    attributeOption: string
+    embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
   }
 
-  export type AttributeOptionUpdateWithoutAttributeInput = {
-    name?: StringFieldUpdateOperationsInput | string
+  export type AttributeOptionCreateOrConnectWithoutProductsInput = {
+    where: AttributeOptionWhereUniqueInput
+    create: XOR<AttributeOptionCreateWithoutProductsInput, AttributeOptionUncheckedCreateWithoutProductsInput>
   }
 
-  export type AttributeOptionUncheckedUpdateWithoutAttributeInput = {
+  export type ProductUpsertWithoutAttributeOptionsInput = {
+    update: XOR<ProductUpdateWithoutAttributeOptionsInput, ProductUncheckedUpdateWithoutAttributeOptionsInput>
+    create: XOR<ProductCreateWithoutAttributeOptionsInput, ProductUncheckedCreateWithoutAttributeOptionsInput>
+    where?: ProductWhereInput
+  }
+
+  export type ProductUpdateToOneWithWhereWithoutAttributeOptionsInput = {
+    where?: ProductWhereInput
+    data: XOR<ProductUpdateWithoutAttributeOptionsInput, ProductUncheckedUpdateWithoutAttributeOptionsInput>
+  }
+
+  export type ProductUpdateWithoutAttributeOptionsInput = {
+    productName?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+    variants?: VariantUpdateManyWithoutProductNestedInput
+  }
+
+  export type ProductUncheckedUpdateWithoutAttributeOptionsInput = {
     id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
+    productName?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+    variants?: VariantUncheckedUpdateManyWithoutProductNestedInput
   }
 
-  export type AttributeOptionUncheckedUpdateManyWithoutAttributeInput = {
+  export type AttributeOptionUpsertWithoutProductsInput = {
+    update: XOR<AttributeOptionUpdateWithoutProductsInput, AttributeOptionUncheckedUpdateWithoutProductsInput>
+    create: XOR<AttributeOptionCreateWithoutProductsInput, AttributeOptionUncheckedCreateWithoutProductsInput>
+    where?: AttributeOptionWhereInput
+  }
+
+  export type AttributeOptionUpdateToOneWithWhereWithoutProductsInput = {
+    where?: AttributeOptionWhereInput
+    data: XOR<AttributeOptionUpdateWithoutProductsInput, AttributeOptionUncheckedUpdateWithoutProductsInput>
+  }
+
+  export type AttributeOptionUpdateWithoutProductsInput = {
+    attribute?: StringFieldUpdateOperationsInput | string
+    attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+  }
+
+  export type AttributeOptionUncheckedUpdateWithoutProductsInput = {
     id?: IntFieldUpdateOperationsInput | number
-    name?: StringFieldUpdateOperationsInput | string
+    attribute?: StringFieldUpdateOperationsInput | string
+    attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+  }
+
+  export type ProductAttributeOptionCreateManyProductInput = {
+    id?: number
+    attributeOptionId: number
+  }
+
+  export type VariantCreateManyProductInput = {
+    id?: number
+    configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
+    metadata: JsonNullValueInput | InputJsonValue
+  }
+
+  export type ProductAttributeOptionUpdateWithoutProductInput = {
+    attributeOption?: AttributeOptionUpdateOneRequiredWithoutProductsNestedInput
+  }
+
+  export type ProductAttributeOptionUncheckedUpdateWithoutProductInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    attributeOptionId?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type ProductAttributeOptionUncheckedUpdateManyWithoutProductInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    attributeOptionId?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type VariantUpdateWithoutProductInput = {
+    configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+  }
+
+  export type VariantUncheckedUpdateWithoutProductInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+  }
+
+  export type VariantUncheckedUpdateManyWithoutProductInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
+    metadata?: JsonNullValueInput | InputJsonValue
+  }
+
+  export type ProductAttributeOptionCreateManyAttributeOptionInput = {
+    id?: number
+    productId: number
+  }
+
+  export type ProductAttributeOptionUpdateWithoutAttributeOptionInput = {
+    product?: ProductUpdateOneRequiredWithoutAttributeOptionsNestedInput
+  }
+
+  export type ProductAttributeOptionUncheckedUpdateWithoutAttributeOptionInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    productId?: IntFieldUpdateOperationsInput | number
+  }
+
+  export type ProductAttributeOptionUncheckedUpdateManyWithoutAttributeOptionInput = {
+    id?: IntFieldUpdateOperationsInput | number
+    productId?: IntFieldUpdateOperationsInput | number
   }
 
 

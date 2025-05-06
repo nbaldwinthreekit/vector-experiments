@@ -19,9 +19,8 @@ function canonicalize(obj: any): any {
 
 router.post('/', async (req, res) => {
   try {
-    const variantData = req.body as VariantData;
-    const productName = variantData.productName;
-    const description = variantData.description;
+    const { productName, description, variants } = req.body as VariantData;
+
     const embedString = productName + description;
     const embedding = await getEmbedding(embedString);
 
@@ -36,7 +35,7 @@ router.post('/', async (req, res) => {
       },
     });
 
-    for (const v of variantData.variants) {
+    for (const v of variants) {
       // Want to order the variant config so we vectorize consistently.
       let embedString = JSON.stringify(canonicalize(v));
       let embedding = await getEmbedding(embedString);
@@ -56,6 +55,43 @@ router.post('/', async (req, res) => {
           metadata: { reminder: 'metadata' },
         },
       });
+
+      const attributeOptions = newVariant.configuration.split(',');
+
+      for (const attributeOptionPair of attributeOptions) {
+        const embedding = await getEmbedding(attributeOptionPair);
+        const [attributeName, attributeOption] = attributeOptionPair.split(':');
+
+        const newAttributeOption = await prisma.attributeOption.upsert({
+          where: {
+            attribute_attributeOption: {
+              attribute: attributeName,
+              attributeOption,
+            },
+          },
+          update: {},
+          create: {
+            attribute: attributeName,
+            attributeOption,
+            embedding: embedding,
+            metadata: { reminder: 'metadata' },
+          },
+        });
+
+        await prisma.productAttributeOption.upsert({
+          where: {
+            productId_attributeOptionId: {
+              productId: newProduct.id,
+              attributeOptionId: newAttributeOption.id,
+            },
+          },
+          update: {},
+          create: {
+            productId: newProduct.id,
+            attributeOptionId: newAttributeOption.id,
+          },
+        });
+      }
     }
 
     res.json({

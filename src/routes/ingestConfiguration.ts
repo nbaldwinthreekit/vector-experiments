@@ -7,10 +7,7 @@ const router = Router();
 
 router.post('/', async (req, res) => {
   try {
-    const configurationData = req.body as ConfigurationData;
-    const productName = configurationData.productName;
-    const description = configurationData.description;
-    const attributes = configurationData.attributes;
+    const { productName, description, attributes } = req.body as ConfigurationData;
 
     const embedString = productName + description;
     const embedding = await getEmbedding(embedString);

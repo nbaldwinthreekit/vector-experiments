@@ -6,6 +6,7 @@ import {
   calcEuclideanDistance,
   calcCosineSimilarity,
   calcVectorSum,
+  calcVectorNorm,
 } from './utilities';
 
 const router = Router();
@@ -31,7 +32,7 @@ router.post('/', async (req, res) => {
 
     const attributeOptionEmbeddings: number[][] = [];
     for (const [attribute, attributeOption] of Object.entries(parsedConfiguration)) {
-      const entry = await prisma.attributeOption.findUnique({
+      const attributeOptionEntry = await prisma.attributeOption.findUnique({
         where: {
           attribute_attributeOption: {
             attribute: attribute.trim(),
@@ -40,13 +41,14 @@ router.post('/', async (req, res) => {
         },
       });
 
-      if (!entry) {
+      if (!attributeOptionEntry) {
         throw new Error(`Attribute Option not found for ${attribute}: ${attributeOption}`);
       }
 
-      attributeOptionEmbeddings.push(entry.embedding as number[]);
+      attributeOptionEmbeddings.push(attributeOptionEntry.embedding as number[]);
     }
 
+    // Comparison metrics
     const attributeOptionSum = calcVectorSum(attributeOptionEmbeddings);
 
     const euclideanDistance = calcEuclideanDistance(
@@ -54,14 +56,16 @@ router.post('/', async (req, res) => {
       variant.embedding as number[]
     );
 
+    const variantVectorNorm = calcVectorNorm(variant.embedding as number[]);
+
     const cosineSimilarity = calcCosineSimilarity(
       attributeOptionSum,
       variant.embedding as number[]
     );
 
     res.json({
-      message: 'Successfully ingested variant data.',
       euclideanDistance,
+      normalizedDistance: euclideanDistance / variantVectorNorm,
       cosineSimilarity,
     });
   } catch (err) {

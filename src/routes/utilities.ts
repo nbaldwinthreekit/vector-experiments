@@ -10,6 +10,16 @@ export function canonicalize(obj: any): any {
   return obj;
 }
 
+export function calcVectorNorm(a: number[]): number {
+  let res = 0;
+
+  for (let i = 0; i < a.length; i++) {
+    res += a[i] ** 2;
+  }
+
+  return Math.sqrt(res);
+}
+
 export function calcVectorSum(embeddings: number[][]): number[] {
   if (embeddings.length === 0) return [];
 
@@ -17,10 +27,7 @@ export function calcVectorSum(embeddings: number[][]): number[] {
   const vectorSum = new Array(vectorLength).fill(0);
 
   for (const embedding of embeddings) {
-    if (embedding.length !== vectorLength) {
-      throw new Error('Embedding dimension mismatch in input array');
-    }
-    for (let i = 0; i < vectorLength; i++) {
+    for (let i = 0; i < embedding.length; i++) {
       vectorSum[i] += embedding[i];
     }
   }
@@ -28,27 +35,21 @@ export function calcVectorSum(embeddings: number[][]): number[] {
   return vectorSum;
 }
 
-export function calcEuclideanDistance(
-  attributeVectorSum: number[],
-  variantEmbedding: number[]
-): number {
-  if (attributeVectorSum.length !== variantEmbedding.length) {
+export function calcEuclideanDistance(a: number[], b: number[]): number {
+  if (a.length !== b.length) {
     throw new Error('Embedding dimension mismatch');
   }
 
-  let differenceVectorMagnitude = 0;
-  for (let i = 0; i < variantEmbedding.length; i++) {
-    differenceVectorMagnitude += (variantEmbedding[i] - attributeVectorSum[i]) ** 2;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) {
+    diff += (b[i] - a[i]) ** 2;
   }
 
-  return Math.sqrt(differenceVectorMagnitude);
+  return Math.sqrt(diff);
 }
 
-export function calcCosineSimilarity(
-  attributeVectorSum: number[],
-  variantEmbedding: number[]
-): number {
-  if (attributeVectorSum.length !== variantEmbedding.length) {
+export function calcCosineSimilarity(a: number[], b: number[]): number {
+  if (a.length !== b.length) {
     throw new Error('Vector length mismatch');
   }
 
@@ -56,10 +57,10 @@ export function calcCosineSimilarity(
   let normAttr = 0;
   let normVariant = 0;
 
-  for (let i = 0; i < attributeVectorSum.length; i++) {
-    dot += attributeVectorSum[i] * variantEmbedding[i];
-    normAttr += attributeVectorSum[i] ** 2;
-    normVariant += variantEmbedding[i] ** 2;
+  for (let i = 0; i < a.length; i++) {
+    dot += a[i] * b[i];
+    normAttr += a[i] ** 2;
+    normVariant += b[i] ** 2;
   }
 
   return dot / (Math.sqrt(normAttr) * Math.sqrt(normVariant));

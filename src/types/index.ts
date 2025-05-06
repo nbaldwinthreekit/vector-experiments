@@ -8,3 +8,9 @@ export interface ConfigurationData {
   description: string;
   attributes: AttributeData[];
 }
+
+export interface VariantData {
+  productName: string;
+  description: string;
+  variants: [Record<string, any>];
+}

@@ -21,62 +21,73 @@ router.post('/', async (req, res) => {
   try {
     const { productName, description, variants } = req.body as VariantData;
 
-    const embedString = productName + description;
-    const embedding = await getEmbedding(embedString);
+    let newProduct = await prisma.product.findUnique({ where: { productName } });
 
-    const newProduct = await prisma.product.upsert({
-      where: { productName },
-      update: {},
-      create: {
-        productName: productName,
-        description: description,
-        embedding: embedding,
-        metadata: { reminder: 'metadata' },
-      },
-    });
-
-    for (const v of variants) {
-      // Want to order the variant config so we vectorize consistently.
-      let embedString = JSON.stringify(canonicalize(v));
-      let embedding = await getEmbedding(embedString);
-
-      const newVariant = await prisma.variant.upsert({
-        where: {
-          productId_configuration: {
-            productId: newProduct.id,
-            configuration: embedString,
-          },
-        },
-        update: {},
-        create: {
-          productId: newProduct.id,
-          configuration: embedString,
-          embedding: embedding,
+    if (!newProduct) {
+      const productEmbedding = await getEmbedding(productName + description);
+      newProduct = await prisma.product.create({
+        data: {
+          productName,
+          description,
+          embedding: productEmbedding,
           metadata: { reminder: 'metadata' },
         },
       });
+    }
 
-      const attributeOptions = newVariant.configuration.split(',');
+    for (const v of variants) {
+      const configString = JSON.stringify(canonicalize(v));
 
-      for (const attributeOptionPair of attributeOptions) {
-        const embedding = await getEmbedding(attributeOptionPair);
-        const [attributeName, attributeOption] = attributeOptionPair.split(':');
-
-        const newAttributeOption = await prisma.attributeOption.upsert({
-          where: {
-            attribute_attributeOption: {
-              attribute: attributeName,
-              attributeOption,
-            },
+      let newVariant = await prisma.variant.findUnique({
+        where: {
+          productId_configuration: {
+            productId: newProduct.id,
+            configuration: configString,
           },
-          update: {},
-          create: {
-            attribute: attributeName,
-            attributeOption,
-            embedding: embedding,
+        },
+      });
+
+      if (!newVariant) {
+        const variantEmbedding = await getEmbedding(configString);
+        newVariant = await prisma.variant.create({
+          data: {
+            productId: newProduct.id,
+            configuration: configString,
+            embedding: variantEmbedding,
             metadata: { reminder: 'metadata' },
           },
         });
+      }
+
+      const attributeOptions = configString.split(',');
+
+      for (const pair of attributeOptions) {
+        const [rawKey, rawValue] = pair.split(':');
+        const attributeName = rawKey?.replace(/["{}]/g, '').trim();
+        const attributeOption = rawValue?.replace(/["{}]/g, '').trim();
+
+        if (!attributeName || !attributeOption) continue;
+
+        let newAttributeOption = await prisma.attributeOption.findUnique({
+          where: {
+            attribute_attributeOption: {
+              attribute: attributeName,
+              attributeOption: attributeOption,
+            },
+          },
+        });
+
+        if (!newAttributeOption) {
+          const attrEmbedding = await getEmbedding(`${attributeName}: ${attributeOption}`);
+          newAttributeOption = await prisma.attributeOption.create({
+            data: {
+              attribute: attributeName,
+              attributeOption: attributeOption,
+              embedding: attrEmbedding,
+              metadata: { reminder: 'metadata' },
+            },
+          });
+        }
 
         await prisma.productAttributeOption.upsert({
           where: {
@@ -98,8 +109,8 @@ router.post('/', async (req, res) => {
       message: 'Successfully ingested variant data.',
     });
   } catch (err) {
-    console.log(err);
-    res.json({ error: 'Error ingesting variant data:', err });
+    console.error(err);
+    res.status(500).json({ error: 'Error ingesting variant data.', detail: err });
   }
 });
 

@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import ingestConfiguration from './ingestVariants';
+import ingestConfiguration from './ingestConfiguration';
 
 const router = Router();
 
-router.use('/ingest-variants', ingestConfiguration);
+router.use('/ingest-configuration', ingestConfiguration);
 
 export default router;

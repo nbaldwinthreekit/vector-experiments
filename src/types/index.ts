@@ -1,5 +1,10 @@
-export interface VariantData {
+export interface AttributeData {
+  attributeName: string;
+  options: string[];
+}
+
+export interface ConfigurationData {
   productName: string;
   description: string;
-  variants: [Record<string, any>];
+  attributes: AttributeData[];
 }

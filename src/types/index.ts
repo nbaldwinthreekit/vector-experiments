@@ -14,3 +14,4 @@ export interface VariantData {
   description: string;
   variants: [Record<string, any>];
 }
+

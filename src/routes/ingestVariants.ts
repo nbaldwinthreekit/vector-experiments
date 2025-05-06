@@ -2,20 +2,9 @@ import { Router } from 'express';
 import prisma from '../lib/prisma';
 import type { VariantData } from '../types';
 import { getEmbedding } from '../openai';
+import { canonicalize } from './utilities';
 
 const router = Router();
-
-function canonicalize(obj: any): any {
-  if (Array.isArray(obj)) return obj.map(canonicalize);
-  if (obj !== null && typeof obj === 'object') {
-    return Object.fromEntries(
-      Object.entries(obj)
-        .sort(([a], [b]) => a.localeCompare(b))
-        .map(([k, v]) => [k, canonicalize(v)])
-    );
-  }
-  return obj;
-}
 
 router.post('/', async (req, res) => {
   try {
@@ -44,12 +33,13 @@ router.post('/', async (req, res) => {
     }
 
     for (const v of variants) {
+      // Sorting the config object to ensure consistent vectorization.
       const configString = JSON.stringify(canonicalize(v));
 
       let newVariant = await prisma.variant.findUnique({
         where: {
-          productId_configuration: {
-            productId: newProduct.id,
+          productName_configuration: {
+            productName,
             configuration: configString,
           },
         },
@@ -62,6 +52,7 @@ router.post('/', async (req, res) => {
         newVariant = await prisma.variant.create({
           data: {
             productId: newProduct.id,
+            productName,
             configuration: configString,
             embedding: variantEmbedding,
             metadata: { reminder: 'metadata' },

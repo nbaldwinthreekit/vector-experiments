@@ -1143,12 +1143,12 @@ export namespace Prisma {
 
   export type ProductCountOutputType = {
     attributeOptions: number
-    productVariants: number
+    variants: number
   }
 
   export type ProductCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     attributeOptions?: boolean | ProductCountOutputTypeCountAttributeOptionsArgs
-    productVariants?: boolean | ProductCountOutputTypeCountProductVariantsArgs
+    variants?: boolean | ProductCountOutputTypeCountVariantsArgs
   }
 
   // Custom InputTypes
@@ -1172,7 +1172,7 @@ export namespace Prisma {
   /**
    * ProductCountOutputType without action
    */
-  export type ProductCountOutputTypeCountProductVariantsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type ProductCountOutputTypeCountVariantsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: VariantWhereInput
   }
 
@@ -1248,6 +1248,7 @@ export namespace Prisma {
     id: number
     productName: number
     description: number
+    embedding: number
     metadata: number
     _all: number
   }
@@ -1277,6 +1278,7 @@ export namespace Prisma {
     id?: true
     productName?: true
     description?: true
+    embedding?: true
     metadata?: true
     _all?: true
   }
@@ -1371,6 +1373,7 @@ export namespace Prisma {
     id: number
     productName: string
     description: string
+    embedding: JsonValue
     metadata: JsonValue
     _count: ProductCountAggregateOutputType | null
     _avg: ProductAvgAggregateOutputType | null
@@ -1397,9 +1400,10 @@ export namespace Prisma {
     id?: boolean
     productName?: boolean
     description?: boolean
+    embedding?: boolean
     metadata?: boolean
     attributeOptions?: boolean | Product$attributeOptionsArgs<ExtArgs>
-    productVariants?: boolean | Product$productVariantsArgs<ExtArgs>
+    variants?: boolean | Product$variantsArgs<ExtArgs>
     _count?: boolean | ProductCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["product"]>
 
@@ -1407,6 +1411,7 @@ export namespace Prisma {
     id?: boolean
     productName?: boolean
     description?: boolean
+    embedding?: boolean
     metadata?: boolean
   }, ExtArgs["result"]["product"]>
 
@@ -1414,6 +1419,7 @@ export namespace Prisma {
     id?: boolean
     productName?: boolean
     description?: boolean
+    embedding?: boolean
     metadata?: boolean
   }, ExtArgs["result"]["product"]>
 
@@ -1421,13 +1427,14 @@ export namespace Prisma {
     id?: boolean
     productName?: boolean
     description?: boolean
+    embedding?: boolean
     metadata?: boolean
   }
 
-  export type ProductOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "productName" | "description" | "metadata", ExtArgs["result"]["product"]>
+  export type ProductOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "productName" | "description" | "embedding" | "metadata", ExtArgs["result"]["product"]>
   export type ProductInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     attributeOptions?: boolean | Product$attributeOptionsArgs<ExtArgs>
-    productVariants?: boolean | Product$productVariantsArgs<ExtArgs>
+    variants?: boolean | Product$variantsArgs<ExtArgs>
     _count?: boolean | ProductCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type ProductIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
@@ -1437,12 +1444,13 @@ export namespace Prisma {
     name: "Product"
     objects: {
       attributeOptions: Prisma.$ProductAttributeOptionPayload<ExtArgs>[]
-      productVariants: Prisma.$VariantPayload<ExtArgs>[]
+      variants: Prisma.$VariantPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: number
       productName: string
       description: string
+      embedding: Prisma.JsonValue
       metadata: Prisma.JsonValue
     }, ExtArgs["result"]["product"]>
     composites: {}
@@ -1839,7 +1847,7 @@ export namespace Prisma {
   export interface Prisma__ProductClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
     attributeOptions<T extends Product$attributeOptionsArgs<ExtArgs> = {}>(args?: Subset<T, Product$attributeOptionsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ProductAttributeOptionPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
-    productVariants<T extends Product$productVariantsArgs<ExtArgs> = {}>(args?: Subset<T, Product$productVariantsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    variants<T extends Product$variantsArgs<ExtArgs> = {}>(args?: Subset<T, Product$variantsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$VariantPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -1872,6 +1880,7 @@ export namespace Prisma {
     readonly id: FieldRef<"Product", 'Int'>
     readonly productName: FieldRef<"Product", 'String'>
     readonly description: FieldRef<"Product", 'String'>
+    readonly embedding: FieldRef<"Product", 'Json'>
     readonly metadata: FieldRef<"Product", 'Json'>
   }
     
@@ -2283,9 +2292,9 @@ export namespace Prisma {
   }
 
   /**
-   * Product.productVariants
+   * Product.variants
    */
-  export type Product$productVariantsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+  export type Product$variantsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     /**
      * Select specific fields to fetch from the Variant
      */
@@ -2361,6 +2370,7 @@ export namespace Prisma {
     id: number
     attribute: number
     attributeOption: number
+    embedding: number
     metadata: number
     _all: number
   }
@@ -2390,6 +2400,7 @@ export namespace Prisma {
     id?: true
     attribute?: true
     attributeOption?: true
+    embedding?: true
     metadata?: true
     _all?: true
   }
@@ -2484,6 +2495,7 @@ export namespace Prisma {
     id: number
     attribute: string
     attributeOption: string
+    embedding: JsonValue
     metadata: JsonValue
     _count: AttributeOptionCountAggregateOutputType | null
     _avg: AttributeOptionAvgAggregateOutputType | null
@@ -2510,6 +2522,7 @@ export namespace Prisma {
     id?: boolean
     attribute?: boolean
     attributeOption?: boolean
+    embedding?: boolean
     metadata?: boolean
     products?: boolean | AttributeOption$productsArgs<ExtArgs>
     _count?: boolean | AttributeOptionCountOutputTypeDefaultArgs<ExtArgs>
@@ -2519,6 +2532,7 @@ export namespace Prisma {
     id?: boolean
     attribute?: boolean
     attributeOption?: boolean
+    embedding?: boolean
     metadata?: boolean
   }, ExtArgs["result"]["attributeOption"]>
 
@@ -2526,6 +2540,7 @@ export namespace Prisma {
     id?: boolean
     attribute?: boolean
     attributeOption?: boolean
+    embedding?: boolean
     metadata?: boolean
   }, ExtArgs["result"]["attributeOption"]>
 
@@ -2533,10 +2548,11 @@ export namespace Prisma {
     id?: boolean
     attribute?: boolean
     attributeOption?: boolean
+    embedding?: boolean
     metadata?: boolean
   }
 
-  export type AttributeOptionOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "attribute" | "attributeOption" | "metadata", ExtArgs["result"]["attributeOption"]>
+  export type AttributeOptionOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "attribute" | "attributeOption" | "embedding" | "metadata", ExtArgs["result"]["attributeOption"]>
   export type AttributeOptionInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     products?: boolean | AttributeOption$productsArgs<ExtArgs>
     _count?: boolean | AttributeOptionCountOutputTypeDefaultArgs<ExtArgs>
@@ -2553,6 +2569,7 @@ export namespace Prisma {
       id: number
       attribute: string
       attributeOption: string
+      embedding: Prisma.JsonValue
       metadata: Prisma.JsonValue
     }, ExtArgs["result"]["attributeOption"]>
     composites: {}
@@ -2981,6 +2998,7 @@ export namespace Prisma {
     readonly id: FieldRef<"AttributeOption", 'Int'>
     readonly attribute: FieldRef<"AttributeOption", 'String'>
     readonly attributeOption: FieldRef<"AttributeOption", 'String'>
+    readonly embedding: FieldRef<"AttributeOption", 'Json'>
     readonly metadata: FieldRef<"AttributeOption", 'Json'>
   }
     
@@ -3448,6 +3466,7 @@ export namespace Prisma {
     id: number
     productId: number
     configuration: number
+    embedding: number
     metadata: number
     _all: number
   }
@@ -3479,6 +3498,7 @@ export namespace Prisma {
     id?: true
     productId?: true
     configuration?: true
+    embedding?: true
     metadata?: true
     _all?: true
   }
@@ -3573,6 +3593,7 @@ export namespace Prisma {
     id: number
     productId: number
     configuration: string
+    embedding: JsonValue
     metadata: JsonValue
     _count: VariantCountAggregateOutputType | null
     _avg: VariantAvgAggregateOutputType | null
@@ -3599,6 +3620,7 @@ export namespace Prisma {
     id?: boolean
     productId?: boolean
     configuration?: boolean
+    embedding?: boolean
     metadata?: boolean
     product?: boolean | ProductDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["variant"]>
@@ -3607,6 +3629,7 @@ export namespace Prisma {
     id?: boolean
     productId?: boolean
     configuration?: boolean
+    embedding?: boolean
     metadata?: boolean
     product?: boolean | ProductDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["variant"]>
@@ -3615,6 +3638,7 @@ export namespace Prisma {
     id?: boolean
     productId?: boolean
     configuration?: boolean
+    embedding?: boolean
     metadata?: boolean
     product?: boolean | ProductDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["variant"]>
@@ -3623,10 +3647,11 @@ export namespace Prisma {
     id?: boolean
     productId?: boolean
     configuration?: boolean
+    embedding?: boolean
     metadata?: boolean
   }
 
-  export type VariantOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "productId" | "configuration" | "metadata", ExtArgs["result"]["variant"]>
+  export type VariantOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "productId" | "configuration" | "embedding" | "metadata", ExtArgs["result"]["variant"]>
   export type VariantInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     product?: boolean | ProductDefaultArgs<ExtArgs>
   }
@@ -3646,6 +3671,7 @@ export namespace Prisma {
       id: number
       productId: number
       configuration: string
+      embedding: Prisma.JsonValue
       metadata: Prisma.JsonValue
     }, ExtArgs["result"]["variant"]>
     composites: {}
@@ -4074,6 +4100,7 @@ export namespace Prisma {
     readonly id: FieldRef<"Variant", 'Int'>
     readonly productId: FieldRef<"Variant", 'Int'>
     readonly configuration: FieldRef<"Variant", 'String'>
+    readonly embedding: FieldRef<"Variant", 'Json'>
     readonly metadata: FieldRef<"Variant", 'Json'>
   }
     
@@ -5582,6 +5609,7 @@ export namespace Prisma {
     id: 'id',
     productName: 'productName',
     description: 'description',
+    embedding: 'embedding',
     metadata: 'metadata'
   };
 
@@ -5592,6 +5620,7 @@ export namespace Prisma {
     id: 'id',
     attribute: 'attribute',
     attributeOption: 'attributeOption',
+    embedding: 'embedding',
     metadata: 'metadata'
   };
 
@@ -5602,6 +5631,7 @@ export namespace Prisma {
     id: 'id',
     productId: 'productId',
     configuration: 'configuration',
+    embedding: 'embedding',
     metadata: 'metadata'
   };
 
@@ -5699,18 +5729,20 @@ export namespace Prisma {
     id?: IntFilter<"Product"> | number
     productName?: StringFilter<"Product"> | string
     description?: StringFilter<"Product"> | string
+    embedding?: JsonFilter<"Product">
     metadata?: JsonFilter<"Product">
     attributeOptions?: ProductAttributeOptionListRelationFilter
-    productVariants?: VariantListRelationFilter
+    variants?: VariantListRelationFilter
   }
 
   export type ProductOrderByWithRelationInput = {
     id?: SortOrder
     productName?: SortOrder
     description?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
     attributeOptions?: ProductAttributeOptionOrderByRelationAggregateInput
-    productVariants?: VariantOrderByRelationAggregateInput
+    variants?: VariantOrderByRelationAggregateInput
   }
 
   export type ProductWhereUniqueInput = Prisma.AtLeast<{
@@ -5720,15 +5752,17 @@ export namespace Prisma {
     OR?: ProductWhereInput[]
     NOT?: ProductWhereInput | ProductWhereInput[]
     description?: StringFilter<"Product"> | string
+    embedding?: JsonFilter<"Product">
     metadata?: JsonFilter<"Product">
     attributeOptions?: ProductAttributeOptionListRelationFilter
-    productVariants?: VariantListRelationFilter
+    variants?: VariantListRelationFilter
   }, "id" | "productName">
 
   export type ProductOrderByWithAggregationInput = {
     id?: SortOrder
     productName?: SortOrder
     description?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
     _count?: ProductCountOrderByAggregateInput
     _avg?: ProductAvgOrderByAggregateInput
@@ -5744,6 +5778,7 @@ export namespace Prisma {
     id?: IntWithAggregatesFilter<"Product"> | number
     productName?: StringWithAggregatesFilter<"Product"> | string
     description?: StringWithAggregatesFilter<"Product"> | string
+    embedding?: JsonWithAggregatesFilter<"Product">
     metadata?: JsonWithAggregatesFilter<"Product">
   }
 
@@ -5754,6 +5789,7 @@ export namespace Prisma {
     id?: IntFilter<"AttributeOption"> | number
     attribute?: StringFilter<"AttributeOption"> | string
     attributeOption?: StringFilter<"AttributeOption"> | string
+    embedding?: JsonFilter<"AttributeOption">
     metadata?: JsonFilter<"AttributeOption">
     products?: ProductAttributeOptionListRelationFilter
   }
@@ -5762,6 +5798,7 @@ export namespace Prisma {
     id?: SortOrder
     attribute?: SortOrder
     attributeOption?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
     products?: ProductAttributeOptionOrderByRelationAggregateInput
   }
@@ -5774,6 +5811,7 @@ export namespace Prisma {
     NOT?: AttributeOptionWhereInput | AttributeOptionWhereInput[]
     attribute?: StringFilter<"AttributeOption"> | string
     attributeOption?: StringFilter<"AttributeOption"> | string
+    embedding?: JsonFilter<"AttributeOption">
     metadata?: JsonFilter<"AttributeOption">
     products?: ProductAttributeOptionListRelationFilter
   }, "id" | "attribute_attributeOption">
@@ -5782,6 +5820,7 @@ export namespace Prisma {
     id?: SortOrder
     attribute?: SortOrder
     attributeOption?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
     _count?: AttributeOptionCountOrderByAggregateInput
     _avg?: AttributeOptionAvgOrderByAggregateInput
@@ -5797,6 +5836,7 @@ export namespace Prisma {
     id?: IntWithAggregatesFilter<"AttributeOption"> | number
     attribute?: StringWithAggregatesFilter<"AttributeOption"> | string
     attributeOption?: StringWithAggregatesFilter<"AttributeOption"> | string
+    embedding?: JsonWithAggregatesFilter<"AttributeOption">
     metadata?: JsonWithAggregatesFilter<"AttributeOption">
   }
 
@@ -5807,6 +5847,7 @@ export namespace Prisma {
     id?: IntFilter<"Variant"> | number
     productId?: IntFilter<"Variant"> | number
     configuration?: StringFilter<"Variant"> | string
+    embedding?: JsonFilter<"Variant">
     metadata?: JsonFilter<"Variant">
     product?: XOR<ProductScalarRelationFilter, ProductWhereInput>
   }
@@ -5815,6 +5856,7 @@ export namespace Prisma {
     id?: SortOrder
     productId?: SortOrder
     configuration?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
     product?: ProductOrderByWithRelationInput
   }
@@ -5827,6 +5869,7 @@ export namespace Prisma {
     NOT?: VariantWhereInput | VariantWhereInput[]
     productId?: IntFilter<"Variant"> | number
     configuration?: StringFilter<"Variant"> | string
+    embedding?: JsonFilter<"Variant">
     metadata?: JsonFilter<"Variant">
     product?: XOR<ProductScalarRelationFilter, ProductWhereInput>
   }, "id" | "productId_configuration">
@@ -5835,6 +5878,7 @@ export namespace Prisma {
     id?: SortOrder
     productId?: SortOrder
     configuration?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
     _count?: VariantCountOrderByAggregateInput
     _avg?: VariantAvgOrderByAggregateInput
@@ -5850,6 +5894,7 @@ export namespace Prisma {
     id?: IntWithAggregatesFilter<"Variant"> | number
     productId?: IntWithAggregatesFilter<"Variant"> | number
     configuration?: StringWithAggregatesFilter<"Variant"> | string
+    embedding?: JsonWithAggregatesFilter<"Variant">
     metadata?: JsonWithAggregatesFilter<"Variant">
   }
 
@@ -5907,47 +5952,53 @@ export namespace Prisma {
   export type ProductCreateInput = {
     productName: string
     description: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
     attributeOptions?: ProductAttributeOptionCreateNestedManyWithoutProductInput
-    productVariants?: VariantCreateNestedManyWithoutProductInput
+    variants?: VariantCreateNestedManyWithoutProductInput
   }
 
   export type ProductUncheckedCreateInput = {
     id?: number
     productName: string
     description: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
     attributeOptions?: ProductAttributeOptionUncheckedCreateNestedManyWithoutProductInput
-    productVariants?: VariantUncheckedCreateNestedManyWithoutProductInput
+    variants?: VariantUncheckedCreateNestedManyWithoutProductInput
   }
 
   export type ProductUpdateInput = {
     productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
     attributeOptions?: ProductAttributeOptionUpdateManyWithoutProductNestedInput
-    productVariants?: VariantUpdateManyWithoutProductNestedInput
+    variants?: VariantUpdateManyWithoutProductNestedInput
   }
 
   export type ProductUncheckedUpdateInput = {
     id?: IntFieldUpdateOperationsInput | number
     productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
     attributeOptions?: ProductAttributeOptionUncheckedUpdateManyWithoutProductNestedInput
-    productVariants?: VariantUncheckedUpdateManyWithoutProductNestedInput
+    variants?: VariantUncheckedUpdateManyWithoutProductNestedInput
   }
 
   export type ProductCreateManyInput = {
     id?: number
     productName: string
     description: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
   export type ProductUpdateManyMutationInput = {
     productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
@@ -5955,12 +6006,14 @@ export namespace Prisma {
     id?: IntFieldUpdateOperationsInput | number
     productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
   export type AttributeOptionCreateInput = {
     attribute: string
     attributeOption: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
     products?: ProductAttributeOptionCreateNestedManyWithoutAttributeOptionInput
   }
@@ -5969,6 +6022,7 @@ export namespace Prisma {
     id?: number
     attribute: string
     attributeOption: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
     products?: ProductAttributeOptionUncheckedCreateNestedManyWithoutAttributeOptionInput
   }
@@ -5976,6 +6030,7 @@ export namespace Prisma {
   export type AttributeOptionUpdateInput = {
     attribute?: StringFieldUpdateOperationsInput | string
     attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
     products?: ProductAttributeOptionUpdateManyWithoutAttributeOptionNestedInput
   }
@@ -5984,6 +6039,7 @@ export namespace Prisma {
     id?: IntFieldUpdateOperationsInput | number
     attribute?: StringFieldUpdateOperationsInput | string
     attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
     products?: ProductAttributeOptionUncheckedUpdateManyWithoutAttributeOptionNestedInput
   }
@@ -5992,12 +6048,14 @@ export namespace Prisma {
     id?: number
     attribute: string
     attributeOption: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
   export type AttributeOptionUpdateManyMutationInput = {
     attribute?: StringFieldUpdateOperationsInput | string
     attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
@@ -6005,32 +6063,37 @@ export namespace Prisma {
     id?: IntFieldUpdateOperationsInput | number
     attribute?: StringFieldUpdateOperationsInput | string
     attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
   export type VariantCreateInput = {
     configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
-    product: ProductCreateNestedOneWithoutProductVariantsInput
+    product: ProductCreateNestedOneWithoutVariantsInput
   }
 
   export type VariantUncheckedCreateInput = {
     id?: number
     productId: number
     configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
   export type VariantUpdateInput = {
     configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
-    product?: ProductUpdateOneRequiredWithoutProductVariantsNestedInput
+    product?: ProductUpdateOneRequiredWithoutVariantsNestedInput
   }
 
   export type VariantUncheckedUpdateInput = {
     id?: IntFieldUpdateOperationsInput | number
     productId?: IntFieldUpdateOperationsInput | number
     configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
@@ -6038,11 +6101,13 @@ export namespace Prisma {
     id?: number
     productId: number
     configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
   export type VariantUpdateManyMutationInput = {
     configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
@@ -6050,6 +6115,7 @@ export namespace Prisma {
     id?: IntFieldUpdateOperationsInput | number
     productId?: IntFieldUpdateOperationsInput | number
     configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
@@ -6158,6 +6224,7 @@ export namespace Prisma {
     id?: SortOrder
     productName?: SortOrder
     description?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
   }
 
@@ -6244,6 +6311,7 @@ export namespace Prisma {
     id?: SortOrder
     attribute?: SortOrder
     attributeOption?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
   }
 
@@ -6281,6 +6349,7 @@ export namespace Prisma {
     id?: SortOrder
     productId?: SortOrder
     configuration?: SortOrder
+    embedding?: SortOrder
     metadata?: SortOrder
   }
 
@@ -6484,18 +6553,18 @@ export namespace Prisma {
     deleteMany?: ProductAttributeOptionScalarWhereInput | ProductAttributeOptionScalarWhereInput[]
   }
 
-  export type ProductCreateNestedOneWithoutProductVariantsInput = {
-    create?: XOR<ProductCreateWithoutProductVariantsInput, ProductUncheckedCreateWithoutProductVariantsInput>
-    connectOrCreate?: ProductCreateOrConnectWithoutProductVariantsInput
+  export type ProductCreateNestedOneWithoutVariantsInput = {
+    create?: XOR<ProductCreateWithoutVariantsInput, ProductUncheckedCreateWithoutVariantsInput>
+    connectOrCreate?: ProductCreateOrConnectWithoutVariantsInput
     connect?: ProductWhereUniqueInput
   }
 
-  export type ProductUpdateOneRequiredWithoutProductVariantsNestedInput = {
-    create?: XOR<ProductCreateWithoutProductVariantsInput, ProductUncheckedCreateWithoutProductVariantsInput>
-    connectOrCreate?: ProductCreateOrConnectWithoutProductVariantsInput
-    upsert?: ProductUpsertWithoutProductVariantsInput
+  export type ProductUpdateOneRequiredWithoutVariantsNestedInput = {
+    create?: XOR<ProductCreateWithoutVariantsInput, ProductUncheckedCreateWithoutVariantsInput>
+    connectOrCreate?: ProductCreateOrConnectWithoutVariantsInput
+    upsert?: ProductUpsertWithoutVariantsInput
     connect?: ProductWhereUniqueInput
-    update?: XOR<XOR<ProductUpdateToOneWithWhereWithoutProductVariantsInput, ProductUpdateWithoutProductVariantsInput>, ProductUncheckedUpdateWithoutProductVariantsInput>
+    update?: XOR<XOR<ProductUpdateToOneWithWhereWithoutVariantsInput, ProductUpdateWithoutVariantsInput>, ProductUncheckedUpdateWithoutVariantsInput>
   }
 
   export type ProductCreateNestedOneWithoutAttributeOptionsInput = {
@@ -6633,12 +6702,14 @@ export namespace Prisma {
 
   export type VariantCreateWithoutProductInput = {
     configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
   export type VariantUncheckedCreateWithoutProductInput = {
     id?: number
     configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
@@ -6699,6 +6770,7 @@ export namespace Prisma {
     id?: IntFilter<"Variant"> | number
     productId?: IntFilter<"Variant"> | number
     configuration?: StringFilter<"Variant"> | string
+    embedding?: JsonFilter<"Variant">
     metadata?: JsonFilter<"Variant">
   }
 
@@ -6736,48 +6808,52 @@ export namespace Prisma {
     data: XOR<ProductAttributeOptionUpdateManyMutationInput, ProductAttributeOptionUncheckedUpdateManyWithoutAttributeOptionInput>
   }
 
-  export type ProductCreateWithoutProductVariantsInput = {
+  export type ProductCreateWithoutVariantsInput = {
     productName: string
     description: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
     attributeOptions?: ProductAttributeOptionCreateNestedManyWithoutProductInput
   }
 
-  export type ProductUncheckedCreateWithoutProductVariantsInput = {
+  export type ProductUncheckedCreateWithoutVariantsInput = {
     id?: number
     productName: string
     description: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
     attributeOptions?: ProductAttributeOptionUncheckedCreateNestedManyWithoutProductInput
   }
 
-  export type ProductCreateOrConnectWithoutProductVariantsInput = {
+  export type ProductCreateOrConnectWithoutVariantsInput = {
     where: ProductWhereUniqueInput
-    create: XOR<ProductCreateWithoutProductVariantsInput, ProductUncheckedCreateWithoutProductVariantsInput>
+    create: XOR<ProductCreateWithoutVariantsInput, ProductUncheckedCreateWithoutVariantsInput>
   }
 
-  export type ProductUpsertWithoutProductVariantsInput = {
-    update: XOR<ProductUpdateWithoutProductVariantsInput, ProductUncheckedUpdateWithoutProductVariantsInput>
-    create: XOR<ProductCreateWithoutProductVariantsInput, ProductUncheckedCreateWithoutProductVariantsInput>
+  export type ProductUpsertWithoutVariantsInput = {
+    update: XOR<ProductUpdateWithoutVariantsInput, ProductUncheckedUpdateWithoutVariantsInput>
+    create: XOR<ProductCreateWithoutVariantsInput, ProductUncheckedCreateWithoutVariantsInput>
     where?: ProductWhereInput
   }
 
-  export type ProductUpdateToOneWithWhereWithoutProductVariantsInput = {
+  export type ProductUpdateToOneWithWhereWithoutVariantsInput = {
     where?: ProductWhereInput
-    data: XOR<ProductUpdateWithoutProductVariantsInput, ProductUncheckedUpdateWithoutProductVariantsInput>
+    data: XOR<ProductUpdateWithoutVariantsInput, ProductUncheckedUpdateWithoutVariantsInput>
   }
 
-  export type ProductUpdateWithoutProductVariantsInput = {
+  export type ProductUpdateWithoutVariantsInput = {
     productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
     attributeOptions?: ProductAttributeOptionUpdateManyWithoutProductNestedInput
   }
 
-  export type ProductUncheckedUpdateWithoutProductVariantsInput = {
+  export type ProductUncheckedUpdateWithoutVariantsInput = {
     id?: IntFieldUpdateOperationsInput | number
     productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
     attributeOptions?: ProductAttributeOptionUncheckedUpdateManyWithoutProductNestedInput
   }
@@ -6785,16 +6861,18 @@ export namespace Prisma {
   export type ProductCreateWithoutAttributeOptionsInput = {
     productName: string
     description: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
-    productVariants?: VariantCreateNestedManyWithoutProductInput
+    variants?: VariantCreateNestedManyWithoutProductInput
   }
 
   export type ProductUncheckedCreateWithoutAttributeOptionsInput = {
     id?: number
     productName: string
     description: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
-    productVariants?: VariantUncheckedCreateNestedManyWithoutProductInput
+    variants?: VariantUncheckedCreateNestedManyWithoutProductInput
   }
 
   export type ProductCreateOrConnectWithoutAttributeOptionsInput = {
@@ -6805,6 +6883,7 @@ export namespace Prisma {
   export type AttributeOptionCreateWithoutProductsInput = {
     attribute: string
     attributeOption: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
@@ -6812,6 +6891,7 @@ export namespace Prisma {
     id?: number
     attribute: string
     attributeOption: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
@@ -6834,16 +6914,18 @@ export namespace Prisma {
   export type ProductUpdateWithoutAttributeOptionsInput = {
     productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
-    productVariants?: VariantUpdateManyWithoutProductNestedInput
+    variants?: VariantUpdateManyWithoutProductNestedInput
   }
 
   export type ProductUncheckedUpdateWithoutAttributeOptionsInput = {
     id?: IntFieldUpdateOperationsInput | number
     productName?: StringFieldUpdateOperationsInput | string
     description?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
-    productVariants?: VariantUncheckedUpdateManyWithoutProductNestedInput
+    variants?: VariantUncheckedUpdateManyWithoutProductNestedInput
   }
 
   export type AttributeOptionUpsertWithoutProductsInput = {
@@ -6860,6 +6942,7 @@ export namespace Prisma {
   export type AttributeOptionUpdateWithoutProductsInput = {
     attribute?: StringFieldUpdateOperationsInput | string
     attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
@@ -6867,6 +6950,7 @@ export namespace Prisma {
     id?: IntFieldUpdateOperationsInput | number
     attribute?: StringFieldUpdateOperationsInput | string
     attributeOption?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
@@ -6878,6 +6962,7 @@ export namespace Prisma {
   export type VariantCreateManyProductInput = {
     id?: number
     configuration: string
+    embedding: JsonNullValueInput | InputJsonValue
     metadata: JsonNullValueInput | InputJsonValue
   }
 
@@ -6897,18 +6982,21 @@ export namespace Prisma {
 
   export type VariantUpdateWithoutProductInput = {
     configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
   export type VariantUncheckedUpdateWithoutProductInput = {
     id?: IntFieldUpdateOperationsInput | number
     configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 
   export type VariantUncheckedUpdateManyWithoutProductInput = {
     id?: IntFieldUpdateOperationsInput | number
     configuration?: StringFieldUpdateOperationsInput | string
+    embedding?: JsonNullValueInput | InputJsonValue
     metadata?: JsonNullValueInput | InputJsonValue
   }
 

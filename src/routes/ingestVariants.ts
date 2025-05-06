@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import prisma from '../lib/prisma';
 import type { VariantData } from '../types';
+import { getEmbedding } from '../openai';
 
 const router = Router();
 
@@ -18,69 +19,43 @@ function canonicalize(obj: any): any {
 
 router.post('/', async (req, res) => {
   try {
-    const rawVariantsData = req.body as VariantData[];
+    const variantData = req.body as VariantData;
+    const productName = variantData.productName;
+    const description = variantData.description;
+    const embedString = productName + description;
+    const embedding = await getEmbedding(embedString);
 
-    for (const v of rawVariantsData) {
-      const newProduct = await prisma.product.upsert({
-        where: { productName: v.productName },
-        update: {},
-        create: {
-          productName: v.productName,
-          description: v.description,
-          metadata: { reminder: 'metadata' },
-        },
-      });
+    const newProduct = await prisma.product.upsert({
+      where: { productName },
+      update: {},
+      create: {
+        productName: productName,
+        description: description,
+        embedding: embedding,
+        metadata: { reminder: 'metadata' },
+      },
+    });
 
-      // Want to order configurations for accurate dup detection
-      const configuration = JSON.stringify(canonicalize(v.configuration));
+    for (const v of variantData.variants) {
+      // Want to order the variant config so we vectorize consistently.
+      let embedString = JSON.stringify(canonicalize(v));
+      let embedding = await getEmbedding(embedString);
 
       const newVariant = await prisma.variant.upsert({
         where: {
           productId_configuration: {
             productId: newProduct.id,
-            configuration: configuration,
+            configuration: embedString,
           },
         },
         update: {},
         create: {
           productId: newProduct.id,
-          configuration: configuration,
+          configuration: embedString,
+          embedding: embedding,
           metadata: { reminder: 'metadata' },
         },
       });
-
-      // create attributes/options
-      for (let [attributeName, attributeOption] of Object.entries(v.configuration)) {
-        const newAttribute = await prisma.attributeOption.upsert({
-          where: {
-            attribute_attributeOption: {
-              attribute: attributeName,
-              attributeOption: attributeOption,
-            },
-          },
-          update: {},
-          create: {
-            attribute: attributeName,
-            attributeOption: attributeOption,
-            metadata: { reminder: 'metadata' },
-          },
-        });
-
-        // link product and attribute option
-        await prisma.productAttributeOption.upsert({
-          where: {
-            productId_attributeOptionId: {
-              productId: newProduct.id,
-              attributeOptionId: newAttribute.id,
-            },
-          },
-          update: {},
-          create: {
-            productId: newProduct.id,
-            attributeOptionId: newAttribute.id,
-          },
-        });
-      }
     }
 
     res.json({

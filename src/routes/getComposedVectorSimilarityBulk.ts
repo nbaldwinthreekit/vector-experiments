@@ -6,12 +6,13 @@ import {
   calcVectorSum,
   calcVectorNorm,
   calcMeanOfArray,
+  normalizeVector,
 } from './utilities';
 
 const router = Router();
 
-// For testing all variant configuration vectors for a product against the
-// composition of the vectors for individual "attribute: attributeOptions" strings.
+// Compares all variants of a product by comparing their full configuration vectors
+// to the sum of individual "attribute: option" embeddings.
 
 router.post('/', async (req, res) => {
   try {
@@ -27,26 +28,29 @@ router.post('/', async (req, res) => {
       throw new Error('No variants with this productName');
     }
 
-    const collectedEuclideanDistances = [];
-    const collectedNormalizedDistances = [];
-    const collectedCosineSimilarity = [];
+    const collectedEuclideanDistances: number[] = [];
+    const collectedNormalizedDistances: number[] = [];
+    const collectedCosineSimilarity: number[] = [];
 
-    console.log(
-      `Calculating stats for product ${productName} for all variants. Total variants ${variants.length}`
-    );
+    console.log(`Calculating stats for product ${productName} across ${variants.length} variants.`);
 
     for (const variant of variants) {
       const parsedConfiguration = JSON.parse(variant.configuration) as Record<string, string>;
       const attributeOptionEmbeddings: number[][] = [];
-      for (const [attribute, attributeOption] of Object.entries(parsedConfiguration)) {
+
+      for (const [rawAttribute, rawAttributeOption] of Object.entries(parsedConfiguration)) {
+        const attribute = rawAttribute.trim();
+        const attributeOption = rawAttributeOption.trim();
+
         const attributeOptionEntry = await prisma.attributeOption.findUnique({
           where: {
             attribute_attributeOption: {
-              attribute: attribute,
+              attribute,
               attributeOption,
             },
           },
         });
+
         if (!attributeOptionEntry) {
           throw new Error(`Attribute Option not found for ${attribute}: ${attributeOption}`);
         }
@@ -55,10 +59,19 @@ router.post('/', async (req, res) => {
       }
 
       const attributeOptionSumVector = calcVectorSum(attributeOptionEmbeddings);
+      const attributeOptionsNormalized = normalizeVector(attributeOptionSumVector);
+
       const variantConfigurationVector = variant.embedding as number[];
 
+      // Use this version for models that return full-length vectors.
+      // const euclideanDistance = calcEuclideanDistance(
+      //   attributeOptionSumVector,
+      //   variantConfigurationVector
+      // );
+
+      // Use this version for models like OpenAI that return unit-normalized vectors.
       const euclideanDistance = calcEuclideanDistance(
-        attributeOptionSumVector,
+        attributeOptionsNormalized,
         variantConfigurationVector
       );
 
@@ -68,7 +81,7 @@ router.post('/', async (req, res) => {
       const normalizedDistance = euclideanDistance / variantConfigurationVectorNorm;
 
       const cosineSimilarity = calcCosineSimilarity(
-        attributeOptionSumVector,
+        attributeOptionSumVector, // Cosine similarity is scale-invariant, so we can use the raw sum or the normalized vector.
         variantConfigurationVector,
         attributeOptionSumVectorNorm,
         variantConfigurationVectorNorm
@@ -79,16 +92,12 @@ router.post('/', async (req, res) => {
       collectedCosineSimilarity.push(cosineSimilarity);
     }
 
-    const meanEuclideanDistance = calcMeanOfArray(collectedEuclideanDistances);
-    const meanNormalizedDistance = calcMeanOfArray(collectedNormalizedDistances);
-    const meanCosineSimilarity = calcMeanOfArray(collectedCosineSimilarity);
-
     res.json({
       productName,
       variantCount: variants.length,
-      meanEuclideanDistance,
-      meanNormalizedDistance,
-      meanCosineSimilarity,
+      meanEuclideanDistance: calcMeanOfArray(collectedEuclideanDistances),
+      meanNormalizedDistance: calcMeanOfArray(collectedNormalizedDistances),
+      meanCosineSimilarity: calcMeanOfArray(collectedCosineSimilarity),
     });
   } catch (err) {
     console.error(err);

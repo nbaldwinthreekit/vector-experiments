@@ -33,11 +33,12 @@ model Variant {
   id            Int     @id @default(autoincrement())
   product       Product @relation(fields: [productId], references: [id])
   productId     Int
+  productName   String
   configuration String
   embedding     Json
   metadata      Json
 
-  @@unique([productId, configuration])
+  @@unique([productName, configuration])
 }
 
 model ProductAttributeOption {

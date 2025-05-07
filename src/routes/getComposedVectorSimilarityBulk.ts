@@ -29,7 +29,7 @@ router.post('/', async (req, res) => {
     }
 
     const collectedEuclideanDistances: number[] = [];
-    const collectedNormalizedDistances: number[] = [];
+    const collectedEuclideanDistancesMetric: number[] = [];
     const collectedCosineSimilarity: number[] = [];
 
     console.log(`Calculating stats for product ${productName} across ${variants.length} variants.`);
@@ -59,7 +59,6 @@ router.post('/', async (req, res) => {
       }
 
       const attributeOptionSumVector = calcVectorSum(attributeOptionEmbeddings);
-      const attributeOptionsNormalized = normalizeVector(attributeOptionSumVector);
 
       const variantConfigurationVector = variant.embedding as number[];
 
@@ -71,14 +70,14 @@ router.post('/', async (req, res) => {
 
       // Use this version for models like OpenAI that return unit-normalized vectors.
       const euclideanDistance = calcEuclideanDistance(
-        attributeOptionsNormalized,
+        normalizeVector(attributeOptionSumVector),
         variantConfigurationVector
       );
 
       const variantConfigurationVectorNorm = calcVectorNorm(variantConfigurationVector);
       const attributeOptionSumVectorNorm = calcVectorNorm(attributeOptionSumVector);
 
-      const normalizedDistance = euclideanDistance / variantConfigurationVectorNorm;
+      const euclideanDistanceMetric = euclideanDistance / variantConfigurationVectorNorm;
 
       const cosineSimilarity = calcCosineSimilarity(
         attributeOptionSumVector, // Cosine similarity is scale-invariant, so we can use the raw sum or the normalized vector.
@@ -88,15 +87,14 @@ router.post('/', async (req, res) => {
       );
 
       collectedEuclideanDistances.push(euclideanDistance);
-      collectedNormalizedDistances.push(normalizedDistance);
+      collectedEuclideanDistancesMetric.push(euclideanDistanceMetric);
       collectedCosineSimilarity.push(cosineSimilarity);
     }
 
     res.json({
       productName,
       variantCount: variants.length,
-      meanEuclideanDistance: calcMeanOfArray(collectedEuclideanDistances),
-      meanNormalizedDistance: calcMeanOfArray(collectedNormalizedDistances),
+      meanEuclideanDistance: calcMeanOfArray(collectedEuclideanDistancesMetric),
       meanCosineSimilarity: calcMeanOfArray(collectedCosineSimilarity),
     });
   } catch (err) {

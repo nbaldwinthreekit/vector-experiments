@@ -6,12 +6,12 @@ import {
   calcCosineSimilarity,
   calcVectorSum,
   calcVectorNorm,
+  normalizeVector,
 } from './utilities';
 
 const router = Router();
 
-// For testing a single variant configuration vector against the
-// composition of the vectors for individual "attribute: attributeOptions" strings.
+// Compares a variant's full configuration vector to the sum of individual "attribute: option" embeddings.
 
 router.post('/', async (req, res) => {
   try {
@@ -55,20 +55,32 @@ router.post('/', async (req, res) => {
     }
 
     const attributeOptionSumVector = calcVectorSum(attributeOptionEmbeddings);
+
+    // openAI always normalizes vectors before returning. There's no way to turn this off =(.
+    // If using openAI, or any other api that uses normalized vectors, the attributeOptionSumVector needs to be normalized to calculate euclidean distance.
+    const attributeOptionsNormalized = normalizeVector(attributeOptionSumVector);
+
     const variantConfigurationVector = variant.embedding as number[];
 
+    // Use this version for models that return full-length vectors.
+    // const euclideanDistance = calcEuclideanDistance(
+    //   attributeOptionSumVector,
+    //   variantConfigurationVector
+    // );
+
+    // Use this version for models like OpenAI that return unit-normalized vectors.
     const euclideanDistance = calcEuclideanDistance(
-      attributeOptionSumVector,
+      attributeOptionsNormalized,
       variantConfigurationVector
     );
 
     const variantConfigurationVectorNorm = calcVectorNorm(variantConfigurationVector);
     const attributeOptionSumVectorNorm = calcVectorNorm(attributeOptionSumVector);
 
-    const normalizedDistance = euclideanDistance / variantConfigurationVectorNorm;
+    const euclideanDistanceSimilarity = euclideanDistance / variantConfigurationVectorNorm;
 
     const cosineSimilarity = calcCosineSimilarity(
-      attributeOptionSumVector,
+      attributeOptionSumVector, // Cosine similarity is scale-invariant, so we can use the raw sum or the normalized vector.
       variantConfigurationVector,
       attributeOptionSumVectorNorm,
       variantConfigurationVectorNorm
@@ -76,7 +88,7 @@ router.post('/', async (req, res) => {
 
     res.json({
       euclideanDistance,
-      normalizedDistance,
+      euclideanDistanceSimilarity,
       cosineSimilarity,
     });
   } catch (err) {

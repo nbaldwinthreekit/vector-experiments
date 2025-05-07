@@ -74,3 +74,9 @@ export function calcMeanOfArray(a: number[]) {
   }
   return sum / a.length;
 }
+
+export function normalizeVector(a: number[]): number[] {
+  const norm = calcVectorNorm(a);
+  if (norm === 0) throw new Error('Cannot normalize a zero vector');
+  return a.map((v) => v / norm);
+}

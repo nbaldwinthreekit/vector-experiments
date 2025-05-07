@@ -1,3 +1,5 @@
+Uses Node v22.14.0
+
 Shoot me a message for .env
 
 npm install

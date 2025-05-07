@@ -48,20 +48,29 @@ export function calcEuclideanDistance(a: number[], b: number[]): number {
   return Math.sqrt(diff);
 }
 
-export function calcCosineSimilarity(a: number[], b: number[]): number {
+export function calcCosineSimilarity(
+  a: number[],
+  b: number[],
+  normA: number,
+  normB: number
+): number {
   if (a.length !== b.length) {
     throw new Error('Vector length mismatch');
   }
 
   let dot = 0;
-  let normAttr = 0;
-  let normVariant = 0;
 
   for (let i = 0; i < a.length; i++) {
     dot += a[i] * b[i];
-    normAttr += a[i] ** 2;
-    normVariant += b[i] ** 2;
   }
 
-  return dot / (Math.sqrt(normAttr) * Math.sqrt(normVariant));
+  return dot / (normA * normB);
+}
+
+export function calcMeanOfArray(a: number[]) {
+  let sum = 0;
+  for (let i = 0; i < a.length; i++) {
+    sum += a[i];
+  }
+  return sum / a.length;
 }

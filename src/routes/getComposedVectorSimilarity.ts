@@ -10,9 +10,13 @@ import {
 
 const router = Router();
 
+// For testing a single variant configuration vector against the
+// composition of the vectors for individual "attribute: attributeOptions" strings.
+
 router.post('/', async (req, res) => {
   try {
     const { productName, configuration } = req.body;
+    // Just in case the incoming configuration isn't sorted.
     const sortedConfiguration = JSON.stringify(canonicalize(configuration));
 
     const variant = await prisma.variant.findUnique({
@@ -27,6 +31,8 @@ router.post('/', async (req, res) => {
     if (!variant) {
       throw new Error('Variant not found. Check configuration');
     }
+
+    console.log(`Calculating stats for product ${productName} on variantId: ${variant.id}`);
 
     const attributeOptionEmbeddings: number[][] = [];
     for (const [rawAttribute, rawAttributeOption] of Object.entries(configuration)) {
@@ -48,29 +54,34 @@ router.post('/', async (req, res) => {
       attributeOptionEmbeddings.push(attributeOptionEntry.embedding as number[]);
     }
 
-    // Comparison metrics
-    const attributeOptionSum = calcVectorSum(attributeOptionEmbeddings);
+    const attributeOptionSumVector = calcVectorSum(attributeOptionEmbeddings);
+    const variantConfigurationVector = variant.embedding as number[];
 
     const euclideanDistance = calcEuclideanDistance(
-      attributeOptionSum,
-      variant.embedding as number[]
+      attributeOptionSumVector,
+      variantConfigurationVector
     );
 
-    const variantVectorNorm = calcVectorNorm(variant.embedding as number[]);
+    const variantConfigurationVectorNorm = calcVectorNorm(variantConfigurationVector);
+    const attributeOptionSumVectorNorm = calcVectorNorm(attributeOptionSumVector);
+
+    const normalizedDistance = euclideanDistance / variantConfigurationVectorNorm;
 
     const cosineSimilarity = calcCosineSimilarity(
-      attributeOptionSum,
-      variant.embedding as number[]
+      attributeOptionSumVector,
+      variantConfigurationVector,
+      attributeOptionSumVectorNorm,
+      variantConfigurationVectorNorm
     );
 
     res.json({
       euclideanDistance,
-      normalizedDistance: euclideanDistance / variantVectorNorm,
+      normalizedDistance,
       cosineSimilarity,
     });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Error ingesting variant data.', detail: err });
+    res.status(500).json({ error: `Error processing request: ${err}` });
   }
 });
 

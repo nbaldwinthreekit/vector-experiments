@@ -2,7 +2,8 @@ import { Router } from 'express';
 import prisma from '../lib/prisma';
 import type { ConfigurationData } from '../types';
 // import { getEmbedding } from '../openai';
-import { getEmbedding } from '../hugging-face';
+// import { getEmbedding } from '../hugging-face/intfloat-e5-base';
+import { getEmbedding } from '../hugging-face/jina-embeddings-v2-base-en';
 
 const router = Router();
 

@@ -63,16 +63,16 @@ router.post('/', async (req, res) => {
     const variantConfigurationVector = variant.embedding as number[];
 
     // Use this version for models that return full-length vectors.
-    // const euclideanDistance = calcEuclideanDistance(
-    //   attributeOptionSumVector,
-    //   variantConfigurationVector
-    // );
-
-    // Use this version for models like OpenAI that return unit-normalized vectors.
     const euclideanDistance = calcEuclideanDistance(
-      attributeOptionsNormalized,
+      attributeOptionSumVector,
       variantConfigurationVector
     );
+
+    // // Use this version for models like OpenAI that return unit-normalized vectors.
+    // const euclideanDistance = calcEuclideanDistance(
+    //   attributeOptionsNormalized,
+    //   variantConfigurationVector
+    // );
 
     const variantConfigurationVectorNorm = calcVectorNorm(variantConfigurationVector);
     const attributeOptionSumVectorNorm = calcVectorNorm(attributeOptionSumVector);

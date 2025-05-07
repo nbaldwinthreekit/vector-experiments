@@ -1,0 +1,3756 @@
+  {
+    "productName": "Aeroflex Chair",
+    "description": "Full-Back Ergonomic Office Chair with Custom Fit. The AeroFlex Chair is a fully adjustable, full-back ergonomic chair designed for professionals who spend long hours seated at a desk. With advanced lumbar and memory foam back support, the AeroFlex is ideal for executive offices, remote workstations, conference rooms, and productivity-focused environments. Unlike stools or perch seating, the AeroFlex includes optional padded or adjustable armrests, high-performance wheel options, and a choice of five base styles to ensure stability and mobility on any surface. Best suited for full-time office workers and remote professionals, executive desk chairs and meeting rooms, and individuals needing sustained back and posture support during long work sessions. Key features include a full-length ergonomic backrest with multiple support options, custom-fit sizes from Small to XXL, caster and rollerblade wheels for smooth movement, durable base options suited for static or mobile setups, and armrest configurations including fixed, removable, or padded designs. If you’re looking for a high-performance office chair that offers tailored comfort and a professional appearance, the AeroFlex is the solution for you.",
+    "variants": [
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Memory Foam",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Ergonomic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Lumbar",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Basic",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Removable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Fixed",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Adjustable",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "Padded",
+        "Base": "Tapered",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Round",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Star",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Flat",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Pedestal",
+        "Wheels": "None"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Rollerblade"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Fixed"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Caster"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "Standard"
+      },
+      {
+        "Back Support": "Mesh",
+        "Armrest": "None",
+        "Base": "Tapered",
+        "Wheels": "None"
+      }
+    ]
+  }

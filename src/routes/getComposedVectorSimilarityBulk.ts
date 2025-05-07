@@ -91,11 +91,16 @@ router.post('/', async (req, res) => {
       collectedCosineSimilarity.push(cosineSimilarity);
     }
 
+    const meanEuclideanDistance = calcMeanOfArray(collectedEuclideanDistances);
+    const meanEuclideanDistanceMetric = calcMeanOfArray(collectedEuclideanDistancesMetric);
+    const meanCosineSimilarity = calcMeanOfArray(collectedCosineSimilarity);
+
     res.json({
       productName,
       variantCount: variants.length,
-      meanEuclideanDistance: calcMeanOfArray(collectedEuclideanDistancesMetric),
-      meanCosineSimilarity: calcMeanOfArray(collectedCosineSimilarity),
+      meanEuclideanDistance,
+      meanEuclideanDistanceMetric,
+      meanCosineSimilarity,
     });
   } catch (err) {
     console.error(err);

@@ -1,0 +1,9 @@
+{
+  "productName": "Aeroflex Chair",
+  "configuration": {
+    "Armrest": "Removable",
+    "Back Support": "Memory Foam",
+    "Base": "Star",
+    "Wheels": "Caster"
+  }
+}

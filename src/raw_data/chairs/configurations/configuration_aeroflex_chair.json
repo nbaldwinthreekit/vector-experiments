@@ -1,0 +1,22 @@
+{
+  "productName": "Aeroflex Chair",
+  "description": "Full-Back Ergonomic Office Chair with Custom Fit. The AeroFlex Chair is a fully adjustable, full-back ergonomic chair designed for professionals who spend long hours seated at a desk. With advanced lumbar and memory foam back support, the AeroFlex is ideal for executive offices, remote workstations, conference rooms, and productivity-focused environments. Unlike stools or perch seating, the AeroFlex includes optional padded or adjustable armrests, high-performance wheel options, and a choice of five base styles to ensure stability and mobility on any surface. Best suited for full-time office workers and remote professionals, executive desk chairs and meeting rooms, and individuals needing sustained back and posture support during long work sessions. Key features include a full-length ergonomic backrest with multiple support options, custom-fit sizes from Small to XXL, caster and rollerblade wheels for smooth movement, durable base options suited for static or mobile setups, and armrest configurations including fixed, removable, or padded designs. If you’re looking for a high-performance office chair that offers tailored comfort and a professional appearance, the AeroFlex is the solution for you.",
+  "attributes": [
+    {
+      "attributeName": "Back Support",
+      "options": ["Memory Foam", "Ergonomic", "Lumbar", "Basic", "Mesh"]
+    },
+    {
+      "attributeName": "Armrest",
+      "options": ["Removable", "Fixed", "Adjustable", "Padded", "None"]
+    },
+    {
+      "attributeName": "Base",
+      "options": ["Round", "Star", "Flat", "Pedestal", "Tapered"]
+    },
+    {
+      "attributeName": "Wheels",
+      "options": ["Rollerblade", "Fixed", "Caster", "Standard", "None"]
+    }
+  ]
+}

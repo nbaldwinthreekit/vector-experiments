@@ -1,6 +1,10 @@
-Uses Node v22.14.0
+Purpose: This is a backend API for digesting configurations and variant data, vectorizing those inputs, and storing in a local sqlite db for analysis.
+
+Node Version: v22.14.0
 
 Shoot me a message for .env
+
+To run:
 
 npm install
 npm run dev

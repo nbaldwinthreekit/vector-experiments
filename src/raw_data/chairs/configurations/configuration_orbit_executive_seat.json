@@ -1,0 +1,26 @@
+{
+  "productName": "Orbit Executive Seat",
+  "attributes": [
+    {
+      "name": "Material",
+      "options": ["Wood", "Metal", "Plastic", "Mesh", "Leather"]
+    },
+    {
+      "name": "Legs",
+      "options": ["Wooden", "Metal", "Five-star", "Plastic", "Swivel"]
+    },
+    {
+      "name": "Armrest",
+      "options": ["Padded", "Adjustable", "Fixed", "Removable", "None"]
+    },
+    {
+      "name": "Wheels",
+      "options": ["Caster", "Rollerblade", "Standard", "Fixed", "None"]
+    },
+    {
+      "name": "Height Adjustment",
+      "options": ["Manual", "Lever", "Automatic", "Gas Lift", "None"]
+    }
+  ],
+  "description": "High-Back Leadership Seating with Enhanced Adjustability. The Orbit Executive Seat is designed for senior professionals and leadership roles, offering advanced comfort, a commanding presence, and executive-level adjustability. With rich material options including leather, mesh, and wood, the chair pairs luxury with ergonomic engineering. Featuring high back support, padded or adjustable armrests, swivel leg designs, and wheel configurations that support dynamic movement, the Orbit Executive Seat is ideal for boardrooms, private offices, and C-suite environments. It supports long sessions of focused work while reflecting a high-status aesthetic. This seat is best suited for professionals who prioritize both comfort and executive design in their work environment."
+}

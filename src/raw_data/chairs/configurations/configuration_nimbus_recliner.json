@@ -1,0 +1,22 @@
+{
+  "productName": "Nimbus Recliner",
+  "attributes": [
+    {
+      "name": "Color",
+      "options": ["Red", "Black", "Blue", "White", "Green"]
+    },
+    {
+      "name": "Armrest",
+      "options": ["Removable", "Padded", "Fixed", "Adjustable", "None"]
+    },
+    {
+      "name": "Finish",
+      "options": ["Brushed", "Matte", "Glossy", "Polished", "Textured"]
+    },
+    {
+      "name": "Height Adjustment",
+      "options": ["Manual", "Lever", "Gas Lift", "Automatic", "None"]
+    }
+  ],
+  "description": "Lounge-Ready Comfort with Reclining Functionality. The Nimbus Recliner is built for restorative comfort, combining full-body ergonomic support with reclining adjustability. Designed for home lounges, media rooms, or quiet office retreats, it allows users to lean back, relax, and stay supported for extended periods. Featuring soft finishes, padded armrests, and adjustable height settings, the Nimbus Recliner delivers luxury in a compact form. It's perfect for winding down, casual reading, or comfort-oriented workspaces. Choose from various finish styles, sizes, and armrest types to create the recliner that fits your space and relaxation goals."
+}

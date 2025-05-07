@@ -1,0 +1,22 @@
+{
+  "productName": "ZenForm Stool",
+  "attributes": [
+    {
+      "name": "Material",
+      "options": ["Wood", "Mesh", "Metal", "Plastic", "Leather"]
+    },
+    {
+      "name": "Armrest",
+      "options": ["Removable", "None", "Adjustable", "Padded", "Fixed"]
+    },
+    {
+      "name": "Color",
+      "options": ["Red", "Green", "White", "Black", "Blue"]
+    },
+    {
+      "name": "Base",
+      "options": ["Pedestal", "Flat", "Star", "Round", "Tapered"]
+    }
+  ],
+  "description": "Compact, Backless Seating for Flexible Workspaces. The ZenForm Stool is a backless, space-saving seating option designed for short-term use in creative, mobile, or casual environments. It’s ideal for collaborative spaces, standing desk transitions, kitchen counters, or design studios where movement and flexibility are essential. Unlike full-back chairs, the ZenForm promotes upright posture and core engagement. Its compact footprint and extensive customization options—across materials, base types, colors, and armrest configurations—make it easy to adapt to any setting or design preference. Best suited for active workspaces with sit-stand flexibility, kitchen islands, labs, studios, and classrooms, and environments where compact, mobile seating is preferred. Key features include durable material choices like mesh, metal, or wood, size options from Small to XXL, color variations, and optional armrest styles to fit both functional and aesthetic needs. If you're seeking a clean, minimalist stool that adapts to fluid environments, the ZenForm is a smart, versatile choice."
+}

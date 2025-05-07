@@ -1,0 +1,3756 @@
+{
+  "productName": "Nimbus Recliner",
+  "description": "Lounge-Ready Comfort with Reclining Functionality. The Nimbus Recliner is built for restorative comfort, combining full-body ergonomic support with reclining adjustability. Designed for home lounges, media rooms, or quiet office retreats, it allows users to lean back, relax, and stay supported for extended periods. Featuring soft finishes, padded armrests, and adjustable height settings, the Nimbus Recliner delivers luxury in a compact form. It's perfect for winding down, casual reading, or comfort-oriented workspaces. Choose from various finish styles, sizes, and armrest types to create the recliner that fits your space and relaxation goals.",
+  "variants": [
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Red",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Black",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Blue",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "White",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Removable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Padded",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Fixed",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "Adjustable",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Brushed",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Matte",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Glossy",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Polished",
+      "Height Adjustment": "None"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Manual"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Lever"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Gas Lift"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "Automatic"
+    },
+    {
+      "Color": "Green",
+      "Armrest": "None",
+      "Finish": "Textured",
+      "Height Adjustment": "None"
+    }
+  ]
+}

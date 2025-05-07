@@ -1,0 +1,3756 @@
+{
+  "productName": "Zenform Stool",
+  "description": "Compact, Backless Seating for Flexible Workspaces. The ZenForm Stool is a backless, space-saving seating option designed for short-term use in creative, mobile, or casual environments. It’s ideal for collaborative spaces, standing desk transitions, kitchen counters, or design studios where movement and flexibility are essential. Unlike full-back chairs, the ZenForm promotes upright posture and core engagement. Its compact footprint and extensive customization options—across materials, base types, colors, and armrest configurations—make it easy to adapt to any setting or design preference. Best suited for active workspaces with sit-stand flexibility, kitchen islands, labs, studios, and classrooms, and environments where compact, mobile seating is preferred. Key features include durable material choices like mesh, metal, or wood, size options from Small to XXL, color variations, and optional armrest styles to fit both functional and aesthetic needs. If you're seeking a clean, minimalist stool that adapts to fluid environments, the ZenForm is a smart, versatile choice.",
+  "variants": [
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Wood",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Mesh",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Metal",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Plastic",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Removable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "None",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Adjustable",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Padded",
+      "Color": "Blue",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Red",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Green",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "White",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Black",
+      "Base": "Tapered"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Pedestal"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Flat"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Star"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Round"
+    },
+    {
+      "Material": "Leather",
+      "Armrest": "Fixed",
+      "Color": "Blue",
+      "Base": "Tapered"
+    }
+  ]
+}

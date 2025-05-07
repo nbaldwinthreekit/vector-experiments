@@ -1,0 +1,22 @@
+{
+  "productName": "Vertex Task Chair",
+  "attributes": [
+    {
+      "name": "Height Adjustment",
+      "options": ["Gas Lift", "None", "Manual", "Lever", "Automatic"]
+    },
+    {
+      "name": "Material",
+      "options": ["Plastic", "Metal", "Wood", "Mesh", "Leather"]
+    },
+    {
+      "name": "Legs",
+      "options": ["Swivel", "Plastic", "Five-star", "Wooden", "Metal"]
+    },
+    {
+      "name": "Armrest",
+      "options": ["None", "Removable", "Fixed", "Padded", "Adjustable"]
+    }
+  ],
+  "description": "Lightweight Seating for Agile Work. The Vertex Task Chair is a streamlined, mid-back chair built for fast-paced work environments. With a focus on mobility and adjustability, it features customizable height controls, breathable materials, and a compact frame that fits under desks or in tight spaces. Ideal for coworking spaces, customer service roles, or dynamic tech environments, the Vertex encourages upright posture and flexible movement. Available with various leg and armrest configurations, it adapts to both individual and shared workstations. The Vertex is a practical choice for task-driven professionals who value function and space efficiency."
+}

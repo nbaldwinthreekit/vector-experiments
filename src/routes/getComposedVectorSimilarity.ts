@@ -80,7 +80,7 @@ router.post('/', async (req, res) => {
     const euclideanDistanceMetric = euclideanDistance / variantConfigurationVectorNorm;
 
     const cosineSimilarity = calcCosineSimilarity(
-      attributeOptionSumVector, // Cosine similarity is scale-invariant, so we can use the raw sum or the normalized vector.
+      attributeOptionSumVector, // Cosine similarity is scale-invariant, so we can use the raw sum.
       variantConfigurationVector,
       attributeOptionSumVectorNorm,
       variantConfigurationVectorNorm

@@ -80,3 +80,7 @@ export function normalizeVector(a: number[]): number[] {
   if (norm === 0) throw new Error('Cannot normalize a zero vector');
   return a.map((v) => v / norm);
 }
+
+export function averageVector(a: number[]): number[] {
+  return a.map((x) => x / a.length);
+}

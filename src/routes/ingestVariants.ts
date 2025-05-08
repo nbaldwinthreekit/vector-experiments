@@ -1,9 +1,10 @@
 import { Router } from 'express';
 import prisma from '../lib/prisma';
 import type { VariantData } from '../types';
-// import { getEmbedding } from '../openai';
-import { getEmbedding } from '../hugging-face';
 import { canonicalize } from './utilities';
+// import { getEmbedding } from '../openai';
+import { getEmbedding } from '../hugging-face/e5-base-v2';
+// import { getEmbedding } from '../hugging-face/gte-small';
 
 const router = Router();
 

@@ -7,6 +7,7 @@ import {
   calcVectorSum,
   calcVectorNorm,
   normalizeVector,
+  averageVector,
 } from './utilities';
 
 const router = Router();
@@ -55,40 +56,43 @@ router.post('/', async (req, res) => {
     }
 
     const attributeOptionSumVector = calcVectorSum(attributeOptionEmbeddings);
+    // Averaging instead of summing the attribute–option embeddings brings composed vectors’
+    // magnitude much closer to the full configuration vectors.
+    const attributeOptionsAverageVector = averageVector(attributeOptionSumVector);
 
     // openAI always normalizes vectors before returning. There's no way to turn this off =(.
     // If using openAI, or any other api that uses normalized vectors, the attributeOptionSumVector needs to be normalized to calculate euclidean distance.
-    const attributeOptionsNormalized = normalizeVector(attributeOptionSumVector);
+    // const attributeOptionsNormalized = normalizeVector(attributeOptionSumVector);
 
     const variantConfigurationVector = variant.embedding as number[];
 
     // Use this version for models that return full-length vectors.
-    // const euclideanDistance = calcEuclideanDistance(
-    //   attributeOptionSumVector,
-    //   variantConfigurationVector
-    // );
-
-    // Use this version for models like OpenAI that return unit-normalized vectors.
     const euclideanDistance = calcEuclideanDistance(
-      attributeOptionsNormalized,
+      attributeOptionsAverageVector,
       variantConfigurationVector
     );
 
-    const variantConfigurationVectorNorm = calcVectorNorm(variantConfigurationVector);
-    const attributeOptionSumVectorNorm = calcVectorNorm(attributeOptionSumVector);
+    // // Use this version for models like OpenAI that return unit-normalized vectors.
+    // const euclideanDistance = calcEuclideanDistance(
+    //   attributeOptionsNormalized,
+    //   variantConfigurationVector
+    // );
 
-    const euclideanDistanceMetric = euclideanDistance / variantConfigurationVectorNorm;
+    const variantConfigurationVectorNorm = calcVectorNorm(variantConfigurationVector);
+    const attributeOptionAverageVectorNorm = calcVectorNorm(attributeOptionsAverageVector);
+
+    const euclideanDistanceRatio = euclideanDistance / variantConfigurationVectorNorm;
 
     const cosineSimilarity = calcCosineSimilarity(
-      attributeOptionSumVector, // Cosine similarity is scale-invariant, so we can use the raw sum.
+      attributeOptionsAverageVector,
       variantConfigurationVector,
-      attributeOptionSumVectorNorm,
+      attributeOptionAverageVectorNorm,
       variantConfigurationVectorNorm
     );
 
     res.json({
       euclideanDistance,
-      euclideanDistanceMetric,
+      euclideanDistanceRatio,
       cosineSimilarity,
     });
   } catch (err) {

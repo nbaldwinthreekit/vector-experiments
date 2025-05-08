@@ -6,13 +6,13 @@ import {
   calcVectorSum,
   calcVectorNorm,
   calcMeanOfArray,
-  normalizeVector,
+  averageVector,
 } from './utilities';
 
 const router = Router();
 
 // Compares all variants of a product by comparing their full configuration vectors
-// to the sum of individual "attribute: option" embeddings.
+// to the averaged embeddings of their individual "attribute: option" components.
 
 router.post('/', async (req, res) => {
   try {
@@ -59,30 +59,26 @@ router.post('/', async (req, res) => {
       }
 
       const attributeOptionSumVector = calcVectorSum(attributeOptionEmbeddings);
+      // Averaging instead of summing the attribute–option embeddings brings composed vectors’
+      // magnitude much closer to the full configuration vectors.
+      const attributeOptionsAverageVector = averageVector(attributeOptionSumVector);
 
       const variantConfigurationVector = variant.embedding as number[];
 
-      // Use this version for models that return full-length vectors.
       const euclideanDistance = calcEuclideanDistance(
-        attributeOptionSumVector,
+        attributeOptionsAverageVector,
         variantConfigurationVector
       );
 
-      // // Use this version for models like OpenAI that return unit-normalized vectors.
-      // const euclideanDistance = calcEuclideanDistance(
-      //   normalizeVector(attributeOptionSumVector),
-      //   variantConfigurationVector
-      // );
-
       const variantConfigurationVectorNorm = calcVectorNorm(variantConfigurationVector);
-      const attributeOptionSumVectorNorm = calcVectorNorm(attributeOptionSumVector);
+      const attributeOptionsAverageVectorNorm = calcVectorNorm(attributeOptionsAverageVector);
 
       const euclideanDistanceMetric = euclideanDistance / variantConfigurationVectorNorm;
 
       const cosineSimilarity = calcCosineSimilarity(
-        attributeOptionSumVector, // Cosine similarity is scale-invariant, so we can use the raw sum.
+        attributeOptionsAverageVector,
         variantConfigurationVector,
-        attributeOptionSumVectorNorm,
+        attributeOptionsAverageVectorNorm,
         variantConfigurationVectorNorm
       );
 
@@ -91,15 +87,12 @@ router.post('/', async (req, res) => {
       collectedCosineSimilarity.push(cosineSimilarity);
     }
 
-    const meanEuclideanDistance = calcMeanOfArray(collectedEuclideanDistances);
-    const meanEuclideanDistanceMetric = calcMeanOfArray(collectedEuclideanDistancesMetric);
+    const meanEuclideanDistanceRatio = calcMeanOfArray(collectedEuclideanDistancesMetric);
     const meanCosineSimilarity = calcMeanOfArray(collectedCosineSimilarity);
 
     res.json({
       productName,
-      variantCount: variants.length,
-      meanEuclideanDistance,
-      meanEuclideanDistanceMetric,
+      meanEuclideanDistanceRatio,
       meanCosineSimilarity,
     });
   } catch (err) {

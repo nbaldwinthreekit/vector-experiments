@@ -1,9 +1,5 @@
 {
+  "userQuery": "I would like a chair with good support for the lumbar spine and no wheels.",
   "productName": "Aeroflex Chair",
-  "configuration": {
-    "Armrest": "Removable",
-    "Back Support": "Memory Foam",
-    "Base": "Star",
-    "Wheels": "Caster"
-  }
+  "resultsRequested": 5
 }

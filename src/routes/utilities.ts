@@ -10,6 +10,10 @@ export function canonicalize(obj: any): any {
   return obj;
 }
 
+export function standardizeFormatting(input: string) {
+  return input.trim().toLowerCase();
+}
+
 export function calcVectorNorm(a: number[]): number {
   let res = 0;
 
@@ -81,6 +85,6 @@ export function normalizeVector(a: number[]): number[] {
   return a.map((v) => v / norm);
 }
 
-export function averageVector(a: number[]): number[] {
+export function calcAverageVector(a: number[]): number[] {
   return a.map((x) => x / a.length);
 }

@@ -1,9 +1,12 @@
 import { Router } from 'express';
 import prisma from '../lib/prisma';
+import { standardizeFormatting } from './utilities';
 import type { ConfigurationData } from '../types';
 // import { getEmbedding } from '../openai';
-import { getEmbedding } from '../hugging-face/e5-base-v2';
+// import { getEmbedding } from '../hugging-face/e5-base-v2';
 // import { getEmbedding } from '../hugging-face/gte-small';
+// import { getEmbedding } from '../hugging-face/bge-small-en-v1.5';
+import { getEmbedding } from '../hugging-face/gte-large';
 
 const router = Router();
 
@@ -21,7 +24,7 @@ router.post('/', async (req, res) => {
     if (!newProduct) {
       newProductCount += 1;
 
-      const embedding = await getEmbedding(productName + description);
+      const embedding = await getEmbedding(standardizeFormatting(productName + description));
       newProduct = await prisma.product.create({
         data: {
           productName,
@@ -49,7 +52,9 @@ router.post('/', async (req, res) => {
         if (!newAttributeOption) {
           newAttributeOptionCount += 1;
 
-          const embedding = await getEmbedding(`${attributeName}: ${attributeOption}`);
+          const embedding = await getEmbedding(
+            standardizeFormatting(`${attributeName}: ${attributeOption}`)
+          );
           newAttributeOption = await prisma.attributeOption.create({
             data: {
               attribute: attributeName,

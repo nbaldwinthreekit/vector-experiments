@@ -6,7 +6,7 @@ import {
   calcVectorSum,
   calcVectorNorm,
   calcMeanOfArray,
-  averageVector,
+  calcAverageVector,
 } from './utilities';
 
 const router = Router();
@@ -59,19 +59,16 @@ router.post('/', async (req, res) => {
       }
 
       const attributeOptionSumVector = calcVectorSum(attributeOptionEmbeddings);
-      // Averaging instead of summing the attribute–option embeddings brings composed vectors’
-      // magnitude much closer to the full configuration vectors.
-      const attributeOptionsAverageVector = averageVector(attributeOptionSumVector);
+      const attributeOptionsAverageVector = calcAverageVector(attributeOptionSumVector);
+      const attributeOptionsAverageVectorNorm = calcVectorNorm(attributeOptionsAverageVector);
 
       const variantConfigurationVector = variant.embedding as number[];
+      const variantConfigurationVectorNorm = calcVectorNorm(variantConfigurationVector);
 
       const euclideanDistance = calcEuclideanDistance(
         attributeOptionsAverageVector,
         variantConfigurationVector
       );
-
-      const variantConfigurationVectorNorm = calcVectorNorm(variantConfigurationVector);
-      const attributeOptionsAverageVectorNorm = calcVectorNorm(attributeOptionsAverageVector);
 
       const euclideanDistanceMetric = euclideanDistance / variantConfigurationVectorNorm;
 

@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import prisma from '../lib/prisma';
 import type { VariantData } from '../types';
-import { canonicalize, standardizeFormatting } from './utilities';
+import { canonicalize, standardizeFormatting, convertToNaturalLanguage } from './utilities';
 // import { getEmbedding } from '../openai';
 // import { getEmbedding } from '../hugging-face/e5-base-v2';
 // import { getEmbedding } from '../hugging-face/gte-small';
@@ -38,13 +38,16 @@ router.post('/', async (req, res) => {
 
     for (const v of variants) {
       // Sorting the config object to ensure consistent vectorization.
-      const configurationString = standardizeFormatting(JSON.stringify(canonicalize(v)));
+      // const configurationString = standardizeFormatting(JSON.stringify(canonicalize(v)));
+
+      // Testing out describing the configuration as natural language.
+      const sortedConfiguration = canonicalize(v);
 
       let newVariant = await prisma.variant.findUnique({
         where: {
           productName_configuration: {
             productName,
-            configuration: configurationString,
+            configuration: JSON.stringify(sortedConfiguration),
           },
         },
       });
@@ -52,12 +55,20 @@ router.post('/', async (req, res) => {
       if (!newVariant) {
         newVariantCount += 1;
 
-        const variantEmbedding = await getEmbedding(configurationString);
+        const naturalLanguageConfiguration = convertToNaturalLanguage(
+          productName,
+          sortedConfiguration
+        );
+
+        const variantEmbedding = await getEmbedding(
+          standardizeFormatting(naturalLanguageConfiguration)
+        );
         newVariant = await prisma.variant.create({
           data: {
             productId: newProduct.id,
             productName,
-            configuration: configurationString,
+            configuration: JSON.stringify(sortedConfiguration),
+            nlConfiguration: naturalLanguageConfiguration,
             embedding: variantEmbedding,
             metadata: { reminder: 'metadata' },
           },
@@ -66,19 +77,14 @@ router.post('/', async (req, res) => {
         console.log('Created new variant:', newVariant.configuration);
       }
 
-      const attributeOptions = configurationString.split(',');
-      for (const pair of attributeOptions) {
-        const [rawKey, rawValue] = pair.split(':');
-        const attributeName = rawKey?.replace(/["{}]/g, '').trim();
-        const attributeOption = rawValue?.replace(/["{}]/g, '').trim();
-
-        if (!attributeName || !attributeOption) continue;
+      for (const [attribute, attributeOption] of Object.entries(sortedConfiguration)) {
+        if (!attribute || !attributeOption) continue;
 
         let newAttributeOption = await prisma.attributeOption.findUnique({
           where: {
             attribute_attributeOption: {
-              attribute: attributeName,
-              attributeOption: attributeOption,
+              attribute,
+              attributeOption: JSON.stringify(attributeOption),
             },
           },
         });
@@ -87,12 +93,14 @@ router.post('/', async (req, res) => {
           newAttributeOptionCount += 1;
 
           const attributeEmbedding = await getEmbedding(
-            standardizeFormatting(`${attributeName}: ${attributeOption}`)
+            standardizeFormatting(
+              `This product has customized ${attribute} with the choice ${attributeOption}.`
+            )
           );
           newAttributeOption = await prisma.attributeOption.create({
             data: {
-              attribute: attributeName,
-              attributeOption: attributeOption,
+              attribute,
+              attributeOption: JSON.stringify(attributeOption),
               embedding: attributeEmbedding,
               metadata: { reminder: 'metadata' },
             },

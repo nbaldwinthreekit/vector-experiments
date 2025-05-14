@@ -9,6 +9,17 @@ export function canonicalize(obj: any): any {
   }
   return obj;
 }
+export function convertToNaturalLanguage(
+  productName: string,
+  variantConfiguration: Record<string, string>
+) {
+  const productNamePrefix = `The product is called the ${productName}. It has customizeable parts.`;
+  let naturalLanguageConfiguration = productNamePrefix;
+  for (const [attribute, attributeValue] of Object.entries(variantConfiguration)) {
+    naturalLanguageConfiguration += ` This product has ${attributeValue} for its ${attribute}.`;
+  }
+  return naturalLanguageConfiguration;
+}
 
 export function standardizeFormatting(input: string) {
   return input.trim().toLowerCase();

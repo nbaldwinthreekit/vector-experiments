@@ -138,6 +138,7 @@ exports.Prisma.VariantScalarFieldEnum = {
   productId: 'productId',
   productName: 'productName',
   configuration: 'configuration',
+  nlConfiguration: 'nlConfiguration',
   embedding: 'embedding',
   metadata: 'metadata'
 };

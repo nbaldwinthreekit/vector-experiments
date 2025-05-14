@@ -35,6 +35,7 @@ model Variant {
   productId         Int
   productName       String  
   configuration     String
+  nlConfiguration   String
   embedding         Json
   metadata          Json
 

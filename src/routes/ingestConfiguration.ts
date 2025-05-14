@@ -53,7 +53,9 @@ router.post('/', async (req, res) => {
           newAttributeOptionCount += 1;
 
           const embedding = await getEmbedding(
-            standardizeFormatting(`${attributeName}: ${attributeOption}`)
+            standardizeFormatting(
+              `This product has customized ${attributeName} with the choice ${attributeOption}.`
+            )
           );
           newAttributeOption = await prisma.attributeOption.create({
             data: {
